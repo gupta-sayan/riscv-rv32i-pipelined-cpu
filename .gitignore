@@ -1,0 +1,37 @@
+# RTL simulation and synthesis outputs
+/build/
+/obj_dir/
+*.vcd
+*.fst
+*.vvp
+*.lxt
+*.lxt2
+*.wdb
+*.jou
+*.bit
+
+# Python environment and generated caches
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+
+# Local editor and operating system files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Credentials and private keys
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+id_rsa
+id_ed25519

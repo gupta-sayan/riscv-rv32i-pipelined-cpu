@@ -1,0 +1,2229 @@
+{
+  "historical_dependencies": [
+    "Historical synthesis predates R01; current accepted bytes are separately verified, not newly synthesized.",
+    "Generic counts are not FPGA utilization, ASIC area/power, measured timing, Fmax or hardware validation.",
+    "F05 remains PARTIAL / DEFERRED; neither target-specific timing shell is completed or signed off.",
+    "Broad original documents, netlists, protected manifests and archives remain restricted dependencies; structural extracts do not replace a self-contained original archive.",
+    "Later 5947-file outcome is reconciled from its saved before scope and saved report; a full paired contemporaneous after-manifest is not supplied by that record.",
+    "Historical F07/F08, this derivative and future delivery validation are separate claims.",
+    "No synthesis, lint, simulation, formal, implementation, timing tool, historical collector or portable lint procedure executed.",
+    "Confidentiality screening is bounded pattern inspection and technical projection, not universal secret detection."
+  ],
+  "omitted_raw_evidence": [
+    "Full structural JSON/exported netlists retained privately with hashes; relevant extracts delivered",
+    "Broad protected/document manifests retained privately; counts and comparisons delivered without restricted path lists",
+    "Internal reports/decisions and archives retained privately; technical dispositions and identities delivered"
+  ],
+  "original_artifacts": [
+    {
+      "artifact_id": "A-03b483fe5c9d13186690",
+      "classification": "preserved_historical_source",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F04"
+      ],
+      "original_bytes": 619,
+      "original_path": "docs/verification/module17/final_campaign/evidence/source_snapshot/rtl/decode/imm_gen.sv",
+      "original_sha256": "17e0d0ffe8aaa44d4171470625f7a383bbe39c0583c112547ad558b8c7ea6815",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-0582297049239ce473f6",
+      "classification": "accepted_technical_source",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "BASELINE"
+      ],
+      "original_bytes": 2993,
+      "original_path": "rtl/memory/lsu_ex.sv",
+      "original_sha256": "5689a9c2d7e1bb432e450e0b64554a83dfe144d976f882bb9663ec186093dcd6",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-0817aab0947a693f982e",
+      "classification": "technical_saved_result",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F05"
+      ],
+      "original_bytes": 80,
+      "original_path": "docs/verification/module17/final_campaign/logs/F05_mgu151rp/results.json",
+      "original_sha256": "e49a79ccd9e3996621e6c364fd9f9db77cbd797cfe159dded888dc0b5531e54d",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-08484eedd606a7eb1584",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 35205,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V20_trace0/simulation.log",
+      "original_sha256": "99f5345fa0d15fb152d84598a60026f10e31043c48d6bc4d2be9e35b5a56f355",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-0909ebcf6dcacffeb021",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 138375,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V16_trace1/simulation.log",
+      "original_sha256": "5dfc86aab317985527530ce65c935530e836cdc7d84c621591b98bdd0f8ac2a1",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-09268bfaa255c74d1bb5",
+      "classification": "preserved_historical_source",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F04"
+      ],
+      "original_bytes": 13614,
+      "original_path": "docs/verification/module17/final_campaign/evidence/source_snapshot/tb/integration/tb_rv32i_core_top.sv",
+      "original_sha256": "ee5b4f53c3c63869dfd1115e5c1f52265e4c641cefa445949c69457a15774ec6",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-0af4b7caacfae2ad147a",
+      "classification": "accepted_technical_source",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "BASELINE"
+      ],
+      "original_bytes": 981,
+      "original_path": "rtl/core/ex_event_mux.sv",
+      "original_sha256": "2c52108735e2181d3554a2542343c20864c029be39189df07db76409c8efbe3d",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-0b71cb80723c094e407f",
+      "classification": "restricted_historical_manifest",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F08-ORIGINAL"
+      ],
+      "original_bytes": 180440,
+      "original_path": "docs/verification/module17/final_campaign/evidence/FINAL_MANIFEST_20261104T232215Z.sha256",
+      "original_sha256": "a30a5e48ebd9b3859d3fef5df21235819ead0a5d7cc99b57f0cf571b2b2ff4fa",
+      "source_scan_findings": [
+        "internal_material"
+      ]
+    },
+    {
+      "artifact_id": "A-0c49bc8050010ff8666f",
+      "classification": "restricted_historical_original",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F04"
+      ],
+      "original_bytes": 4361,
+      "original_path": "docs/verification/module17/final_campaign/scripts/f04.py",
+      "original_sha256": "3bed92c70bfab2719e358916b4d7b786b92895fd91cf308fafdb18b136db5ad3",
+      "source_scan_findings": [
+        "internal_material"
+      ]
+    },
+    {
+      "artifact_id": "A-1140746eedbb03dd4496",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 37566,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V06_trace1/simulation.log",
+      "original_sha256": "561484b52312e2c2f7031f9367d38a28d60774a86c90fc3439b9a97232130e10",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-1171a78aac1ce16ffbac",
+      "classification": "preserved_historical_source",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F04"
+      ],
+      "original_bytes": 365,
+      "original_path": "docs/verification/module17/final_campaign/evidence/source_snapshot/rtl/memory/imem_sync.sv",
+      "original_sha256": "95ffe4de77adc2f5f22238c921bc206cd308597ac0d851ed53b34aa5c4867260",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-11a19847eccb72ee6a49",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 37565,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V06_trace0/simulation.log",
+      "original_sha256": "410daba83bbdccb80bd9377bca9cdfb1408f1f141ebc79ef92d659f790ade598",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-14f1b14da214e575ebe8",
+      "classification": "historical_technical_text",
+      "content_treatment": "complete technical text embedded with only declared root substitution",
+      "delivered_record_ids": [
+        "F04-trace0",
+        "T-14f1b14da214e575ebe8"
+      ],
+      "original_bytes": 1003,
+      "original_path": "docs/verification/module17/final_campaign/logs/F04_3pvhfy2g/synth_trace0.ys",
+      "original_sha256": "9768881321e1a85541bf095a8b12dc9ff09aaf2c009c725aa25bef09e3208ac0",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-18756581edb26c9d994e",
+      "classification": "restricted_historical_original",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "MAINTENANCE"
+      ],
+      "original_bytes": 876,
+      "original_path": "docs/verification/module17/lint_closure/implementation/evidence/t01_full_bench_results.json",
+      "original_sha256": "bc5bd22ef9e20db17dc4992f08348e7d6b02a88e5d557582404f8d604626175e",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-19bef984af33b29cab34",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 1447299,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V12_trace1/simulation.log",
+      "original_sha256": "0598444e8d940b927f2f3abe15cc6af27c84f5ae8979fd0c02cc47a50bbf3639",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-1a392e677fd048942242",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 271272,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V19_trace0/simulation.log",
+      "original_sha256": "4f862b6254f904df5841a26dea2ff10e39d49a1b221de90229543a9845108ae2",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-1ac00a3cfdc7b8c4e40c",
+      "classification": "restricted_historical_original",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F05"
+      ],
+      "original_bytes": 3802,
+      "original_path": "docs/verification/module17/final_campaign/TIMING_REPORT.md",
+      "original_sha256": "a646e8168055306e26af898b0d95440ee112c0d860a08361f4cf3748cb0db329",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-1ea199fcea0d29740c9d",
+      "classification": "restricted_historical_original",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F03",
+        "F05"
+      ],
+      "original_bytes": 18572,
+      "original_path": "docs/DECISIONS.md",
+      "original_sha256": "49c5582e8fd12dec6d3706ee439c3ba88b786a5591c016f8b858a217030c4d13",
+      "source_scan_findings": [
+        "internal_material"
+      ]
+    },
+    {
+      "artifact_id": "A-2105277424868800cd62",
+      "classification": "accepted_technical_source",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "BASELINE"
+      ],
+      "original_bytes": 11939,
+      "original_path": "rtl/decode/decoder.sv",
+      "original_sha256": "bc4e16864545f00fcdb0ad755cfe80512ea4d13cb9d408ae268ba12b2c7c6742",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-21c18408aa5379fcc26a",
+      "classification": "accepted_technical_source",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "BASELINE"
+      ],
+      "original_bytes": 3313,
+      "original_path": "rtl/core/wb_trace.sv",
+      "original_sha256": "39ba5ea95779c5445b96298cf7cc45ae373adde60f19808fa4743a58ccfabe1f",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-228a2f67f0771fcee64c",
+      "classification": "existing_technical_derivative",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "PRIOR-DERIVATIVES"
+      ],
+      "original_bytes": 99085,
+      "original_path": "docs/verification/module17/lint_closure/fail_closed_runner/TECHNICAL_LINT_VALIDATION.json",
+      "original_sha256": "e540792ad1f1a9cd22ac300fb61d4273be041c9118232645b4dd39f0a60f5646",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-2524aaae4f256bb57585",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 34475,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V24_trace1/simulation.log",
+      "original_sha256": "916a71ac1e0e50ded0a4055320032ebf46907e22f154f9cec7f0223e138efe13",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-26c96990b1cfadf0d873",
+      "classification": "preserved_historical_source",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F04"
+      ],
+      "original_bytes": 895,
+      "original_path": "docs/verification/module17/final_campaign/evidence/source_snapshot/rtl/core/hazard_ctrl.sv",
+      "original_sha256": "74c9691330fc99b708fee570e61d575d8400ebf5d27344dc1a03ecb849d12cc8",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-2703b1406993c58465f5",
+      "classification": "restricted_structural_JSON",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F04-trace1"
+      ],
+      "original_bytes": 5525691,
+      "original_path": "docs/verification/module17/final_campaign/logs/F04_3pvhfy2g/netlist_trace1.json",
+      "original_sha256": "dd22f94c3cefd1f5747b085a6d2941c725b607cbb190bb51550bed47756575d7",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-27b1bbd23a7c2ebc1d9f",
+      "classification": "restricted_exported_netlist",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F04-trace1"
+      ],
+      "original_bytes": 775696,
+      "original_path": "docs/verification/module17/final_campaign/logs/F04_3pvhfy2g/netlist_trace1.v",
+      "original_sha256": "0b1b4422ab21ff4cdb4e5c4c6a31ab122b08e0bf86dd345f1691255c2926e4a3",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-28d68305813cab1d834f",
+      "classification": "accepted_technical_source",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "BASELINE"
+      ],
+      "original_bytes": 619,
+      "original_path": "rtl/decode/imm_gen.sv",
+      "original_sha256": "17e0d0ffe8aaa44d4171470625f7a383bbe39c0583c112547ad558b8c7ea6815",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-2d31bbd6711e2f309fcf",
+      "classification": "restricted_historical_original",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F04"
+      ],
+      "original_bytes": 1519,
+      "original_path": "docs/verification/module17/final_campaign/evidence/rtl_before.sha256",
+      "original_sha256": "a235b504947089a98a2a16db3517615b52801c6ff315658b6e10a6413ab7052e",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-2dce54d9f2dc790d811a",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 1447299,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V12_trace0/simulation.log",
+      "original_sha256": "e7f7c386f60e57fd3da53d81feaf44b5b25414f5ba02e7b757a8bc4ff7f684ba",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-37a55d12be4f90c724b1",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 137907,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V14_trace1/simulation.log",
+      "original_sha256": "94eebad572df6f7668d9752a0003cbbcbaa23f2a07912418ffffa9016514aa7d",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-39d80df92165fd7191a1",
+      "classification": "historical_technical_text",
+      "content_treatment": "complete technical text embedded with only declared root substitution",
+      "delivered_record_ids": [
+        "F05",
+        "T-39d80df92165fd7191a1"
+      ],
+      "original_bytes": 9158,
+      "original_path": "docs/verification/module17/final_campaign/logs/F05_mgu151rp/logic_depth_trace1.log",
+      "original_sha256": "24ee867e47166a263678f978ef51b61f6c3ab49e5f2a592537a8457d6f6bb8d5",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-3e2f85e1f03634d91eb5",
+      "classification": "historical_technical_text",
+      "content_treatment": "complete technical text embedded with only declared root substitution",
+      "delivered_record_ids": [
+        "F05",
+        "T-3e2f85e1f03634d91eb5"
+      ],
+      "original_bytes": 184,
+      "original_path": "docs/verification/module17/final_campaign/logs/F05_mgu151rp/logic_depth_trace0.ys",
+      "original_sha256": "8d7e6d8aa824c13baa08cf4422df3f4d262919968fdda29c52350d3e0e5c90d3",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-3e4e8420c1acf1ea8179",
+      "classification": "restricted_historical_original",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "MAINTENANCE"
+      ],
+      "original_bytes": 1755,
+      "original_path": "docs/verification/module17/lint_closure/implementation/SOURCE_CHANGE_AUDIT.md",
+      "original_sha256": "9ed739fc679557ee575621ce74053826f76535bfe3036198dc60012938309139",
+      "source_scan_findings": [
+        "internal_material"
+      ]
+    },
+    {
+      "artifact_id": "A-3e8983ff36d28048ecb8",
+      "classification": "restricted_historical_original",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F04"
+      ],
+      "original_bytes": 750,
+      "original_path": "docs/verification/module17/final_campaign/logs/F04_3pvhfy2g/commands.jsonl",
+      "original_sha256": "57b06007d36cdf237ed3c7a7ac74e78ff0139b741334717382506f03260ce5ac",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-3f9cf435f85a079b92b4",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 34201,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V01_trace0/simulation.log",
+      "original_sha256": "afb2a9b763b0b217f0846c997e6464d09766d8c2f7f6c1d35ee1ea631f74003c",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-40cb55707440fd2bdecf",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 69555,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V05_trace1/simulation.log",
+      "original_sha256": "683a2af989ab69dd01f89085660c7d5861e0cb1b727fa08235f7239904db6f47",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-442fd70aa28c8ce6c3a1",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 33643,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V23_trace1/simulation.log",
+      "original_sha256": "44fc3ac359d16d0b825b748172c51707ccefd908040299a54b7fb9b8b6f66b47",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-449d9dfcc568af8d4c90",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 501720,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V08_trace0/simulation.log",
+      "original_sha256": "7123eac5207a0387f29e1e2bc0e3a3dcdd48932e2d75942fce14a1c713476bb6",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-457e1e68b9e3fe334db1",
+      "classification": "technical_machine_audit",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "MAINTENANCE",
+        "R01",
+        "T01"
+      ],
+      "original_bytes": 716,
+      "original_path": "docs/verification/module17/lint_closure/implementation/evidence/source_changes.json",
+      "original_sha256": "4a73e7719ac3530e20faf6422740fe578067a9743631be3fae9aefdf57ebcb07",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-475e4d0d741bd89446e7",
+      "classification": "restricted_historical_original",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F05"
+      ],
+      "original_bytes": 2911,
+      "original_path": "docs/verification/module17/TIMING_OBLIGATIONS.md",
+      "original_sha256": "677d1a8a2cdd1553c6f64aa5260863d37603af826180a56b447e758a4c53aa64",
+      "source_scan_findings": [
+        "internal_material"
+      ]
+    },
+    {
+      "artifact_id": "A-47a3aa2d5f8116dc4440",
+      "classification": "technical_saved_result",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 1707,
+      "original_path": "docs/verification/module17/final_campaign/logs/F07_py2avkr8/trace_equivalence.json",
+      "original_sha256": "c3bd9a8972fca8eaf5ee5d337a5b82a0e164a953a1c1eb51dfe5cea80436b93e",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-4931119e20b182dd39f5",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 242736,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V11_trace0/simulation.log",
+      "original_sha256": "0096d5891ed4c3658434fb85e85a955bbc0d13708c93aaab544e264a0ef8bd68",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-4a352e8278130a654055",
+      "classification": "accepted_technical_source",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "BASELINE"
+      ],
+      "original_bytes": 814,
+      "original_path": "rtl/core/alu.sv",
+      "original_sha256": "8ec9db346cd6f41bfe4a1640288f2bc1a399e97fa43ce0ebb9aa8a46be669939",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-4b614200a224185fbabb",
+      "classification": "existing_technical_derivative",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "PRIOR-DERIVATIVES"
+      ],
+      "original_bytes": 18254924,
+      "original_path": "docs/verification/module17/final_campaign/TECHNICAL_FUNCTIONAL_EVIDENCE.json",
+      "original_sha256": "f7e56711aee9c579494b81aae778afe394b4d1fe28bb0af197ccee2cef651176",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-4e84c2abeda024a89dbf",
+      "classification": "restricted_historical_original",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F08"
+      ],
+      "original_bytes": 11194,
+      "original_path": "docs/verification/module17/final_campaign/FINAL_ENGINEERING_REPORT.md",
+      "original_sha256": "667081f09513ff7d8fff8f0119154968a8f9f7f3cc6c295bbf1f33593e930516",
+      "source_scan_findings": [
+        "internal_material"
+      ]
+    },
+    {
+      "artifact_id": "A-501e1f0ad6ca2e92e59e",
+      "classification": "accepted_technical_source",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "BASELINE"
+      ],
+      "original_bytes": 870,
+      "original_path": "rtl/memory/dmem_sync.sv",
+      "original_sha256": "fb0cc47641f86feeb0d5b1fd32128e47258bcab3e1031143a1627d7c778d8f9d",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-502219b4428924b42a0b",
+      "classification": "accepted_technical_source",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "BASELINE"
+      ],
+      "original_bytes": 365,
+      "original_path": "rtl/memory/imem_sync.sv",
+      "original_sha256": "95ffe4de77adc2f5f22238c921bc206cd308597ac0d851ed53b34aa5c4867260",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-50a0db781a7e2f84c8d7",
+      "classification": "preserved_historical_source",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F04"
+      ],
+      "original_bytes": 12600,
+      "original_path": "docs/verification/module17/final_campaign/evidence/source_snapshot/rtl/core/pipeline_regs.sv",
+      "original_sha256": "5fbb22be5137cbd7a9e7455ed1d76558623375fc4e89b5e8f36e7564cc620b15",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-50afbb885eb5ec1bc631",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 34037,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V21_trace1/simulation.log",
+      "original_sha256": "1a180f946774f235aaf7b7e0ff60c1d9d6dc5748a99a2d6c24831cad43d01ed6",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-5112d54f27ed4d48800e",
+      "classification": "preserved_historical_source",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F04"
+      ],
+      "original_bytes": 2995,
+      "original_path": "docs/verification/module17/final_campaign/evidence/source_snapshot/rtl/core/fault_ctrl.sv",
+      "original_sha256": "6406e8f0d23d40152ea4ea39c3e705eee22670fd884094dd62e7d2dfe506beba",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-56cd12c3bf5aec5e7b00",
+      "classification": "preserved_historical_source",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F04"
+      ],
+      "original_bytes": 1499,
+      "original_path": "docs/verification/module17/final_campaign/evidence/source_snapshot/rtl/memory/load_formatter.sv",
+      "original_sha256": "8e0b77bc226b3ff8db10596061ed9a798fa60fc405b036df456a194e16e44194",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-57e42a2c9b723b1de7a8",
+      "classification": "preserved_historical_source",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F04"
+      ],
+      "original_bytes": 17754,
+      "original_path": "docs/verification/module17/final_campaign/evidence/source_snapshot/rtl/core/rv32i_core_top.sv",
+      "original_sha256": "412910c9715894020c4fcdc7c641372951197525bfaa44061f70fd8b26a8386b",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-595a6dc1ea246a8a325f",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 105242,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V17_trace1/simulation.log",
+      "original_sha256": "a5b9cf55c53783b46c29d062591504aa67fb0fbdc159566d015209905ecbd5a4",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-5a53cf65ad632c7776f5",
+      "classification": "accepted_technical_source",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "BASELINE",
+        "R01"
+      ],
+      "original_bytes": 1500,
+      "original_path": "rtl/memory/load_formatter.sv",
+      "original_sha256": "562491ee4affd64ee76f593b753144bfc2812b59bc3c55f3fcc57731711ce800",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-5bd0725482774f2dafe5",
+      "classification": "accepted_technical_source",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "BASELINE"
+      ],
+      "original_bytes": 2147,
+      "original_path": "rtl/core/forward_unit.sv",
+      "original_sha256": "61097692b624744c51b88ca95bc0c2d485db570cb0f4efbb64f7580a5b497d02",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-5be1e183ab14b5f6c6b4",
+      "classification": "restricted_exported_netlist",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F04-trace0"
+      ],
+      "original_bytes": 679334,
+      "original_path": "docs/verification/module17/final_campaign/logs/F04_3pvhfy2g/netlist_trace0.v",
+      "original_sha256": "dd2cded47caa76ab0fdd42399b2119acad2f00f5ac5a8dea355456340258962b",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-5c8420ecf42fd29dfefd",
+      "classification": "preserved_historical_source",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F04"
+      ],
+      "original_bytes": 870,
+      "original_path": "docs/verification/module17/final_campaign/evidence/source_snapshot/rtl/memory/dmem_sync.sv",
+      "original_sha256": "fb0cc47641f86feeb0d5b1fd32128e47258bcab3e1031143a1627d7c778d8f9d",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-5d8fe7ffca1583cc281e",
+      "classification": "historical_technical_text",
+      "content_treatment": "complete technical text embedded with only declared root substitution",
+      "delivered_record_ids": [
+        "F04-trace0",
+        "T-5d8fe7ffca1583cc281e"
+      ],
+      "original_bytes": 153810,
+      "original_path": "docs/verification/module17/final_campaign/logs/F04_3pvhfy2g/synthesis_trace0.log",
+      "original_sha256": "f6b85c03b64c74003386fd1b8e2bc8ae8246b4ee54b3a8966d8dad38fdb6d480",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-6287ace0a82ef7f3e9bc",
+      "classification": "restricted_historical_original",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F03"
+      ],
+      "original_bytes": 10291,
+      "original_path": "docs/verification/module17/final_campaign/logs/F03_mno7_7jz/source_references.log",
+      "original_sha256": "76ab9875465a2ad4ae83eb43c4883fe4b2b1640ea4b20b37659b2818a8b8831d",
+      "source_scan_findings": [
+        "internal_material"
+      ]
+    },
+    {
+      "artifact_id": "A-62eac937d7270bb89fc3",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 203398,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V09_trace0/simulation.log",
+      "original_sha256": "54417ce9cab30593dfddef4f07d835511fa039f7ddd58c5deae61275e276c426",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-65aabefaaf7e12a4a775",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 136443,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V13_trace0/simulation.log",
+      "original_sha256": "94b7616709c442b7370cc452dd8148c826da924770b30ea290d4e58c15070346",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-65b28d51742bfefc4bea",
+      "classification": "historical_technical_text",
+      "content_treatment": "complete technical text embedded with only declared root substitution",
+      "delivered_record_ids": [
+        "F05",
+        "T-65b28d51742bfefc4bea"
+      ],
+      "original_bytes": 9431,
+      "original_path": "docs/verification/module17/final_campaign/logs/F05_mgu151rp/logic_depth_trace0.log",
+      "original_sha256": "175d91ac0c5d0bd17a80539b6386923e0294fb5007e42d36f30287622945afd8",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-6caaf52c3d0a93d30022",
+      "classification": "technical_saved_result",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 57,
+      "original_path": "docs/verification/module17/final_campaign/logs/F07_py2avkr8/integrity.json",
+      "original_sha256": "b181044c38ffc37fd412dc17db81194d5bd2167ba04cbd2aa94c1ea026c5ebfb",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-6d37f4adb77148e5f37c",
+      "classification": "restricted_historical_original",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 41,
+      "original_path": "docs/verification/module17/final_campaign/evidence/git_head_initial.log",
+      "original_sha256": "6484908fed634dac471050e10f0414df4a0257380dceb8aaf47fbe6a0c8acd2a",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-6e6fca10917cdcc3bc6d",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 427598,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V04_trace1/simulation.log",
+      "original_sha256": "7d907e9075a61c0306124b51f79d64197591dd5dfeed4c691c11772aae8e2594",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-6f2cfa77dc3e7321a05e",
+      "classification": "restricted_historical_original",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F04"
+      ],
+      "original_bytes": 10510,
+      "original_path": "docs/verification/module17/final_campaign/evidence/SOURCE_SNAPSHOT.sha256",
+      "original_sha256": "3ba3b4fde80f72ba3f540bc4456f1f84c67c46abcaf25a018eb84f366f2c2005",
+      "source_scan_findings": [
+        "internal_material"
+      ]
+    },
+    {
+      "artifact_id": "A-7182e4769e7fd8b63432",
+      "classification": "restricted_historical_archive",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F08-ORIGINAL"
+      ],
+      "original_bytes": 8490390,
+      "original_path": "docs/verification/module17/final_campaign/VER-M17-003_evidence_20261104T232215Z.tar.gz",
+      "original_sha256": "bfc5bcff099c1ce3dc7873cdf25183e6efdae738685d9f23ed1572a191193d6b",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-7784d7791e9bf0559ee6",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 501720,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V08_trace1/simulation.log",
+      "original_sha256": "a3f9f94ba36e9202edf54ad3160183bced22e1375e5ca3b29ec80eab22a1e246",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-7799adeb8edd5ec50639",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 205206,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V22_trace0/simulation.log",
+      "original_sha256": "99ba9a906df58e9043aece59a9e37f85ce649bd42a4c08411d415e9afae93f54",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-78f1d7df65f5ce2a44ce",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 242736,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V11_trace1/simulation.log",
+      "original_sha256": "ead88a12b4147e681ae9581cf877fe33703f32660451c9ac4759db537e6ce5fc",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-81212199efb54d122e81",
+      "classification": "accepted_technical_source",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "BASELINE"
+      ],
+      "original_bytes": 12600,
+      "original_path": "rtl/core/pipeline_regs.sv",
+      "original_sha256": "5fbb22be5137cbd7a9e7455ed1d76558623375fc4e89b5e8f36e7564cc620b15",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-8139591e42ecd1fa33ea",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 34466,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V26_trace0/simulation.log",
+      "original_sha256": "1ec7d1920213c6dba8ce7a74465cce697105aeb57c7ad43019ee16dad914d570",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-8171fee7841a92d372b4",
+      "classification": "technical_tool_record",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F04"
+      ],
+      "original_bytes": 34,
+      "original_path": "docs/verification/module17/final_campaign/evidence/yosys_version.log",
+      "original_sha256": "14022961a7564dcc908f30f8b52cc1289449e8f25a95ed5c2d2afb88c4bde4fa",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-83b43c2f3823b2dbf82b",
+      "classification": "historical_technical_text",
+      "content_treatment": "complete technical text embedded with only declared root substitution",
+      "delivered_record_ids": [
+        "F04-trace1",
+        "T-83b43c2f3823b2dbf82b"
+      ],
+      "original_bytes": 165693,
+      "original_path": "docs/verification/module17/final_campaign/logs/F04_3pvhfy2g/synthesis_trace1.log",
+      "original_sha256": "e9c9e63d512845b6c9e53aeee3ee023be3d06c2647d895cda9b4fd656d4248a3",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-86459e154d65da9017d8",
+      "classification": "preserved_historical_source",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F04"
+      ],
+      "original_bytes": 814,
+      "original_path": "docs/verification/module17/final_campaign/evidence/source_snapshot/rtl/core/alu.sv",
+      "original_sha256": "8ec9db346cd6f41bfe4a1640288f2bc1a399e97fa43ce0ebb9aa8a46be669939",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-8cbaa16097651ca9cec6",
+      "classification": "restricted_historical_original",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07-LATER"
+      ],
+      "original_bytes": 18416,
+      "original_path": "docs/verification/module17/lint_closure/fail_closed_runner/build_reports.py",
+      "original_sha256": "4dfa1cf85195e3f630d81a23dd277ca436202deb8fc7cd338895d8f874db6c8f",
+      "source_scan_findings": [
+        "internal_material"
+      ]
+    },
+    {
+      "artifact_id": "A-8d76923e7e932785dd6a",
+      "classification": "accepted_technical_source",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "BASELINE"
+      ],
+      "original_bytes": 687,
+      "original_path": "rtl/decode/reg_file.sv",
+      "original_sha256": "0ab07270776dc07725cb9a9be3f99fd9f7e42d26b20f205c071971119ae411a0",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-8f10f8fcd429e8ce71cf",
+      "classification": "restricted_structural_JSON",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F04-trace0"
+      ],
+      "original_bytes": 1415199,
+      "original_path": "docs/verification/module17/final_campaign/logs/F04_3pvhfy2g/preopt_trace0.json",
+      "original_sha256": "64a2b6ede4e40beb745a4c3489cbca16cb97bce5abc9c605672f317e9081f34c",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-8f19cc00671d58a71338",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 187427,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V02_trace1/simulation.log",
+      "original_sha256": "751f2caf37bc0b763ed9124c3af8f2587f3ce60684d176957e9f65ec258dddbd",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-8f29647574033517e06f",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 35205,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V20_trace1/simulation.log",
+      "original_sha256": "406ef05db89d7ec3d7c54c4ce6f76c39a73955b7db7a23804aa61bdf7728c62c",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-8f44993e48a4637948eb",
+      "classification": "preserved_historical_source",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F04"
+      ],
+      "original_bytes": 1758,
+      "original_path": "docs/verification/module17/final_campaign/evidence/source_snapshot/rtl/core/branch_unit.sv",
+      "original_sha256": "3e029339650acde9092ca72233a7eb761adf82cdb99423a3d11644293f8b5dff",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-90fefc33d30e6b013da8",
+      "classification": "accepted_technical_source",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "BASELINE"
+      ],
+      "original_bytes": 951,
+      "original_path": "rtl/core/pc_fetch.sv",
+      "original_sha256": "a7408b3e9e8c7059465cd19505f77bcfe9d2deda5bba07ba23a1e625853579c5",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-91aa08d5c5e01cf25b8c",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 34560,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V15_trace0/simulation.log",
+      "original_sha256": "c1926bffe374a41957c5b1b81fe09dee8d940ffe03c5d9ba9e6a75dd8f95547e",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-94f25645242a9e99a7a0",
+      "classification": "restricted_historical_original",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 2691,
+      "original_path": "docs/verification/module17/final_campaign/INTEGRITY_REPORT.md",
+      "original_sha256": "a6813e7440b4af62c255dc817a8a262867854a71678433352523bc2ed746f1da",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-964cbed2e2b7c07372d9",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 259694,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V27_trace1/simulation.log",
+      "original_sha256": "16f7aaee3857e4c20220bf14476a5c96ac85bb0319c74fb94ae4dcb6744182c8",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-985252b9cab1894a8421",
+      "classification": "existing_technical_derivative",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "PRIOR-DERIVATIVES"
+      ],
+      "original_bytes": 516923,
+      "original_path": "docs/verification/module17/final_campaign/TECHNICAL_FUNCTIONAL_VALIDATION.json",
+      "original_sha256": "ea91c872cbeb5761793a5e2fb341db86b06784ea0861b3420cfc6ef99737f01d",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-99699bad6a60ef57b619",
+      "classification": "restricted_historical_original",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "BASELINE"
+      ],
+      "original_bytes": 16548,
+      "original_path": "docs/verification/module17/lint_closure/fail_closed_runner/approved_manifest.json",
+      "original_sha256": "498f80e8205c1b4a380292d3142d00586a9291768bfb82c5f0e69e1fcc95f0e8",
+      "source_scan_findings": [
+        "internal_material",
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-9a466ccb0ed9143e61da",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 173868,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V07_trace0/simulation.log",
+      "original_sha256": "a0dc399bbddc323a9c5d0fe5f4f68849a6658990814609f467e2a35caeb1fa2e",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-9c1ebd1b11ce5dce63ed",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 34037,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V21_trace0/simulation.log",
+      "original_sha256": "c4f30578aaf288ee51ffd47cc9fe05a9145dea24526ae449594a3ec5028ca22e",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-9c2f14cf873115c2865c",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 189704,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V03_trace1/simulation.log",
+      "original_sha256": "9008edae6eff138f219a38550b21de46905c07f584867ffbfda64a33bd603b65",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-9f83e399687873a31e56",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 144395,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V10_trace0/simulation.log",
+      "original_sha256": "e7fff40aac96ac22227163691e2192ab0532133f44622bcf293ce3cebe466bdc",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-9ff5c649a6d6355f591b",
+      "classification": "preserved_technical_source",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "R01"
+      ],
+      "original_bytes": 1499,
+      "original_path": "docs/verification/module17/lint_closure/implementation/evidence/original/rtl/memory/load_formatter.sv",
+      "original_sha256": "8e0b77bc226b3ff8db10596061ed9a798fa60fc405b036df456a194e16e44194",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-a173d7a1dd43c9f11c3b",
+      "classification": "preserved_historical_source",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F04"
+      ],
+      "original_bytes": 2993,
+      "original_path": "docs/verification/module17/final_campaign/evidence/source_snapshot/rtl/memory/lsu_ex.sv",
+      "original_sha256": "5689a9c2d7e1bb432e450e0b64554a83dfe144d976f882bb9663ec186093dcd6",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-a1d856d36791a4a6ff4e",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 34475,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V24_trace0/simulation.log",
+      "original_sha256": "d22cf28de792447d837b1530255633e5cfd9d45168177b0f55858c200b5cbf81",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-a3238c402d86c48fdcc8",
+      "classification": "preserved_historical_source",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F04"
+      ],
+      "original_bytes": 2147,
+      "original_path": "docs/verification/module17/final_campaign/evidence/source_snapshot/rtl/core/forward_unit.sv",
+      "original_sha256": "61097692b624744c51b88ca95bc0c2d485db570cb0f4efbb64f7580a5b497d02",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-a4bc1749935f9169ce3b",
+      "classification": "restricted_historical_original",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07-LATER"
+      ],
+      "original_bytes": 41,
+      "original_path": "docs/verification/module17/lint_closure/fail_closed_runner/git_head_before.log",
+      "original_sha256": "6484908fed634dac471050e10f0414df4a0257380dceb8aaf47fbe6a0c8acd2a",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-a565c4816a562772f791",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 203398,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V09_trace1/simulation.log",
+      "original_sha256": "5564c55cb6773d4e7138e5cb9a4ac55672bd8ef457ea3baa09088cbbfa4d7fa1",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-a56ab6e566bf00f30103",
+      "classification": "restricted_historical_original",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07-LATER"
+      ],
+      "original_bytes": 1012692,
+      "original_path": "docs/verification/module17/lint_closure/fail_closed_runner/protected_before.json",
+      "original_sha256": "fee07c2348d505642abc147eb6188b3150f4d964c14cfdf2983dafb0107a3d19",
+      "source_scan_findings": [
+        "internal_material"
+      ]
+    },
+    {
+      "artifact_id": "A-a73997be7b140da92917",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 35031,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V25_trace0/simulation.log",
+      "original_sha256": "06d502d49f76c359e1ec06993a4f3fffa743e62edcbbbc744af1c6f69d0b3775",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-a75df566615a250ae59d",
+      "classification": "accepted_technical_source",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "BASELINE"
+      ],
+      "original_bytes": 2995,
+      "original_path": "rtl/core/fault_ctrl.sv",
+      "original_sha256": "6406e8f0d23d40152ea4ea39c3e705eee22670fd884094dd62e7d2dfe506beba",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-a7cd547ec80d03185986",
+      "classification": "accepted_technical_source",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "BASELINE",
+        "T01"
+      ],
+      "original_bytes": 13619,
+      "original_path": "tb/integration/tb_rv32i_core_top.sv",
+      "original_sha256": "d293418f0d68adc9898495a0a3d439d5059a2ae19cba981672d67998cf8b27fe",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-a8fa9a42311ef5b0dcbc",
+      "classification": "preserved_historical_source",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F04"
+      ],
+      "original_bytes": 981,
+      "original_path": "docs/verification/module17/final_campaign/evidence/source_snapshot/rtl/core/ex_event_mux.sv",
+      "original_sha256": "2c52108735e2181d3554a2542343c20864c029be39189df07db76409c8efbe3d",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-a8fbe031602b356a4655",
+      "classification": "restricted_historical_original",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07-LATER"
+      ],
+      "original_bytes": 160,
+      "original_path": "docs/verification/module17/lint_closure/fail_closed_runner/integrity.json",
+      "original_sha256": "5ca020f544d4723c28ba6673d6f9f895add792b651fcccc068e7df0d4ee9f8e0",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-aa806b8327ea34892b18",
+      "classification": "historical_technical_text",
+      "content_treatment": "complete technical text embedded with only declared root substitution",
+      "delivered_record_ids": [
+        "F04-trace1",
+        "T-aa806b8327ea34892b18"
+      ],
+      "original_bytes": 1003,
+      "original_path": "docs/verification/module17/final_campaign/logs/F04_3pvhfy2g/synth_trace1.ys",
+      "original_sha256": "62e1b478d8d4d0810d8aa9196ecb840466753c1e9392e39290d0f80b7f1af257",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-ab4e68f489ec5d30afe3",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 34201,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V01_trace1/simulation.log",
+      "original_sha256": "446ed6c57f1062cb371c18afe3c57ebcdf6b7988251b9e7362b0fd2a5716e9b1",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-ac722cbd237c4a325446",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 69555,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V05_trace0/simulation.log",
+      "original_sha256": "cc7e16551272ca2e479fa0e927f589babe2f0b309bc281d8832ae643bd4d43bb",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-ac9a6417731a4a132c9f",
+      "classification": "restricted_historical_original",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F08-LATER"
+      ],
+      "original_bytes": 600,
+      "original_path": "docs/verification/module17/lint_closure/fail_closed_runner/PACKAGE_VALIDATION.json",
+      "original_sha256": "0cd5719213afa08b10e1599547c3b7261ff476b5f9bbae2446d05a88ff0726d9",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-ae4beb6514eb8c6b5a44",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 33643,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V23_trace0/simulation.log",
+      "original_sha256": "628d66bc4c0f9a18878c3d137ba9a7f285fe7168eb3968f7a7b830fc84bf522a",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-b3a9c245c0ec6e51f983",
+      "classification": "restricted_historical_original",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F08"
+      ],
+      "original_bytes": 427,
+      "original_path": "docs/verification/module17/final_campaign/PACKAGE_VALIDATION_20261104T232215Z.json",
+      "original_sha256": "784b275a736389e3b2e21899b9e0e171eeda72b089b84036f8da1143c1c8b6e2",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-b77dca156cf80af80b8c",
+      "classification": "preserved_technical_source",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "T01"
+      ],
+      "original_bytes": 13614,
+      "original_path": "docs/verification/module17/lint_closure/implementation/evidence/original/tb/integration/tb_rv32i_core_top.sv",
+      "original_sha256": "ee5b4f53c3c63869dfd1115e5c1f52265e4c641cefa445949c69457a15774ec6",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-ba28c594d16e4bb05f52",
+      "classification": "restricted_historical_archive",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F08-LATER"
+      ],
+      "original_bytes": 5872855,
+      "original_path": "docs/verification/module17/lint_closure/fail_closed_runner/VER-M17-003-F01-RUNNER_EVIDENCE.tar.gz",
+      "original_sha256": "7b4442ec1d375df351277a8abfc0c19eb958b35145bd40e35164cd0d6fe78bbc",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-be67a8be0ed7e0c54554",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 271272,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V19_trace1/simulation.log",
+      "original_sha256": "dae4ef1f4cb837e210ddcd1d70f01fc844023b032b10730ce9c7611b9cf64421",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-c762910cb234d8154dcf",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 187422,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V02_trace0/simulation.log",
+      "original_sha256": "3c544cbe5d93898f3eb48a39612a14b7fba8f4637470e6cdef4a52f1a14bcd32",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-c8912add2437ca827c9d",
+      "classification": "technical_saved_result",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F04"
+      ],
+      "original_bytes": 1336,
+      "original_path": "docs/verification/module17/final_campaign/logs/F04_3pvhfy2g/summary.json",
+      "original_sha256": "a82a64407795bebe69361d5df309cd1b0c0661064716188aabfc4b3db742d0e9",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-c8a53685e50ef7ff6c93",
+      "classification": "existing_technical_derivative",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "PRIOR-DERIVATIVES"
+      ],
+      "original_bytes": 624001,
+      "original_path": "docs/verification/module17/final_campaign/TECHNICAL_FUNCTIONAL_MANIFEST.json",
+      "original_sha256": "4068dc3185a705fcb461dfbc24fd04f9d17b3d20fb20b24a83d3194ee1d475d8",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-c8efd086692c4d6c7325",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 35031,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V25_trace1/simulation.log",
+      "original_sha256": "a03729b9ff8a121ce4b77114ece59bee8e6906a05b476b097bc051896b7d68e2",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-ca1061aaa0255a0e72a4",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 832692,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V18_trace0/simulation.log",
+      "original_sha256": "33d30d7dd8672a15b72fe8b6d769a8b33700af7e2da3a3b920b6f729975c4bab",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-cd32ba0f731fcb24dfbe",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 34560,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V15_trace1/simulation.log",
+      "original_sha256": "3725a12a449d333f20ea24bfbeb0f6cd0c82010451ea04c5f426ff9ce2272098",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-cd8f0661d6d5734c1246",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 832692,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V18_trace1/simulation.log",
+      "original_sha256": "25cff1a3fe8a74f893dd3b821f0ce8f93ea821ad36362aeeb93cdeec2cd94788",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-d09bd41838c2097b66d0",
+      "classification": "existing_technical_derivative",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "PRIOR-DERIVATIVES"
+      ],
+      "original_bytes": 227175,
+      "original_path": "docs/verification/module17/lint_closure/fail_closed_runner/TECHNICAL_LINT_EVIDENCE.json",
+      "original_sha256": "09bc02f2b14bc9437244d4f053a7c26e34d645a41c66f7879abffb16d5510f51",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-d41d2d9c327e8dc932a7",
+      "classification": "restricted_historical_original",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 41,
+      "original_path": "docs/verification/module17/final_campaign/logs/F07_py2avkr8/git_head_final.log",
+      "original_sha256": "6484908fed634dac471050e10f0414df4a0257380dceb8aaf47fbe6a0c8acd2a",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-d585fd6b7f0537f2b2d3",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 259686,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V27_trace0/simulation.log",
+      "original_sha256": "d3d62a1610d6b8d5bdbce6fef07cd7db8d8bff8beb2f389d1c6a8a042fc1f263",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-d5bdc39581bfb55e7eb7",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 189699,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V03_trace0/simulation.log",
+      "original_sha256": "c46b0c734752f2d336a62312de8123383f8cf0a69b71ac8009f7bb149befe20d",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-d68d99cf13fbe7442277",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 138375,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V16_trace0/simulation.log",
+      "original_sha256": "0465ca0e547c4ec22ad565c92cdbdcf486ffc68ae07cfda709d234fa716e9c69",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-d812231dea41432e994f",
+      "classification": "restricted_historical_original",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 7918,
+      "original_path": "docs/verification/module17/final_campaign/scripts/f07.py",
+      "original_sha256": "802b263c0845101074b646111e951acefb5b391391e35a630b9e0961a22ff82b",
+      "source_scan_findings": [
+        "internal_material"
+      ]
+    },
+    {
+      "artifact_id": "A-d9254c89e6082ca6633e",
+      "classification": "restricted_historical_original",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 623091,
+      "original_path": "docs/verification/module17/final_campaign/evidence/protected_before.json",
+      "original_sha256": "d28fb4a279fbe3e4d3af3bdc6d4f06c00bcfbc2b30c2bf67c781f665edbfdff9",
+      "source_scan_findings": [
+        "internal_material"
+      ]
+    },
+    {
+      "artifact_id": "A-d9a0d438186bb6293f33",
+      "classification": "restricted_historical_original",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "HISTORICAL-STATUS"
+      ],
+      "original_bytes": 3219,
+      "original_path": "docs/verification/module17/final_campaign/evidence/state.json",
+      "original_sha256": "570679d4e399fad58020479cca307f7e756817dcba21a1a36bef522f6f6cb071",
+      "source_scan_findings": [
+        "internal_material"
+      ]
+    },
+    {
+      "artifact_id": "A-d9c02c255aec746b3eba",
+      "classification": "preserved_historical_source",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F04"
+      ],
+      "original_bytes": 687,
+      "original_path": "docs/verification/module17/final_campaign/evidence/source_snapshot/rtl/decode/reg_file.sv",
+      "original_sha256": "0ab07270776dc07725cb9a9be3f99fd9f7e42d26b20f205c071971119ae411a0",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-dc4ca44efe715a47bed8",
+      "classification": "preserved_historical_source",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F04"
+      ],
+      "original_bytes": 951,
+      "original_path": "docs/verification/module17/final_campaign/evidence/source_snapshot/rtl/core/pc_fetch.sv",
+      "original_sha256": "a7408b3e9e8c7059465cd19505f77bcfe9d2deda5bba07ba23a1e625853579c5",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-dc83a3f56cd580dd1a91",
+      "classification": "restricted_historical_original",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F05"
+      ],
+      "original_bytes": 1037,
+      "original_path": "docs/verification/module17/final_campaign/logs/F05_mgu151rp/commands.jsonl",
+      "original_sha256": "1824e6405f88d7c0492f47ab3ca11e2db4028155b035c8f2bbe7cefdae7630e1",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-dff00cbefe7d7fbd6139",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 105241,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V17_trace0/simulation.log",
+      "original_sha256": "5e967f0e49d9a44ade18b124b54018ddc7c05fc07e79d6da697d121f41ccc887",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-e3f2aeff05fb35ddd859",
+      "classification": "historical_technical_text",
+      "content_treatment": "complete technical text embedded with only declared root substitution",
+      "delivered_record_ids": [
+        "F05",
+        "T-e3f2aeff05fb35ddd859"
+      ],
+      "original_bytes": 184,
+      "original_path": "docs/verification/module17/final_campaign/logs/F05_mgu151rp/logic_depth_trace1.ys",
+      "original_sha256": "0e56ae7799a8fcb482f1b0428157018891884fdb52e153e73246ec16c7e51cbc",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-e41e7a157d9bc2cebd70",
+      "classification": "restricted_historical_original",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F04"
+      ],
+      "original_bytes": 3960,
+      "original_path": "docs/verification/module17/final_campaign/SYNTHESIS_REPORT.md",
+      "original_sha256": "4346f5c306199f5d1d00f77a6dc35ac9230670a759c99a61dd83d771aaec0357",
+      "source_scan_findings": [
+        "internal_material"
+      ]
+    },
+    {
+      "artifact_id": "A-e4f3bb8e14fb3bd0e84c",
+      "classification": "restricted_historical_original",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07-LATER"
+      ],
+      "original_bytes": 41,
+      "original_path": "docs/verification/module17/lint_closure/fail_closed_runner/git_head_after.log",
+      "original_sha256": "6484908fed634dac471050e10f0414df4a0257380dceb8aaf47fbe6a0c8acd2a",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-e5e90a640389332b44d9",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 136443,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V13_trace1/simulation.log",
+      "original_sha256": "862a96e053ddc7cc3d8fc6a63e5828c00e2f71a179026c1908d73d559003044f",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-e620ffdea3ccf5a7657e",
+      "classification": "accepted_technical_source",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "BASELINE"
+      ],
+      "original_bytes": 17754,
+      "original_path": "rtl/core/rv32i_core_top.sv",
+      "original_sha256": "412910c9715894020c4fcdc7c641372951197525bfaa44061f70fd8b26a8386b",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-e77ce837a713dcc1dcdb",
+      "classification": "preserved_historical_source",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F04"
+      ],
+      "original_bytes": 3313,
+      "original_path": "docs/verification/module17/final_campaign/evidence/source_snapshot/rtl/core/wb_trace.sv",
+      "original_sha256": "39ba5ea95779c5445b96298cf7cc45ae373adde60f19808fa4743a58ccfabe1f",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-e8262f4c7f8f1dcf4d67",
+      "classification": "restricted_historical_original",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 5570,
+      "original_path": "docs/verification/module17/final_campaign/scripts/common.py",
+      "original_sha256": "929b9010d1e7dd1a531ee33a9d0594e7ec86bd6c5b08e41c8c0c0bc8a246f7dd",
+      "source_scan_findings": [
+        "internal_material"
+      ]
+    },
+    {
+      "artifact_id": "A-e8913d7e561f64dbffb3",
+      "classification": "restricted_historical_manifest",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F08-LATER"
+      ],
+      "original_bytes": 125792,
+      "original_path": "docs/verification/module17/lint_closure/fail_closed_runner/SHA256SUMS",
+      "original_sha256": "35375debbd9f637a8c278c9d0292e795275063ba1f1a40b436baa2f136905de4",
+      "source_scan_findings": [
+        "internal_material"
+      ]
+    },
+    {
+      "artifact_id": "A-e8c8c4ec95f52d462232",
+      "classification": "accepted_technical_source",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "BASELINE"
+      ],
+      "original_bytes": 1758,
+      "original_path": "rtl/core/branch_unit.sv",
+      "original_sha256": "3e029339650acde9092ca72233a7eb761adf82cdb99423a3d11644293f8b5dff",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-ea2f34f29a3e03c47e92",
+      "classification": "restricted_structural_JSON",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F04-trace0"
+      ],
+      "original_bytes": 5240017,
+      "original_path": "docs/verification/module17/final_campaign/logs/F04_3pvhfy2g/netlist_trace0.json",
+      "original_sha256": "a71e1eca44f212100727eb499270d21b6b2241b9303bdc3961261e6661ad1471",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-ecb224a10e144fce4b3d",
+      "classification": "restricted_historical_original",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F05"
+      ],
+      "original_bytes": 2,
+      "original_path": "docs/verification/module17/final_campaign/logs/F05_mgu151rp/constraint_inventory.json",
+      "original_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-ed76032002b3d4ad1051",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 427593,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V04_trace0/simulation.log",
+      "original_sha256": "f758236eaf7413f4581d16e7f7c88c0fda2fceb887ddf2ec694f4595abdbe735",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-ed7da519e235ac0c15d6",
+      "classification": "accepted_technical_source",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "BASELINE"
+      ],
+      "original_bytes": 895,
+      "original_path": "rtl/core/hazard_ctrl.sv",
+      "original_sha256": "74c9691330fc99b708fee570e61d575d8400ebf5d27344dc1a03ecb849d12cc8",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-ee88c510c8a6801a181d",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 173868,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V07_trace1/simulation.log",
+      "original_sha256": "7ce4f247d435b6e7111e53865d99239d4c141e17795702bd19c4d617302e4c42",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-f27aabbed6f77901f661",
+      "classification": "existing_technical_derivative",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "PRIOR-DERIVATIVES"
+      ],
+      "original_bytes": 112857,
+      "original_path": "docs/verification/module17/lint_closure/fail_closed_runner/TECHNICAL_LINT_MANIFEST.json",
+      "original_sha256": "0dec33ffff196c80609b5773e661b7b3840244fc2773978a2b5dc8bbffe70c38",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-f86fe7239faffdd8bc14",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 137907,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V14_trace0/simulation.log",
+      "original_sha256": "da9c4ef3b5dd557dba90dbd8049da217a3cb4b5d0b02eefd44487e55439ffefe",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-f8e3427a9d9d18ea3a65",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 144399,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V10_trace1/simulation.log",
+      "original_sha256": "ed80ba03e30519265e140d8c50bad063f46baf2afacc9190cc669dbf1f7a1d65",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-f9c6f48b16096bb6ee69",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 34466,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V26_trace1/simulation.log",
+      "original_sha256": "2a68e640f4e0ec8aee9ca2a6d0dd89713f7fe58cab9101219fdc3a85ae27ae7e",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-fc15c6343ea557b45909",
+      "classification": "restricted_historical_original",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F03"
+      ],
+      "original_bytes": 3487,
+      "original_path": "docs/verification/module17/final_campaign/A01_ARCHITECTURE_ASSESSMENT.md",
+      "original_sha256": "20dde07b89eab20906bede0de869e90587a87f1efe0952bb6c6f1a05e8da9607",
+      "source_scan_findings": [
+        "internal_material"
+      ]
+    },
+    {
+      "artifact_id": "A-fc2f0aa1f91d4649b3f0",
+      "classification": "restricted_structural_JSON",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F04-trace1"
+      ],
+      "original_bytes": 1513790,
+      "original_path": "docs/verification/module17/final_campaign/logs/F04_3pvhfy2g/preopt_trace1.json",
+      "original_sha256": "45c05be0728dc2e16ba74041a01529977684445909b41e4f429a05fdcbdb2bc0",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-fcdb621bfadb21bf5e8c",
+      "classification": "restricted_historical_log",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 205206,
+      "original_path": "docs/verification/module17/final_campaign/logs/F06_bkc2n79b/V22_trace1/simulation.log",
+      "original_sha256": "7be68833891450612e609f54a207ee51e041c3f5ee7934ca1a4cda1835e233a4",
+      "source_scan_findings": [
+        "personal_path"
+      ]
+    },
+    {
+      "artifact_id": "A-fd608750366ecb51153a",
+      "classification": "preserved_historical_source",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F04"
+      ],
+      "original_bytes": 11939,
+      "original_path": "docs/verification/module17/final_campaign/evidence/source_snapshot/rtl/decode/decoder.sv",
+      "original_sha256": "bc4e16864545f00fcdb0ad755cfe80512ea4d13cb9d408ae268ba12b2c7c6742",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-fe275b0e6129d3596965",
+      "classification": "restricted_historical_original",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 623091,
+      "original_path": "docs/verification/module17/final_campaign/evidence/protected_after.json",
+      "original_sha256": "d28fb4a279fbe3e4d3af3bdc6d4f06c00bcfbc2b30c2bf67c781f665edbfdff9",
+      "source_scan_findings": [
+        "internal_material"
+      ]
+    },
+    {
+      "artifact_id": "A-fef25d214e925cdbb5f7",
+      "classification": "technical_saved_result",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F07"
+      ],
+      "original_bytes": 10878,
+      "original_path": "docs/verification/module17/final_campaign/logs/F07_py2avkr8/regression_audit.json",
+      "original_sha256": "ab1ae87e2275d8e81959445956b95848d51ad437c95c69524478540bc7d6bd25",
+      "source_scan_findings": []
+    },
+    {
+      "artifact_id": "A-ff21b6b9a3a33e9d9056",
+      "classification": "restricted_historical_original",
+      "content_treatment": "identity reference; original retained privately unless technical text explicitly embedded",
+      "delivered_record_ids": [
+        "F05"
+      ],
+      "original_bytes": 95096,
+      "original_path": "docs/ARCHITECTURE.md",
+      "original_sha256": "529d37628f2d87dc8f9b030d7e2182122e29d25ed416e2ce04a21c984e3b8b98",
+      "source_scan_findings": [
+        "internal_material"
+      ]
+    }
+  ],
+  "output_hash_policy": "Final fingerprints reported externally; no circular self-hashes",
+  "outputs": [
+    "docs/verification/module17/final_campaign/TECHNICAL_IMPLEMENTATION_EVIDENCE.json",
+    "docs/verification/module17/final_campaign/TECHNICAL_IMPLEMENTATION_MANIFEST.json",
+    "docs/verification/module17/final_campaign/TECHNICAL_IMPLEMENTATION_VALIDATION.json"
+  ],
+  "package_id": "rv32i-implementation-integrity-evidence-v1-pre-push-008e",
+  "record_id": "MANIFEST",
+  "schema_id": "rv32i.technical-implementation-manifest",
+  "schema_version": "1.0.0",
+  "scope": "F03-F05, F07-F08 and exact R01/T01 provenance",
+  "source_baselines": {
+    "accepted_post_R01_T01": {
+      "rtl/core/alu.sv": "8ec9db346cd6f41bfe4a1640288f2bc1a399e97fa43ce0ebb9aa8a46be669939",
+      "rtl/core/branch_unit.sv": "3e029339650acde9092ca72233a7eb761adf82cdb99423a3d11644293f8b5dff",
+      "rtl/core/ex_event_mux.sv": "2c52108735e2181d3554a2542343c20864c029be39189df07db76409c8efbe3d",
+      "rtl/core/fault_ctrl.sv": "6406e8f0d23d40152ea4ea39c3e705eee22670fd884094dd62e7d2dfe506beba",
+      "rtl/core/forward_unit.sv": "61097692b624744c51b88ca95bc0c2d485db570cb0f4efbb64f7580a5b497d02",
+      "rtl/core/hazard_ctrl.sv": "74c9691330fc99b708fee570e61d575d8400ebf5d27344dc1a03ecb849d12cc8",
+      "rtl/core/pc_fetch.sv": "a7408b3e9e8c7059465cd19505f77bcfe9d2deda5bba07ba23a1e625853579c5",
+      "rtl/core/pipeline_regs.sv": "5fbb22be5137cbd7a9e7455ed1d76558623375fc4e89b5e8f36e7564cc620b15",
+      "rtl/core/rv32i_core_top.sv": "412910c9715894020c4fcdc7c641372951197525bfaa44061f70fd8b26a8386b",
+      "rtl/core/wb_trace.sv": "39ba5ea95779c5445b96298cf7cc45ae373adde60f19808fa4743a58ccfabe1f",
+      "rtl/decode/decoder.sv": "bc4e16864545f00fcdb0ad755cfe80512ea4d13cb9d408ae268ba12b2c7c6742",
+      "rtl/decode/imm_gen.sv": "17e0d0ffe8aaa44d4171470625f7a383bbe39c0583c112547ad558b8c7ea6815",
+      "rtl/decode/reg_file.sv": "0ab07270776dc07725cb9a9be3f99fd9f7e42d26b20f205c071971119ae411a0",
+      "rtl/memory/dmem_sync.sv": "fb0cc47641f86feeb0d5b1fd32128e47258bcab3e1031143a1627d7c778d8f9d",
+      "rtl/memory/imem_sync.sv": "95ffe4de77adc2f5f22238c921bc206cd308597ac0d851ed53b34aa5c4867260",
+      "rtl/memory/load_formatter.sv": "562491ee4affd64ee76f593b753144bfc2812b59bc3c55f3fcc57731711ce800",
+      "rtl/memory/lsu_ex.sv": "5689a9c2d7e1bb432e450e0b64554a83dfe144d976f882bb9663ec186093dcd6",
+      "tb/integration/tb_rv32i_core_top.sv": "d293418f0d68adc9898495a0a3d439d5059a2ae19cba981672d67998cf8b27fe"
+    },
+    "historical_RTL_source_hashes": {
+      "rtl/core/alu.sv": "8ec9db346cd6f41bfe4a1640288f2bc1a399e97fa43ce0ebb9aa8a46be669939",
+      "rtl/core/branch_unit.sv": "3e029339650acde9092ca72233a7eb761adf82cdb99423a3d11644293f8b5dff",
+      "rtl/core/ex_event_mux.sv": "2c52108735e2181d3554a2542343c20864c029be39189df07db76409c8efbe3d",
+      "rtl/core/fault_ctrl.sv": "6406e8f0d23d40152ea4ea39c3e705eee22670fd884094dd62e7d2dfe506beba",
+      "rtl/core/forward_unit.sv": "61097692b624744c51b88ca95bc0c2d485db570cb0f4efbb64f7580a5b497d02",
+      "rtl/core/hazard_ctrl.sv": "74c9691330fc99b708fee570e61d575d8400ebf5d27344dc1a03ecb849d12cc8",
+      "rtl/core/pc_fetch.sv": "a7408b3e9e8c7059465cd19505f77bcfe9d2deda5bba07ba23a1e625853579c5",
+      "rtl/core/pipeline_regs.sv": "5fbb22be5137cbd7a9e7455ed1d76558623375fc4e89b5e8f36e7564cc620b15",
+      "rtl/core/rv32i_core_top.sv": "412910c9715894020c4fcdc7c641372951197525bfaa44061f70fd8b26a8386b",
+      "rtl/core/wb_trace.sv": "39ba5ea95779c5445b96298cf7cc45ae373adde60f19808fa4743a58ccfabe1f",
+      "rtl/decode/decoder.sv": "bc4e16864545f00fcdb0ad755cfe80512ea4d13cb9d408ae268ba12b2c7c6742",
+      "rtl/decode/imm_gen.sv": "17e0d0ffe8aaa44d4171470625f7a383bbe39c0583c112547ad558b8c7ea6815",
+      "rtl/decode/reg_file.sv": "0ab07270776dc07725cb9a9be3f99fd9f7e42d26b20f205c071971119ae411a0",
+      "rtl/memory/dmem_sync.sv": "fb0cc47641f86feeb0d5b1fd32128e47258bcab3e1031143a1627d7c778d8f9d",
+      "rtl/memory/imem_sync.sv": "95ffe4de77adc2f5f22238c921bc206cd308597ac0d851ed53b34aa5c4867260",
+      "rtl/memory/load_formatter.sv": "8e0b77bc226b3ff8db10596061ed9a798fa60fc405b036df456a194e16e44194",
+      "rtl/memory/lsu_ex.sv": "5689a9c2d7e1bb432e450e0b64554a83dfe144d976f882bb9663ec186093dcd6"
+    },
+    "historical_pre_R01_T01_snapshot": {
+      "rtl/core/alu.sv": {
+        "artifact_id": "A-86459e154d65da9017d8",
+        "bytes": 814,
+        "sha256": "8ec9db346cd6f41bfe4a1640288f2bc1a399e97fa43ce0ebb9aa8a46be669939"
+      },
+      "rtl/core/branch_unit.sv": {
+        "artifact_id": "A-8f44993e48a4637948eb",
+        "bytes": 1758,
+        "sha256": "3e029339650acde9092ca72233a7eb761adf82cdb99423a3d11644293f8b5dff"
+      },
+      "rtl/core/ex_event_mux.sv": {
+        "artifact_id": "A-a8fa9a42311ef5b0dcbc",
+        "bytes": 981,
+        "sha256": "2c52108735e2181d3554a2542343c20864c029be39189df07db76409c8efbe3d"
+      },
+      "rtl/core/fault_ctrl.sv": {
+        "artifact_id": "A-5112d54f27ed4d48800e",
+        "bytes": 2995,
+        "sha256": "6406e8f0d23d40152ea4ea39c3e705eee22670fd884094dd62e7d2dfe506beba"
+      },
+      "rtl/core/forward_unit.sv": {
+        "artifact_id": "A-a3238c402d86c48fdcc8",
+        "bytes": 2147,
+        "sha256": "61097692b624744c51b88ca95bc0c2d485db570cb0f4efbb64f7580a5b497d02"
+      },
+      "rtl/core/hazard_ctrl.sv": {
+        "artifact_id": "A-26c96990b1cfadf0d873",
+        "bytes": 895,
+        "sha256": "74c9691330fc99b708fee570e61d575d8400ebf5d27344dc1a03ecb849d12cc8"
+      },
+      "rtl/core/pc_fetch.sv": {
+        "artifact_id": "A-dc4ca44efe715a47bed8",
+        "bytes": 951,
+        "sha256": "a7408b3e9e8c7059465cd19505f77bcfe9d2deda5bba07ba23a1e625853579c5"
+      },
+      "rtl/core/pipeline_regs.sv": {
+        "artifact_id": "A-50a0db781a7e2f84c8d7",
+        "bytes": 12600,
+        "sha256": "5fbb22be5137cbd7a9e7455ed1d76558623375fc4e89b5e8f36e7564cc620b15"
+      },
+      "rtl/core/rv32i_core_top.sv": {
+        "artifact_id": "A-57e42a2c9b723b1de7a8",
+        "bytes": 17754,
+        "sha256": "412910c9715894020c4fcdc7c641372951197525bfaa44061f70fd8b26a8386b"
+      },
+      "rtl/core/wb_trace.sv": {
+        "artifact_id": "A-e77ce837a713dcc1dcdb",
+        "bytes": 3313,
+        "sha256": "39ba5ea95779c5445b96298cf7cc45ae373adde60f19808fa4743a58ccfabe1f"
+      },
+      "rtl/decode/decoder.sv": {
+        "artifact_id": "A-fd608750366ecb51153a",
+        "bytes": 11939,
+        "sha256": "bc4e16864545f00fcdb0ad755cfe80512ea4d13cb9d408ae268ba12b2c7c6742"
+      },
+      "rtl/decode/imm_gen.sv": {
+        "artifact_id": "A-03b483fe5c9d13186690",
+        "bytes": 619,
+        "sha256": "17e0d0ffe8aaa44d4171470625f7a383bbe39c0583c112547ad558b8c7ea6815"
+      },
+      "rtl/decode/reg_file.sv": {
+        "artifact_id": "A-d9c02c255aec746b3eba",
+        "bytes": 687,
+        "sha256": "0ab07270776dc07725cb9a9be3f99fd9f7e42d26b20f205c071971119ae411a0"
+      },
+      "rtl/memory/dmem_sync.sv": {
+        "artifact_id": "A-5c8420ecf42fd29dfefd",
+        "bytes": 870,
+        "sha256": "fb0cc47641f86feeb0d5b1fd32128e47258bcab3e1031143a1627d7c778d8f9d"
+      },
+      "rtl/memory/imem_sync.sv": {
+        "artifact_id": "A-1171a78aac1ce16ffbac",
+        "bytes": 365,
+        "sha256": "95ffe4de77adc2f5f22238c921bc206cd308597ac0d851ed53b34aa5c4867260"
+      },
+      "rtl/memory/load_formatter.sv": {
+        "artifact_id": "A-56cd12c3bf5aec5e7b00",
+        "bytes": 1499,
+        "sha256": "8e0b77bc226b3ff8db10596061ed9a798fa60fc405b036df456a194e16e44194"
+      },
+      "rtl/memory/lsu_ex.sv": {
+        "artifact_id": "A-a173d7a1dd43c9f11c3b",
+        "bytes": 2993,
+        "sha256": "5689a9c2d7e1bb432e450e0b64554a83dfe144d976f882bb9663ec186093dcd6"
+      },
+      "tb/integration/tb_rv32i_core_top.sv": {
+        "artifact_id": "A-09268bfaa255c74d1bb5",
+        "bytes": 13614,
+        "sha256": "ee5b4f53c3c63869dfd1115e5c1f52265e4c641cefa445949c69457a15774ec6"
+      }
+    },
+    "record_id": "BASELINE"
+  },
+  "tool_identity": {
+    "recorded_Yosys_version": "Yosys 0.33 (git sha1 2584903a060)",
+    "type": "Historical version log and netlist creator; no new invocation"
+  },
+  "transformation_rules": [
+    {
+      "description": "Faithful summaries/structural extracts; omit separate administration, private documents and broad manifest path lists; preserve identities",
+      "id": "technical_projection"
+    },
+    {
+      "description": "Complete selected scripts/logs, replacing only exact original root with <historical-root>; every other UTF-8 byte preserved",
+      "id": "exact_original_root_prefix_substitution_only"
+    },
+    {
+      "description": "Cell histogram/count, TRACE_EN and sticky drivers independently recomputed from saved JSON without synthesis",
+      "id": "structural_extract"
+    },
+    {
+      "description": "Stream/hash payloads in memory; restricted archive contents not persisted or delivered",
+      "id": "archive_validation_only"
+    }
+  ],
+  "validation_scope": "Accepted hashes, source snapshots, exact maintenance bytes, saved structural/log/script comparisons, protected-pair equality, archive manifests/payloads and output confidentiality/scope"
+}

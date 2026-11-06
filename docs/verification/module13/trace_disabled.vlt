@@ -1,0 +1,17 @@
+`verilator_config
+// Module 13: expected trace-only inputs after TRACE_EN=0 elaboration.
+// Apply only to disabled RTL and dual-config testbench lint; enabled RTL is unwaived.
+// Exact filename + diagnostic rule + full signal-specific message; no wildcard.
+lint_off -rule UNUSEDSIGNAL -file "rtl/core/pipeline_regs.sv" -match "Signal is not used: 'id_instr'"
+lint_off -rule UNUSEDSIGNAL -file "rtl/core/pipeline_regs.sv" -match "Signal is not used: 'ex_instr'"
+lint_off -rule UNUSEDSIGNAL -file "rtl/core/pipeline_regs.sv" -match "Signal is not used: 'ex_mem_write'"
+lint_off -rule UNUSEDSIGNAL -file "rtl/core/pipeline_regs.sv" -match "Signal is not used: 'ex_mem_addr'"
+lint_off -rule UNUSEDSIGNAL -file "rtl/core/pipeline_regs.sv" -match "Signal is not used: 'ex_mem_wdata'"
+lint_off -rule UNUSEDSIGNAL -file "rtl/core/pipeline_regs.sv" -match "Signal is not used: 'ex_mem_wmask'"
+lint_off -rule UNUSEDSIGNAL -file "rtl/core/pipeline_regs.sv" -match "Signal is not used: 'mem_read'"
+lint_off -rule UNUSEDSIGNAL -file "rtl/core/pipeline_regs.sv" -match "Signal is not used: 'mem_write'"
+lint_off -rule UNUSEDSIGNAL -file "rtl/core/pipeline_regs.sv" -match "Signal is not used: 'mem_instr'"
+lint_off -rule UNUSEDSIGNAL -file "rtl/core/pipeline_regs.sv" -match "Signal is not used: 'mem_addr'"
+lint_off -rule UNUSEDSIGNAL -file "rtl/core/pipeline_regs.sv" -match "Signal is not used: 'mem_wdata'"
+lint_off -rule UNUSEDSIGNAL -file "rtl/core/pipeline_regs.sv" -match "Signal is not used: 'mem_wmask'"
+lint_off -rule UNUSEDSIGNAL -file "rtl/core/pipeline_regs.sv" -match "Signal is not used: 'mem_rdata'"

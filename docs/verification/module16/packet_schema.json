@@ -1,0 +1,50 @@
+{
+  "inputs": {
+    "clk": 1,
+    "rst": 1,
+    "halted": 1,
+    "memwb_valid": 1,
+    "memwb_reg_write": 1,
+    "memwb_mem_read": 1,
+    "memwb_mem_write": 1,
+    "memwb_pc": 32,
+    "memwb_instr": 32,
+    "memwb_rd": 5,
+    "memwb_wb_data": 32,
+    "memwb_mem_addr": 32,
+    "memwb_mem_wmask": 4,
+    "memwb_mem_wdata": 32,
+    "memwb_mem_rdata": 32
+  },
+  "outputs": {
+    "wb_rd_we": 1,
+    "wb_rd": 5,
+    "wb_data": 32,
+    "retire_valid": 1,
+    "retire_pc": 32,
+    "retire_instr": 32,
+    "retire_rd": 5,
+    "retire_rd_we": 1,
+    "retire_rd_data": 32,
+    "retire_mem_valid": 1,
+    "retire_mem_write": 1,
+    "retire_mem_addr": 32,
+    "retire_mem_wmask": 4,
+    "retire_mem_wdata": 32,
+    "retire_mem_rdata": 32
+  },
+  "trace": [
+    "retire_valid",
+    "retire_pc",
+    "retire_instr",
+    "retire_rd",
+    "retire_rd_we",
+    "retire_rd_data",
+    "retire_mem_valid",
+    "retire_mem_write",
+    "retire_mem_addr",
+    "retire_mem_wmask",
+    "retire_mem_wdata",
+    "retire_mem_rdata"
+  ]
+}

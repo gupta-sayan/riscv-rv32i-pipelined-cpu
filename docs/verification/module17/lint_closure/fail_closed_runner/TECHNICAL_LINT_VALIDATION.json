@@ -1,0 +1,3441 @@
+{
+  "analysis_method": "Independent read-only parsing implementing the inspected historical comparator semantics; original runner and test scripts never imported or executed",
+  "checks": [
+    {
+      "check_id": "frozen_manifest_sha256",
+      "expected": "498f80e8205c1b4a380292d3142d00586a9291768bfb82c5f0e69e1fcc95f0e8",
+      "observed": "498f80e8205c1b4a380292d3142d00586a9291768bfb82c5f0e69e1fcc95f0e8",
+      "passed": true
+    },
+    {
+      "check_id": "frozen_runner_sha256",
+      "expected": "a3021fea88eaba782f4cb108741df98957753630ff0f408e471f4e4e92409ac1",
+      "observed": "a3021fea88eaba782f4cb108741df98957753630ff0f408e471f4e4e92409ac1",
+      "passed": true
+    },
+    {
+      "check_id": "accepted_design_source_count",
+      "expected": 18,
+      "observed": 18,
+      "passed": true
+    },
+    {
+      "check_id": "accepted-source-rtl/core/alu.sv",
+      "expected": "8ec9db346cd6f41bfe4a1640288f2bc1a399e97fa43ce0ebb9aa8a46be669939",
+      "observed": "8ec9db346cd6f41bfe4a1640288f2bc1a399e97fa43ce0ebb9aa8a46be669939",
+      "passed": true
+    },
+    {
+      "check_id": "accepted-source-rtl/core/branch_unit.sv",
+      "expected": "3e029339650acde9092ca72233a7eb761adf82cdb99423a3d11644293f8b5dff",
+      "observed": "3e029339650acde9092ca72233a7eb761adf82cdb99423a3d11644293f8b5dff",
+      "passed": true
+    },
+    {
+      "check_id": "accepted-source-rtl/core/ex_event_mux.sv",
+      "expected": "2c52108735e2181d3554a2542343c20864c029be39189df07db76409c8efbe3d",
+      "observed": "2c52108735e2181d3554a2542343c20864c029be39189df07db76409c8efbe3d",
+      "passed": true
+    },
+    {
+      "check_id": "accepted-source-rtl/core/fault_ctrl.sv",
+      "expected": "6406e8f0d23d40152ea4ea39c3e705eee22670fd884094dd62e7d2dfe506beba",
+      "observed": "6406e8f0d23d40152ea4ea39c3e705eee22670fd884094dd62e7d2dfe506beba",
+      "passed": true
+    },
+    {
+      "check_id": "accepted-source-rtl/core/forward_unit.sv",
+      "expected": "61097692b624744c51b88ca95bc0c2d485db570cb0f4efbb64f7580a5b497d02",
+      "observed": "61097692b624744c51b88ca95bc0c2d485db570cb0f4efbb64f7580a5b497d02",
+      "passed": true
+    },
+    {
+      "check_id": "accepted-source-rtl/core/hazard_ctrl.sv",
+      "expected": "74c9691330fc99b708fee570e61d575d8400ebf5d27344dc1a03ecb849d12cc8",
+      "observed": "74c9691330fc99b708fee570e61d575d8400ebf5d27344dc1a03ecb849d12cc8",
+      "passed": true
+    },
+    {
+      "check_id": "accepted-source-rtl/core/pc_fetch.sv",
+      "expected": "a7408b3e9e8c7059465cd19505f77bcfe9d2deda5bba07ba23a1e625853579c5",
+      "observed": "a7408b3e9e8c7059465cd19505f77bcfe9d2deda5bba07ba23a1e625853579c5",
+      "passed": true
+    },
+    {
+      "check_id": "accepted-source-rtl/core/pipeline_regs.sv",
+      "expected": "5fbb22be5137cbd7a9e7455ed1d76558623375fc4e89b5e8f36e7564cc620b15",
+      "observed": "5fbb22be5137cbd7a9e7455ed1d76558623375fc4e89b5e8f36e7564cc620b15",
+      "passed": true
+    },
+    {
+      "check_id": "accepted-source-rtl/core/rv32i_core_top.sv",
+      "expected": "412910c9715894020c4fcdc7c641372951197525bfaa44061f70fd8b26a8386b",
+      "observed": "412910c9715894020c4fcdc7c641372951197525bfaa44061f70fd8b26a8386b",
+      "passed": true
+    },
+    {
+      "check_id": "accepted-source-rtl/core/wb_trace.sv",
+      "expected": "39ba5ea95779c5445b96298cf7cc45ae373adde60f19808fa4743a58ccfabe1f",
+      "observed": "39ba5ea95779c5445b96298cf7cc45ae373adde60f19808fa4743a58ccfabe1f",
+      "passed": true
+    },
+    {
+      "check_id": "accepted-source-rtl/decode/decoder.sv",
+      "expected": "bc4e16864545f00fcdb0ad755cfe80512ea4d13cb9d408ae268ba12b2c7c6742",
+      "observed": "bc4e16864545f00fcdb0ad755cfe80512ea4d13cb9d408ae268ba12b2c7c6742",
+      "passed": true
+    },
+    {
+      "check_id": "accepted-source-rtl/decode/imm_gen.sv",
+      "expected": "17e0d0ffe8aaa44d4171470625f7a383bbe39c0583c112547ad558b8c7ea6815",
+      "observed": "17e0d0ffe8aaa44d4171470625f7a383bbe39c0583c112547ad558b8c7ea6815",
+      "passed": true
+    },
+    {
+      "check_id": "accepted-source-rtl/decode/reg_file.sv",
+      "expected": "0ab07270776dc07725cb9a9be3f99fd9f7e42d26b20f205c071971119ae411a0",
+      "observed": "0ab07270776dc07725cb9a9be3f99fd9f7e42d26b20f205c071971119ae411a0",
+      "passed": true
+    },
+    {
+      "check_id": "accepted-source-rtl/memory/dmem_sync.sv",
+      "expected": "fb0cc47641f86feeb0d5b1fd32128e47258bcab3e1031143a1627d7c778d8f9d",
+      "observed": "fb0cc47641f86feeb0d5b1fd32128e47258bcab3e1031143a1627d7c778d8f9d",
+      "passed": true
+    },
+    {
+      "check_id": "accepted-source-rtl/memory/imem_sync.sv",
+      "expected": "95ffe4de77adc2f5f22238c921bc206cd308597ac0d851ed53b34aa5c4867260",
+      "observed": "95ffe4de77adc2f5f22238c921bc206cd308597ac0d851ed53b34aa5c4867260",
+      "passed": true
+    },
+    {
+      "check_id": "accepted-source-rtl/memory/load_formatter.sv",
+      "expected": "562491ee4affd64ee76f593b753144bfc2812b59bc3c55f3fcc57731711ce800",
+      "observed": "562491ee4affd64ee76f593b753144bfc2812b59bc3c55f3fcc57731711ce800",
+      "passed": true
+    },
+    {
+      "check_id": "accepted-source-rtl/memory/lsu_ex.sv",
+      "expected": "5689a9c2d7e1bb432e450e0b64554a83dfe144d976f882bb9663ec186093dcd6",
+      "observed": "5689a9c2d7e1bb432e450e0b64554a83dfe144d976f882bb9663ec186093dcd6",
+      "passed": true
+    },
+    {
+      "check_id": "accepted-source-tb/integration/tb_rv32i_core_top.sv",
+      "expected": "d293418f0d68adc9898495a0a3d439d5059a2ae19cba981672d67998cf8b27fe",
+      "observed": "d293418f0d68adc9898495a0a3d439d5059a2ae19cba981672d67998cf8b27fe",
+      "passed": true
+    },
+    {
+      "check_id": "pinned_source_document_count",
+      "expected": 58,
+      "observed": 58,
+      "passed": true
+    },
+    {
+      "check_id": "restricted_document_input_count",
+      "expected": 4,
+      "observed": 4,
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-docs/verification/module17/d01/tb_d01.sv",
+      "expected": "429df85a327e5f90432cbc835e9204309344bdfe89ee02a86f312fdbe5c586f5",
+      "observed": "429df85a327e5f90432cbc835e9204309344bdfe89ee02a86f312fdbe5c586f5",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-docs/verification/module17/d02_a01/tb_d02_a01.sv",
+      "expected": "fdc82c229b2ed4d47830bf0c5dc339530ca6ba95230407f9b3ba2dcad501c2c1",
+      "observed": "fdc82c229b2ed4d47830bf0c5dc339530ca6ba95230407f9b3ba2dcad501c2c1",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-docs/verification/module17/final_campaign/tests/checked_d01.sv",
+      "expected": "f7326db2b281157ef91bf0a0d42e2a240eace0bc324a13fadecfe77f326cc99d",
+      "observed": "f7326db2b281157ef91bf0a0d42e2a240eace0bc324a13fadecfe77f326cc99d",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-docs/verification/module17/final_campaign/tests/checked_injected.sv",
+      "expected": "a72905d0de24676ed34a8ec7c1099af3893d2158389fad27e772f2ca423d2279",
+      "observed": "a72905d0de24676ed34a8ec7c1099af3893d2158389fad27e772f2ca423d2279",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-docs/verification/module17/final_campaign/tests/checked_legal.sv",
+      "expected": "c95d4ac932e208cea884a9be4caff82cf44a0ef57fca04863d2d06b49e2c44fc",
+      "observed": "c95d4ac932e208cea884a9be4caff82cf44a0ef57fca04863d2d06b49e2c44fc",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-docs/verification/module17/final_campaign/tests/cpu_checker.sv",
+      "expected": "56f526a2f255d0b17c31fa3a1067325c5e679db20b465c68f2880b199f40862b",
+      "observed": "56f526a2f255d0b17c31fa3a1067325c5e679db20b465c68f2880b199f40862b",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-docs/verification/module17/full_campaign/tests/v01/tb_campaign.sv",
+      "expected": "7396a978f89fe94f71cc500d89e4a438aff54314c46d92b4588534d07ab6ec54",
+      "observed": "7396a978f89fe94f71cc500d89e4a438aff54314c46d92b4588534d07ab6ec54",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-docs/verification/module17/full_campaign/tests/v02/tb_campaign.sv",
+      "expected": "312b580ce00f103673de198771743c9c937a7a198654a2837bc8e71dce24361b",
+      "observed": "312b580ce00f103673de198771743c9c937a7a198654a2837bc8e71dce24361b",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-docs/verification/module17/full_campaign/tests/v03/tb_campaign.sv",
+      "expected": "1c9c033bb4e3bd6dea1ce2f29257fd1a31b0f5877b50bdd25f776d7735d6b851",
+      "observed": "1c9c033bb4e3bd6dea1ce2f29257fd1a31b0f5877b50bdd25f776d7735d6b851",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-docs/verification/module17/full_campaign/tests/v04/tb_campaign.sv",
+      "expected": "3cdeea4bd5b2a28abc0097f1006ee8faf3948ec061e49ec4eaf719ceb4c8ea40",
+      "observed": "3cdeea4bd5b2a28abc0097f1006ee8faf3948ec061e49ec4eaf719ceb4c8ea40",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-docs/verification/module17/full_campaign/tests/v05/tb_campaign.sv",
+      "expected": "a6aa9797e4454a2ccb7b3a17dbc1a5999df1d01bdff90272688db5e0a4c5edbc",
+      "observed": "a6aa9797e4454a2ccb7b3a17dbc1a5999df1d01bdff90272688db5e0a4c5edbc",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-docs/verification/module17/full_campaign/tests/v06/tb_campaign.sv",
+      "expected": "b72f9bee171b15106d4e68f94f91d5ce70b735e41b700699b1c934c1a7af9be9",
+      "observed": "b72f9bee171b15106d4e68f94f91d5ce70b735e41b700699b1c934c1a7af9be9",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-docs/verification/module17/full_campaign/tests/v07/tb_campaign.sv",
+      "expected": "83a9ed1b6a1e379827c54805e15d5c97e40063428c3538a8e9bae550b22dd124",
+      "observed": "83a9ed1b6a1e379827c54805e15d5c97e40063428c3538a8e9bae550b22dd124",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-docs/verification/module17/full_campaign/tests/v08/tb_campaign.sv",
+      "expected": "7883d5acb64ce25d0dd611f6c8dffb77e55e88af377185258091fa4071c603ed",
+      "observed": "7883d5acb64ce25d0dd611f6c8dffb77e55e88af377185258091fa4071c603ed",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-docs/verification/module17/full_campaign/tests/v09/tb_campaign.sv",
+      "expected": "37105fad821307c7a3dce2474d2497a97aaed4549ffe25a862974a89ad854b58",
+      "observed": "37105fad821307c7a3dce2474d2497a97aaed4549ffe25a862974a89ad854b58",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-docs/verification/module17/full_campaign/tests/v10/tb_campaign.sv",
+      "expected": "b61199361f464c0f4470be4418aa7f3fc9c060df39c97e2fc786b6f3af1a9275",
+      "observed": "b61199361f464c0f4470be4418aa7f3fc9c060df39c97e2fc786b6f3af1a9275",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-docs/verification/module17/full_campaign/tests/v11/tb_campaign.sv",
+      "expected": "82f5d9e62287ddf66dc5ae71fbc643567f3474ad3f8b2468c44275ba866ee296",
+      "observed": "82f5d9e62287ddf66dc5ae71fbc643567f3474ad3f8b2468c44275ba866ee296",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-docs/verification/module17/full_campaign/tests/v12/tb_campaign.sv",
+      "expected": "3d1e774b9afb842bb971819e9d3e93a52db7b37010b9e8c5bce1c9541c4b5fc9",
+      "observed": "3d1e774b9afb842bb971819e9d3e93a52db7b37010b9e8c5bce1c9541c4b5fc9",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-docs/verification/module17/full_campaign/tests/v13/tb_campaign.sv",
+      "expected": "5635a8bb60f6da308303815525a6a6bd7c9b01b9ab0fc1e287ce5e1f5c11df16",
+      "observed": "5635a8bb60f6da308303815525a6a6bd7c9b01b9ab0fc1e287ce5e1f5c11df16",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-docs/verification/module17/full_campaign/tests/v14/tb_campaign.sv",
+      "expected": "99a1a13fb588ab42d613c7cc81a9a17261c245d1d21b5ba06936c7de61e8034f",
+      "observed": "99a1a13fb588ab42d613c7cc81a9a17261c245d1d21b5ba06936c7de61e8034f",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-docs/verification/module17/full_campaign/tests/v15/tb_a01.sv",
+      "expected": "23bf2a6168b46504c276c19714d0068879d81bbdf10017936b858450e9fa0c66",
+      "observed": "23bf2a6168b46504c276c19714d0068879d81bbdf10017936b858450e9fa0c66",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-docs/verification/module17/full_campaign/tests/v15/tb_campaign.sv",
+      "expected": "3621022ffcc0e43a0e8bd4ef591fcf1cdeaa983c365ff0586ca591604c743986",
+      "observed": "3621022ffcc0e43a0e8bd4ef591fcf1cdeaa983c365ff0586ca591604c743986",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-docs/verification/module17/full_campaign/tests/v16/tb_campaign.sv",
+      "expected": "16011de81cdd0fa452efdb22bc56db68eed8dc9cf5a729b5ce35cd81f2a36500",
+      "observed": "16011de81cdd0fa452efdb22bc56db68eed8dc9cf5a729b5ce35cd81f2a36500",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-docs/verification/module17/full_campaign/tests/v17/tb_campaign.sv",
+      "expected": "d634724451fed1829d9f3d7a35317e836b72639184bccc68aff189307d94a119",
+      "observed": "d634724451fed1829d9f3d7a35317e836b72639184bccc68aff189307d94a119",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-docs/verification/module17/full_campaign/tests/v18/tb_campaign.sv",
+      "expected": "ba9acec8b515db3c5320a44ba8674c440a69a6a3efbb3c382c55e16f5c1b90fb",
+      "observed": "ba9acec8b515db3c5320a44ba8674c440a69a6a3efbb3c382c55e16f5c1b90fb",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-docs/verification/module17/full_campaign/tests/v19/tb_campaign.sv",
+      "expected": "f31dcbdca58d35d1c33247b7c30ca74297455b355ebfc2ca975f17c08e9bd58d",
+      "observed": "f31dcbdca58d35d1c33247b7c30ca74297455b355ebfc2ca975f17c08e9bd58d",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-docs/verification/module17/full_campaign/tests/v20/tb_campaign.sv",
+      "expected": "d020c7006d77023c44b9f64986a1d726be93e08000fa38f5e41849113fad3123",
+      "observed": "d020c7006d77023c44b9f64986a1d726be93e08000fa38f5e41849113fad3123",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-docs/verification/module17/full_campaign/tests/v21/tb_campaign.sv",
+      "expected": "44d4aed97d094387bf5b250dd6dc9983cfcad03c3bafc49715fc5dcd3708989c",
+      "observed": "44d4aed97d094387bf5b250dd6dc9983cfcad03c3bafc49715fc5dcd3708989c",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-docs/verification/module17/full_campaign/tests/v22/tb_campaign.sv",
+      "expected": "2db6c6e2f46777f4b6dd7e662a7e593aa3ecf399c4b9688b3727dd7d87569286",
+      "observed": "2db6c6e2f46777f4b6dd7e662a7e593aa3ecf399c4b9688b3727dd7d87569286",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-docs/verification/module17/full_campaign/tests/v23/tb_accepted_fetch_reset.sv",
+      "expected": "531d7260f8bd897c57a1b2cce95d09ce3b8c20b9d0138bde8fb3e6ee3b3170b4",
+      "observed": "531d7260f8bd897c57a1b2cce95d09ce3b8c20b9d0138bde8fb3e6ee3b3170b4",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-docs/verification/module17/full_campaign/tests/v23/tb_campaign.sv",
+      "expected": "e7c7ca381b4716c34e15b8f9fc58646c230989e9a1bf6ebf6625fa83d55d5df2",
+      "observed": "e7c7ca381b4716c34e15b8f9fc58646c230989e9a1bf6ebf6625fa83d55d5df2",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-docs/verification/module17/full_campaign/tests/v23/tb_reset.sv",
+      "expected": "58fe746d6f692814118f60033032862772c209011aaee8ee52680932ca3f478e",
+      "observed": "58fe746d6f692814118f60033032862772c209011aaee8ee52680932ca3f478e",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-docs/verification/module17/full_campaign/tests/v24/tb_campaign.sv",
+      "expected": "9b22583b826b52a07217f899772387824867d4049cd0eb5d02bace8ed9b5798a",
+      "observed": "9b22583b826b52a07217f899772387824867d4049cd0eb5d02bace8ed9b5798a",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-docs/verification/module17/full_campaign/tests/v25/tb_campaign.sv",
+      "expected": "902200d5d0a5ae040c86fdf53016d07247294144553a2683006166ef767651c0",
+      "observed": "902200d5d0a5ae040c86fdf53016d07247294144553a2683006166ef767651c0",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-docs/verification/module17/full_campaign/tests/v26/tb_campaign.sv",
+      "expected": "e122d7a80c751b97170f6894f7cccc742e6a0d97ae18a434c1bf41b06d4b9656",
+      "observed": "e122d7a80c751b97170f6894f7cccc742e6a0d97ae18a434c1bf41b06d4b9656",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-docs/verification/module17/full_campaign/tests/v27/tb_campaign.sv",
+      "expected": "bc847536710525c1741614f3ee83d4aef4a43c9490c5206a5ad693a58ba7a1f8",
+      "observed": "bc847536710525c1741614f3ee83d4aef4a43c9490c5206a5ad693a58ba7a1f8",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-rtl/core/alu.sv",
+      "expected": "8ec9db346cd6f41bfe4a1640288f2bc1a399e97fa43ce0ebb9aa8a46be669939",
+      "observed": "8ec9db346cd6f41bfe4a1640288f2bc1a399e97fa43ce0ebb9aa8a46be669939",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-rtl/core/branch_unit.sv",
+      "expected": "3e029339650acde9092ca72233a7eb761adf82cdb99423a3d11644293f8b5dff",
+      "observed": "3e029339650acde9092ca72233a7eb761adf82cdb99423a3d11644293f8b5dff",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-rtl/core/ex_event_mux.sv",
+      "expected": "2c52108735e2181d3554a2542343c20864c029be39189df07db76409c8efbe3d",
+      "observed": "2c52108735e2181d3554a2542343c20864c029be39189df07db76409c8efbe3d",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-rtl/core/fault_ctrl.sv",
+      "expected": "6406e8f0d23d40152ea4ea39c3e705eee22670fd884094dd62e7d2dfe506beba",
+      "observed": "6406e8f0d23d40152ea4ea39c3e705eee22670fd884094dd62e7d2dfe506beba",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-rtl/core/forward_unit.sv",
+      "expected": "61097692b624744c51b88ca95bc0c2d485db570cb0f4efbb64f7580a5b497d02",
+      "observed": "61097692b624744c51b88ca95bc0c2d485db570cb0f4efbb64f7580a5b497d02",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-rtl/core/hazard_ctrl.sv",
+      "expected": "74c9691330fc99b708fee570e61d575d8400ebf5d27344dc1a03ecb849d12cc8",
+      "observed": "74c9691330fc99b708fee570e61d575d8400ebf5d27344dc1a03ecb849d12cc8",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-rtl/core/pc_fetch.sv",
+      "expected": "a7408b3e9e8c7059465cd19505f77bcfe9d2deda5bba07ba23a1e625853579c5",
+      "observed": "a7408b3e9e8c7059465cd19505f77bcfe9d2deda5bba07ba23a1e625853579c5",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-rtl/core/pipeline_regs.sv",
+      "expected": "5fbb22be5137cbd7a9e7455ed1d76558623375fc4e89b5e8f36e7564cc620b15",
+      "observed": "5fbb22be5137cbd7a9e7455ed1d76558623375fc4e89b5e8f36e7564cc620b15",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-rtl/core/rv32i_core_top.sv",
+      "expected": "412910c9715894020c4fcdc7c641372951197525bfaa44061f70fd8b26a8386b",
+      "observed": "412910c9715894020c4fcdc7c641372951197525bfaa44061f70fd8b26a8386b",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-rtl/core/wb_trace.sv",
+      "expected": "39ba5ea95779c5445b96298cf7cc45ae373adde60f19808fa4743a58ccfabe1f",
+      "observed": "39ba5ea95779c5445b96298cf7cc45ae373adde60f19808fa4743a58ccfabe1f",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-rtl/decode/decoder.sv",
+      "expected": "bc4e16864545f00fcdb0ad755cfe80512ea4d13cb9d408ae268ba12b2c7c6742",
+      "observed": "bc4e16864545f00fcdb0ad755cfe80512ea4d13cb9d408ae268ba12b2c7c6742",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-rtl/decode/imm_gen.sv",
+      "expected": "17e0d0ffe8aaa44d4171470625f7a383bbe39c0583c112547ad558b8c7ea6815",
+      "observed": "17e0d0ffe8aaa44d4171470625f7a383bbe39c0583c112547ad558b8c7ea6815",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-rtl/decode/reg_file.sv",
+      "expected": "0ab07270776dc07725cb9a9be3f99fd9f7e42d26b20f205c071971119ae411a0",
+      "observed": "0ab07270776dc07725cb9a9be3f99fd9f7e42d26b20f205c071971119ae411a0",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-rtl/memory/dmem_sync.sv",
+      "expected": "fb0cc47641f86feeb0d5b1fd32128e47258bcab3e1031143a1627d7c778d8f9d",
+      "observed": "fb0cc47641f86feeb0d5b1fd32128e47258bcab3e1031143a1627d7c778d8f9d",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-rtl/memory/imem_sync.sv",
+      "expected": "95ffe4de77adc2f5f22238c921bc206cd308597ac0d851ed53b34aa5c4867260",
+      "observed": "95ffe4de77adc2f5f22238c921bc206cd308597ac0d851ed53b34aa5c4867260",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-rtl/memory/load_formatter.sv",
+      "expected": "562491ee4affd64ee76f593b753144bfc2812b59bc3c55f3fcc57731711ce800",
+      "observed": "562491ee4affd64ee76f593b753144bfc2812b59bc3c55f3fcc57731711ce800",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-rtl/memory/lsu_ex.sv",
+      "expected": "5689a9c2d7e1bb432e450e0b64554a83dfe144d976f882bb9663ec186093dcd6",
+      "observed": "5689a9c2d7e1bb432e450e0b64554a83dfe144d976f882bb9663ec186093dcd6",
+      "passed": true
+    },
+    {
+      "check_id": "technical-pinned-source-tb/integration/tb_rv32i_core_top.sv",
+      "expected": "d293418f0d68adc9898495a0a3d439d5059a2ae19cba981672d67998cf8b27fe",
+      "observed": "d293418f0d68adc9898495a0a3d439d5059a2ae19cba981672d67998cf8b27fe",
+      "passed": true
+    },
+    {
+      "check_id": "frozen_decision_register_identity",
+      "expected": "3eb7222b7570617b90ffd31987354ce2d58481bc062329cfb2ba9a33c0928104",
+      "observed": "3eb7222b7570617b90ffd31987354ce2d58481bc062329cfb2ba9a33c0928104",
+      "passed": true
+    },
+    {
+      "check_id": "known_current_decision_mismatch",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "summary_manifest_sha256",
+      "expected": "498f80e8205c1b4a380292d3142d00586a9291768bfb82c5f0e69e1fcc95f0e8",
+      "observed": "498f80e8205c1b4a380292d3142d00586a9291768bfb82c5f0e69e1fcc95f0e8",
+      "passed": true
+    },
+    {
+      "check_id": "summary_runner_sha256",
+      "expected": "a3021fea88eaba782f4cb108741df98957753630ff0f408e471f4e4e92409ac1",
+      "observed": "a3021fea88eaba782f4cb108741df98957753630ff0f408e471f4e4e92409ac1",
+      "passed": true
+    },
+    {
+      "check_id": "inventory-hash-core_trace0",
+      "expected": "8fe8975542c7668612aba3f4c1c78a7bf8c2ec8e994f2e939e17a4ae7761ed84",
+      "observed": "8fe8975542c7668612aba3f4c1c78a7bf8c2ec8e994f2e939e17a4ae7761ed84",
+      "passed": true
+    },
+    {
+      "check_id": "native-origin-hash-core_trace0",
+      "expected": "3901f41cb388237625053c9a4a20230a0d2bfcc17b0826743c21650e9e22c749",
+      "observed": "3901f41cb388237625053c9a4a20230a0d2bfcc17b0826743c21650e9e22c749",
+      "passed": true
+    },
+    {
+      "check_id": "native-utf8-roundtrip-core_trace0",
+      "expected": {
+        "bytes": 7728,
+        "sha256": "3901f41cb388237625053c9a4a20230a0d2bfcc17b0826743c21650e9e22c749"
+      },
+      "observed": {
+        "bytes": 7728,
+        "sha256": "3901f41cb388237625053c9a4a20230a0d2bfcc17b0826743c21650e9e22c749"
+      },
+      "passed": true
+    },
+    {
+      "check_id": "warning-count-core_trace0",
+      "expected": 27,
+      "observed": 27,
+      "passed": true
+    },
+    {
+      "check_id": "full-multiset-origin-core_trace0",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "diagnostic-confidentiality-core_trace0",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "native-confidentiality-core_trace0",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "summary-result-record-core_trace0",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "saved-acceptance-core_trace0",
+      "expected": "APPROVED-WARNING INVENTORY PASS",
+      "observed": "APPROVED-WARNING INVENTORY PASS",
+      "passed": true
+    },
+    {
+      "check_id": "saved-native-exit-core_trace0",
+      "expected": 1,
+      "observed": 1,
+      "passed": true
+    },
+    {
+      "check_id": "saved-warning-count-core_trace0",
+      "expected": 27,
+      "observed": 27,
+      "passed": true
+    },
+    {
+      "check_id": "saved-runner-hash-core_trace0",
+      "expected": "a3021fea88eaba782f4cb108741df98957753630ff0f408e471f4e4e92409ac1",
+      "observed": "a3021fea88eaba782f4cb108741df98957753630ff0f408e471f4e4e92409ac1",
+      "passed": true
+    },
+    {
+      "check_id": "saved-manifest-hash-core_trace0",
+      "expected": "498f80e8205c1b4a380292d3142d00586a9291768bfb82c5f0e69e1fcc95f0e8",
+      "observed": "498f80e8205c1b4a380292d3142d00586a9291768bfb82c5f0e69e1fcc95f0e8",
+      "passed": true
+    },
+    {
+      "check_id": "saved-inventory-hash-core_trace0",
+      "expected": "8fe8975542c7668612aba3f4c1c78a7bf8c2ec8e994f2e939e17a4ae7761ed84",
+      "observed": "8fe8975542c7668612aba3f4c1c78a7bf8c2ec8e994f2e939e17a4ae7761ed84",
+      "passed": true
+    },
+    {
+      "check_id": "saved-source-hashes-before-core_trace0",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "saved-source-hashes-after-core_trace0",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "saved-complete-context-core_trace0",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "saved-stdout-empty-core_trace0",
+      "expected": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "observed": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "passed": true
+    },
+    {
+      "check_id": "saved-stderr-byte-equality-core_trace0",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "saved-parsed-multiset-core_trace0",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "inventory-hash-core_trace1",
+      "expected": "657b85066fb38b1422e550d44ecea67083555ccf7117578841fa6c8878666804",
+      "observed": "657b85066fb38b1422e550d44ecea67083555ccf7117578841fa6c8878666804",
+      "passed": true
+    },
+    {
+      "check_id": "native-origin-hash-core_trace1",
+      "expected": "6091bb803b9818ecfb1a7a43833334ea86887349cc8323b52d82043ec89f2b00",
+      "observed": "6091bb803b9818ecfb1a7a43833334ea86887349cc8323b52d82043ec89f2b00",
+      "passed": true
+    },
+    {
+      "check_id": "native-utf8-roundtrip-core_trace1",
+      "expected": {
+        "bytes": 1536,
+        "sha256": "6091bb803b9818ecfb1a7a43833334ea86887349cc8323b52d82043ec89f2b00"
+      },
+      "observed": {
+        "bytes": 1536,
+        "sha256": "6091bb803b9818ecfb1a7a43833334ea86887349cc8323b52d82043ec89f2b00"
+      },
+      "passed": true
+    },
+    {
+      "check_id": "warning-count-core_trace1",
+      "expected": 5,
+      "observed": 5,
+      "passed": true
+    },
+    {
+      "check_id": "full-multiset-origin-core_trace1",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "diagnostic-confidentiality-core_trace1",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "native-confidentiality-core_trace1",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "summary-result-record-core_trace1",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "saved-acceptance-core_trace1",
+      "expected": "APPROVED-WARNING INVENTORY PASS",
+      "observed": "APPROVED-WARNING INVENTORY PASS",
+      "passed": true
+    },
+    {
+      "check_id": "saved-native-exit-core_trace1",
+      "expected": 1,
+      "observed": 1,
+      "passed": true
+    },
+    {
+      "check_id": "saved-warning-count-core_trace1",
+      "expected": 5,
+      "observed": 5,
+      "passed": true
+    },
+    {
+      "check_id": "saved-runner-hash-core_trace1",
+      "expected": "a3021fea88eaba782f4cb108741df98957753630ff0f408e471f4e4e92409ac1",
+      "observed": "a3021fea88eaba782f4cb108741df98957753630ff0f408e471f4e4e92409ac1",
+      "passed": true
+    },
+    {
+      "check_id": "saved-manifest-hash-core_trace1",
+      "expected": "498f80e8205c1b4a380292d3142d00586a9291768bfb82c5f0e69e1fcc95f0e8",
+      "observed": "498f80e8205c1b4a380292d3142d00586a9291768bfb82c5f0e69e1fcc95f0e8",
+      "passed": true
+    },
+    {
+      "check_id": "saved-inventory-hash-core_trace1",
+      "expected": "657b85066fb38b1422e550d44ecea67083555ccf7117578841fa6c8878666804",
+      "observed": "657b85066fb38b1422e550d44ecea67083555ccf7117578841fa6c8878666804",
+      "passed": true
+    },
+    {
+      "check_id": "saved-source-hashes-before-core_trace1",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "saved-source-hashes-after-core_trace1",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "saved-complete-context-core_trace1",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "saved-stdout-empty-core_trace1",
+      "expected": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "observed": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "passed": true
+    },
+    {
+      "check_id": "saved-stderr-byte-equality-core_trace1",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "saved-parsed-multiset-core_trace1",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "inventory-hash-bench_trace0",
+      "expected": "a9feb78375d9b2905dbbd294dc073a4313da9a881740b6066e52559c9c7801b5",
+      "observed": "a9feb78375d9b2905dbbd294dc073a4313da9a881740b6066e52559c9c7801b5",
+      "passed": true
+    },
+    {
+      "check_id": "native-origin-hash-bench_trace0",
+      "expected": "021077155cddd8655f2f7e3acec0f704cc97766765cbb10fdd4f2e64d3ea2f29",
+      "observed": "021077155cddd8655f2f7e3acec0f704cc97766765cbb10fdd4f2e64d3ea2f29",
+      "passed": true
+    },
+    {
+      "check_id": "native-utf8-roundtrip-bench_trace0",
+      "expected": {
+        "bytes": 15435,
+        "sha256": "021077155cddd8655f2f7e3acec0f704cc97766765cbb10fdd4f2e64d3ea2f29"
+      },
+      "observed": {
+        "bytes": 15435,
+        "sha256": "021077155cddd8655f2f7e3acec0f704cc97766765cbb10fdd4f2e64d3ea2f29"
+      },
+      "passed": true
+    },
+    {
+      "check_id": "warning-count-bench_trace0",
+      "expected": 49,
+      "observed": 49,
+      "passed": true
+    },
+    {
+      "check_id": "full-multiset-origin-bench_trace0",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "diagnostic-confidentiality-bench_trace0",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "native-confidentiality-bench_trace0",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "summary-result-record-bench_trace0",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "saved-acceptance-bench_trace0",
+      "expected": "APPROVED-WARNING INVENTORY PASS",
+      "observed": "APPROVED-WARNING INVENTORY PASS",
+      "passed": true
+    },
+    {
+      "check_id": "saved-native-exit-bench_trace0",
+      "expected": 1,
+      "observed": 1,
+      "passed": true
+    },
+    {
+      "check_id": "saved-warning-count-bench_trace0",
+      "expected": 49,
+      "observed": 49,
+      "passed": true
+    },
+    {
+      "check_id": "saved-runner-hash-bench_trace0",
+      "expected": "a3021fea88eaba782f4cb108741df98957753630ff0f408e471f4e4e92409ac1",
+      "observed": "a3021fea88eaba782f4cb108741df98957753630ff0f408e471f4e4e92409ac1",
+      "passed": true
+    },
+    {
+      "check_id": "saved-manifest-hash-bench_trace0",
+      "expected": "498f80e8205c1b4a380292d3142d00586a9291768bfb82c5f0e69e1fcc95f0e8",
+      "observed": "498f80e8205c1b4a380292d3142d00586a9291768bfb82c5f0e69e1fcc95f0e8",
+      "passed": true
+    },
+    {
+      "check_id": "saved-inventory-hash-bench_trace0",
+      "expected": "a9feb78375d9b2905dbbd294dc073a4313da9a881740b6066e52559c9c7801b5",
+      "observed": "a9feb78375d9b2905dbbd294dc073a4313da9a881740b6066e52559c9c7801b5",
+      "passed": true
+    },
+    {
+      "check_id": "saved-source-hashes-before-bench_trace0",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "saved-source-hashes-after-bench_trace0",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "saved-complete-context-bench_trace0",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "saved-stdout-empty-bench_trace0",
+      "expected": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "observed": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "passed": true
+    },
+    {
+      "check_id": "saved-stderr-byte-equality-bench_trace0",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "saved-parsed-multiset-bench_trace0",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "inventory-hash-bench_trace1",
+      "expected": "30401209c4f28b2b7c062a2c350bd8550e5d7f617144b67de02c148dbfb00fdf",
+      "observed": "30401209c4f28b2b7c062a2c350bd8550e5d7f617144b67de02c148dbfb00fdf",
+      "passed": true
+    },
+    {
+      "check_id": "native-origin-hash-bench_trace1",
+      "expected": "c19357a9bc7599860849a4cc48001c619c6cf3a1e5fe4fc6c0706026af619d4c",
+      "observed": "c19357a9bc7599860849a4cc48001c619c6cf3a1e5fe4fc6c0706026af619d4c",
+      "passed": true
+    },
+    {
+      "check_id": "native-utf8-roundtrip-bench_trace1",
+      "expected": {
+        "bytes": 9090,
+        "sha256": "c19357a9bc7599860849a4cc48001c619c6cf3a1e5fe4fc6c0706026af619d4c"
+      },
+      "observed": {
+        "bytes": 9090,
+        "sha256": "c19357a9bc7599860849a4cc48001c619c6cf3a1e5fe4fc6c0706026af619d4c"
+      },
+      "passed": true
+    },
+    {
+      "check_id": "warning-count-bench_trace1",
+      "expected": 27,
+      "observed": 27,
+      "passed": true
+    },
+    {
+      "check_id": "full-multiset-origin-bench_trace1",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "diagnostic-confidentiality-bench_trace1",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "native-confidentiality-bench_trace1",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "summary-result-record-bench_trace1",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "saved-acceptance-bench_trace1",
+      "expected": "APPROVED-WARNING INVENTORY PASS",
+      "observed": "APPROVED-WARNING INVENTORY PASS",
+      "passed": true
+    },
+    {
+      "check_id": "saved-native-exit-bench_trace1",
+      "expected": 1,
+      "observed": 1,
+      "passed": true
+    },
+    {
+      "check_id": "saved-warning-count-bench_trace1",
+      "expected": 27,
+      "observed": 27,
+      "passed": true
+    },
+    {
+      "check_id": "saved-runner-hash-bench_trace1",
+      "expected": "a3021fea88eaba782f4cb108741df98957753630ff0f408e471f4e4e92409ac1",
+      "observed": "a3021fea88eaba782f4cb108741df98957753630ff0f408e471f4e4e92409ac1",
+      "passed": true
+    },
+    {
+      "check_id": "saved-manifest-hash-bench_trace1",
+      "expected": "498f80e8205c1b4a380292d3142d00586a9291768bfb82c5f0e69e1fcc95f0e8",
+      "observed": "498f80e8205c1b4a380292d3142d00586a9291768bfb82c5f0e69e1fcc95f0e8",
+      "passed": true
+    },
+    {
+      "check_id": "saved-inventory-hash-bench_trace1",
+      "expected": "30401209c4f28b2b7c062a2c350bd8550e5d7f617144b67de02c148dbfb00fdf",
+      "observed": "30401209c4f28b2b7c062a2c350bd8550e5d7f617144b67de02c148dbfb00fdf",
+      "passed": true
+    },
+    {
+      "check_id": "saved-source-hashes-before-bench_trace1",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "saved-source-hashes-after-bench_trace1",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "saved-complete-context-bench_trace1",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "saved-stdout-empty-bench_trace1",
+      "expected": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "observed": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "passed": true
+    },
+    {
+      "check_id": "saved-stderr-byte-equality-bench_trace1",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "saved-parsed-multiset-bench_trace1",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "configuration_count",
+      "expected": 4,
+      "observed": 4,
+      "passed": true
+    },
+    {
+      "check_id": "total_occurrences",
+      "expected": 108,
+      "observed": 108,
+      "passed": true
+    },
+    {
+      "check_id": "primary_diagnostic_identities",
+      "expected": 50,
+      "observed": 50,
+      "passed": true
+    },
+    {
+      "check_id": "control_aggregate_equality",
+      "expected": [
+        {
+          "configuration": "core_trace1",
+          "description": "Unauthorized driven unused signal, same full CPU hierarchy.",
+          "expected_rejection": true,
+          "id": "N01",
+          "kind": "actual Verilator on disposable source",
+          "pass_": true,
+          "reason": "Rejected: complete diagnostic inventory mismatch",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "A01 sticky diagnostic moved by one line; production sticky untouched.",
+          "expected_rejection": true,
+          "id": "N02",
+          "kind": "actual Verilator on disposable source",
+          "pass_": true,
+          "reason": "Rejected: complete diagnostic inventory mismatch",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "Same A01 sticky and other warning text under another source file.",
+          "expected_rejection": true,
+          "id": "N03",
+          "kind": "actual different logical source path",
+          "pass_": true,
+          "reason": "Rejected: complete diagnostic inventory mismatch",
+          "rejected": true
+        },
+        {
+          "configuration": "bench_trace0",
+          "description": "Instruction encoder argument warning columns moved by one.",
+          "expected_rejection": true,
+          "id": "N04",
+          "kind": "actual Verilator on disposable source",
+          "pass_": true,
+          "reason": "Rejected: complete diagnostic inventory mismatch",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "A01 sticky record removed; summary corrected to avoid count-only rejection.",
+          "expected_rejection": true,
+          "id": "N05",
+          "kind": "diagnostic replay",
+          "pass_": true,
+          "reason": "Rejected: complete diagnostic inventory mismatch",
+          "rejected": true
+        },
+        {
+          "configuration": "bench_trace0",
+          "description": "Duplicate encoder occurrence with consistent updated count.",
+          "expected_rejection": true,
+          "id": "N06",
+          "kind": "diagnostic replay",
+          "pass_": true,
+          "reason": "Rejected: complete diagnostic inventory mismatch",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "Unexpected LATCH diagnostic, consistent updated count.",
+          "expected_rejection": true,
+          "id": "N07",
+          "kind": "diagnostic replay",
+          "pass_": true,
+          "reason": "Rejected: complete diagnostic inventory mismatch",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "TRACE_EN=0-only wb_trace diagnostic supplied to TRACE_EN=1 inventory.",
+          "expected_rejection": true,
+          "id": "N08",
+          "kind": "diagnostic replay",
+          "pass_": true,
+          "reason": "Rejected: complete diagnostic inventory mismatch",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "One LF in copied top; warning text could be unchanged, but hash must fail.",
+          "expected_rejection": true,
+          "id": "N09",
+          "kind": "disposable source fingerprint",
+          "pass_": true,
+          "reason": "Rejected: source fingerprint mismatch",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": true,
+          "id": "N10_version",
+          "kind": "metadata identity mutation",
+          "pass_": true,
+          "reason": "Rejected: tool/version/command/environment identity mismatch",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": true,
+          "id": "N10_arguments",
+          "kind": "metadata identity mutation",
+          "pass_": true,
+          "reason": "Rejected: tool/version/command/environment identity mismatch",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": true,
+          "id": "N10_top",
+          "kind": "metadata identity mutation",
+          "pass_": true,
+          "reason": "Rejected: tool/version/command/environment identity mismatch",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": true,
+          "id": "N10_executable",
+          "kind": "metadata identity mutation",
+          "pass_": true,
+          "reason": "Rejected: tool/version/command/environment identity mismatch",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": true,
+          "id": "N10_environment",
+          "kind": "metadata identity mutation",
+          "pass_": true,
+          "reason": "Rejected: tool/version/command/environment identity mismatch",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": true,
+          "id": "N11_truncated",
+          "kind": "diagnostic replay",
+          "pass_": true,
+          "reason": "Rejected: empty/truncated/nontext output",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": true,
+          "id": "N11_malformed_header",
+          "kind": "diagnostic replay",
+          "pass_": true,
+          "reason": "Rejected: unexpected diagnostic or unframed tool output: %Warning???-UNUSEDSIGNAL: rtl/core/rv32i_core_top.sv:62:7: Signal is not used: 'enter_drain'\n",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": true,
+          "id": "N11_malformed_message",
+          "kind": "diagnostic replay",
+          "pass_": true,
+          "reason": "Rejected: complete diagnostic inventory mismatch",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": true,
+          "id": "N11_non_utf8",
+          "kind": "diagnostic replay",
+          "pass_": true,
+          "reason": "Rejected: non-UTF8 tool output",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": true,
+          "id": "N12_fatal",
+          "kind": "diagnostic replay",
+          "pass_": true,
+          "reason": "Rejected: duplicate/nonterminal warning summary",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": true,
+          "id": "N12_crash",
+          "kind": "diagnostic replay",
+          "pass_": true,
+          "reason": "Rejected: unexpected native tool exit -11",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": true,
+          "id": "N12_success_exit",
+          "kind": "diagnostic replay",
+          "pass_": true,
+          "reason": "Rejected: unexpected native tool exit 0",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": false,
+          "id": "P01_multiline",
+          "kind": "diagnostic replay",
+          "pass_": true,
+          "reason": "accepted",
+          "rejected": false
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": false,
+          "id": "P02_warning_reordering",
+          "kind": "diagnostic replay",
+          "pass_": true,
+          "reason": "accepted",
+          "rejected": false
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": false,
+          "id": "P03_relative_path_normalization",
+          "kind": "diagnostic replay",
+          "pass_": true,
+          "reason": "accepted",
+          "rejected": false
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": false,
+          "id": "P04_absolute_path_normalization",
+          "kind": "diagnostic replay",
+          "pass_": true,
+          "reason": "accepted",
+          "rejected": false
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": true,
+          "id": "X01_stdout_noise",
+          "kind": "diagnostic replay",
+          "pass_": true,
+          "reason": "Rejected: unexpected stdout",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": true,
+          "id": "X02_multiline_detail_change",
+          "kind": "diagnostic replay",
+          "pass_": true,
+          "reason": "Rejected: complete diagnostic inventory mismatch",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": true,
+          "id": "X03_path_escape",
+          "kind": "diagnostic replay",
+          "pass_": true,
+          "reason": "Rejected: diagnostic path escapes source root",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": true,
+          "id": "X04_wrong_summary_count",
+          "kind": "diagnostic replay",
+          "pass_": true,
+          "reason": "Rejected: missing/mismatched fatal warning count",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": true,
+          "id": "X05_missing_summary",
+          "kind": "diagnostic replay",
+          "pass_": true,
+          "reason": "Rejected: missing/mismatched fatal warning count",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": true,
+          "id": "X06_malformed_continuation",
+          "kind": "diagnostic replay",
+          "pass_": true,
+          "reason": "Rejected: complete diagnostic inventory mismatch",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": true,
+          "id": "X07_added_source",
+          "kind": "source set guard",
+          "pass_": true,
+          "reason": "Rejected: source file set changed",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": true,
+          "id": "X08_wrong_configuration_inventory",
+          "kind": "diagnostic replay",
+          "pass_": true,
+          "reason": "Rejected: complete diagnostic inventory mismatch",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": true,
+          "id": "X09_contract_tamper",
+          "kind": "contract fingerprint",
+          "pass_": true,
+          "reason": "Rejected: approved manifest fingerprint mismatch",
+          "rejected": true
+        },
+        {
+          "expected_rejection": true,
+          "id": "X10_cli_override",
+          "pass_": true,
+          "rejected": true
+        }
+      ],
+      "observed": [
+        {
+          "configuration": "core_trace1",
+          "description": "Unauthorized driven unused signal, same full CPU hierarchy.",
+          "expected_rejection": true,
+          "id": "N01",
+          "kind": "actual Verilator on disposable source",
+          "pass_": true,
+          "reason": "Rejected: complete diagnostic inventory mismatch",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "A01 sticky diagnostic moved by one line; production sticky untouched.",
+          "expected_rejection": true,
+          "id": "N02",
+          "kind": "actual Verilator on disposable source",
+          "pass_": true,
+          "reason": "Rejected: complete diagnostic inventory mismatch",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "Same A01 sticky and other warning text under another source file.",
+          "expected_rejection": true,
+          "id": "N03",
+          "kind": "actual different logical source path",
+          "pass_": true,
+          "reason": "Rejected: complete diagnostic inventory mismatch",
+          "rejected": true
+        },
+        {
+          "configuration": "bench_trace0",
+          "description": "Instruction encoder argument warning columns moved by one.",
+          "expected_rejection": true,
+          "id": "N04",
+          "kind": "actual Verilator on disposable source",
+          "pass_": true,
+          "reason": "Rejected: complete diagnostic inventory mismatch",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "A01 sticky record removed; summary corrected to avoid count-only rejection.",
+          "expected_rejection": true,
+          "id": "N05",
+          "kind": "diagnostic replay",
+          "pass_": true,
+          "reason": "Rejected: complete diagnostic inventory mismatch",
+          "rejected": true
+        },
+        {
+          "configuration": "bench_trace0",
+          "description": "Duplicate encoder occurrence with consistent updated count.",
+          "expected_rejection": true,
+          "id": "N06",
+          "kind": "diagnostic replay",
+          "pass_": true,
+          "reason": "Rejected: complete diagnostic inventory mismatch",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "Unexpected LATCH diagnostic, consistent updated count.",
+          "expected_rejection": true,
+          "id": "N07",
+          "kind": "diagnostic replay",
+          "pass_": true,
+          "reason": "Rejected: complete diagnostic inventory mismatch",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "TRACE_EN=0-only wb_trace diagnostic supplied to TRACE_EN=1 inventory.",
+          "expected_rejection": true,
+          "id": "N08",
+          "kind": "diagnostic replay",
+          "pass_": true,
+          "reason": "Rejected: complete diagnostic inventory mismatch",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "One LF in copied top; warning text could be unchanged, but hash must fail.",
+          "expected_rejection": true,
+          "id": "N09",
+          "kind": "disposable source fingerprint",
+          "pass_": true,
+          "reason": "Rejected: source fingerprint mismatch",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": true,
+          "id": "N10_version",
+          "kind": "metadata identity mutation",
+          "pass_": true,
+          "reason": "Rejected: tool/version/command/environment identity mismatch",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": true,
+          "id": "N10_arguments",
+          "kind": "metadata identity mutation",
+          "pass_": true,
+          "reason": "Rejected: tool/version/command/environment identity mismatch",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": true,
+          "id": "N10_top",
+          "kind": "metadata identity mutation",
+          "pass_": true,
+          "reason": "Rejected: tool/version/command/environment identity mismatch",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": true,
+          "id": "N10_executable",
+          "kind": "metadata identity mutation",
+          "pass_": true,
+          "reason": "Rejected: tool/version/command/environment identity mismatch",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": true,
+          "id": "N10_environment",
+          "kind": "metadata identity mutation",
+          "pass_": true,
+          "reason": "Rejected: tool/version/command/environment identity mismatch",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": true,
+          "id": "N11_truncated",
+          "kind": "diagnostic replay",
+          "pass_": true,
+          "reason": "Rejected: empty/truncated/nontext output",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": true,
+          "id": "N11_malformed_header",
+          "kind": "diagnostic replay",
+          "pass_": true,
+          "reason": "Rejected: unexpected diagnostic or unframed tool output: %Warning???-UNUSEDSIGNAL: rtl/core/rv32i_core_top.sv:62:7: Signal is not used: 'enter_drain'\n",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": true,
+          "id": "N11_malformed_message",
+          "kind": "diagnostic replay",
+          "pass_": true,
+          "reason": "Rejected: complete diagnostic inventory mismatch",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": true,
+          "id": "N11_non_utf8",
+          "kind": "diagnostic replay",
+          "pass_": true,
+          "reason": "Rejected: non-UTF8 tool output",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": true,
+          "id": "N12_fatal",
+          "kind": "diagnostic replay",
+          "pass_": true,
+          "reason": "Rejected: duplicate/nonterminal warning summary",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": true,
+          "id": "N12_crash",
+          "kind": "diagnostic replay",
+          "pass_": true,
+          "reason": "Rejected: unexpected native tool exit -11",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": true,
+          "id": "N12_success_exit",
+          "kind": "diagnostic replay",
+          "pass_": true,
+          "reason": "Rejected: unexpected native tool exit 0",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": false,
+          "id": "P01_multiline",
+          "kind": "diagnostic replay",
+          "pass_": true,
+          "reason": "accepted",
+          "rejected": false
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": false,
+          "id": "P02_warning_reordering",
+          "kind": "diagnostic replay",
+          "pass_": true,
+          "reason": "accepted",
+          "rejected": false
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": false,
+          "id": "P03_relative_path_normalization",
+          "kind": "diagnostic replay",
+          "pass_": true,
+          "reason": "accepted",
+          "rejected": false
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": false,
+          "id": "P04_absolute_path_normalization",
+          "kind": "diagnostic replay",
+          "pass_": true,
+          "reason": "accepted",
+          "rejected": false
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": true,
+          "id": "X01_stdout_noise",
+          "kind": "diagnostic replay",
+          "pass_": true,
+          "reason": "Rejected: unexpected stdout",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": true,
+          "id": "X02_multiline_detail_change",
+          "kind": "diagnostic replay",
+          "pass_": true,
+          "reason": "Rejected: complete diagnostic inventory mismatch",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": true,
+          "id": "X03_path_escape",
+          "kind": "diagnostic replay",
+          "pass_": true,
+          "reason": "Rejected: diagnostic path escapes source root",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": true,
+          "id": "X04_wrong_summary_count",
+          "kind": "diagnostic replay",
+          "pass_": true,
+          "reason": "Rejected: missing/mismatched fatal warning count",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": true,
+          "id": "X05_missing_summary",
+          "kind": "diagnostic replay",
+          "pass_": true,
+          "reason": "Rejected: missing/mismatched fatal warning count",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": true,
+          "id": "X06_malformed_continuation",
+          "kind": "diagnostic replay",
+          "pass_": true,
+          "reason": "Rejected: complete diagnostic inventory mismatch",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": true,
+          "id": "X07_added_source",
+          "kind": "source set guard",
+          "pass_": true,
+          "reason": "Rejected: source file set changed",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": true,
+          "id": "X08_wrong_configuration_inventory",
+          "kind": "diagnostic replay",
+          "pass_": true,
+          "reason": "Rejected: complete diagnostic inventory mismatch",
+          "rejected": true
+        },
+        {
+          "configuration": "core_trace1",
+          "description": "",
+          "expected_rejection": true,
+          "id": "X09_contract_tamper",
+          "kind": "contract fingerprint",
+          "pass_": true,
+          "reason": "Rejected: approved manifest fingerprint mismatch",
+          "rejected": true
+        },
+        {
+          "expected_rejection": true,
+          "id": "X10_cli_override",
+          "pass_": true,
+          "rejected": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "check_id": "control_count",
+      "expected": 35,
+      "observed": 35,
+      "passed": true
+    },
+    {
+      "check_id": "control_ids_unique",
+      "expected": 35,
+      "observed": 35,
+      "passed": true
+    },
+    {
+      "check_id": "expected_rejection_count",
+      "expected": 31,
+      "observed": 31,
+      "passed": true
+    },
+    {
+      "check_id": "parser_positive_count",
+      "expected": 4,
+      "observed": 4,
+      "passed": true
+    },
+    {
+      "check_id": "all_controls_recorded_pass",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "summary_control_pass",
+      "expected": 35,
+      "observed": 35,
+      "passed": true
+    },
+    {
+      "check_id": "summary_control_fail",
+      "expected": 0,
+      "observed": 0,
+      "passed": true
+    },
+    {
+      "check_id": "summary_negative_controls",
+      "expected": 31,
+      "observed": 31,
+      "passed": true
+    },
+    {
+      "check_id": "summary_parser_positive",
+      "expected": 4,
+      "observed": 4,
+      "passed": true
+    },
+    {
+      "check_id": "individual-control-N01",
+      "expected": {
+        "configuration": "core_trace1",
+        "description": "Unauthorized driven unused signal, same full CPU hierarchy.",
+        "expected_rejection": true,
+        "id": "N01",
+        "kind": "actual Verilator on disposable source",
+        "pass_": true,
+        "reason": "Rejected: complete diagnostic inventory mismatch",
+        "rejected": true
+      },
+      "observed": {
+        "configuration": "core_trace1",
+        "description": "Unauthorized driven unused signal, same full CPU hierarchy.",
+        "expected_rejection": true,
+        "id": "N01",
+        "kind": "actual Verilator on disposable source",
+        "pass_": true,
+        "reason": "Rejected: complete diagnostic inventory mismatch",
+        "rejected": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "control-confidentiality-N01",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "individual-control-N02",
+      "expected": {
+        "configuration": "core_trace1",
+        "description": "A01 sticky diagnostic moved by one line; production sticky untouched.",
+        "expected_rejection": true,
+        "id": "N02",
+        "kind": "actual Verilator on disposable source",
+        "pass_": true,
+        "reason": "Rejected: complete diagnostic inventory mismatch",
+        "rejected": true
+      },
+      "observed": {
+        "configuration": "core_trace1",
+        "description": "A01 sticky diagnostic moved by one line; production sticky untouched.",
+        "expected_rejection": true,
+        "id": "N02",
+        "kind": "actual Verilator on disposable source",
+        "pass_": true,
+        "reason": "Rejected: complete diagnostic inventory mismatch",
+        "rejected": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "control-confidentiality-N02",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "individual-control-N03",
+      "expected": {
+        "configuration": "core_trace1",
+        "description": "Same A01 sticky and other warning text under another source file.",
+        "expected_rejection": true,
+        "id": "N03",
+        "kind": "actual different logical source path",
+        "pass_": true,
+        "reason": "Rejected: complete diagnostic inventory mismatch",
+        "rejected": true
+      },
+      "observed": {
+        "configuration": "core_trace1",
+        "description": "Same A01 sticky and other warning text under another source file.",
+        "expected_rejection": true,
+        "id": "N03",
+        "kind": "actual different logical source path",
+        "pass_": true,
+        "reason": "Rejected: complete diagnostic inventory mismatch",
+        "rejected": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "control-confidentiality-N03",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "individual-control-N04",
+      "expected": {
+        "configuration": "bench_trace0",
+        "description": "Instruction encoder argument warning columns moved by one.",
+        "expected_rejection": true,
+        "id": "N04",
+        "kind": "actual Verilator on disposable source",
+        "pass_": true,
+        "reason": "Rejected: complete diagnostic inventory mismatch",
+        "rejected": true
+      },
+      "observed": {
+        "configuration": "bench_trace0",
+        "description": "Instruction encoder argument warning columns moved by one.",
+        "expected_rejection": true,
+        "id": "N04",
+        "kind": "actual Verilator on disposable source",
+        "pass_": true,
+        "reason": "Rejected: complete diagnostic inventory mismatch",
+        "rejected": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "control-confidentiality-N04",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "individual-control-N05",
+      "expected": {
+        "configuration": "core_trace1",
+        "description": "A01 sticky record removed; summary corrected to avoid count-only rejection.",
+        "expected_rejection": true,
+        "id": "N05",
+        "kind": "diagnostic replay",
+        "pass_": true,
+        "reason": "Rejected: complete diagnostic inventory mismatch",
+        "rejected": true
+      },
+      "observed": {
+        "configuration": "core_trace1",
+        "description": "A01 sticky record removed; summary corrected to avoid count-only rejection.",
+        "expected_rejection": true,
+        "id": "N05",
+        "kind": "diagnostic replay",
+        "pass_": true,
+        "reason": "Rejected: complete diagnostic inventory mismatch",
+        "rejected": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "control-confidentiality-N05",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "individual-control-N06",
+      "expected": {
+        "configuration": "bench_trace0",
+        "description": "Duplicate encoder occurrence with consistent updated count.",
+        "expected_rejection": true,
+        "id": "N06",
+        "kind": "diagnostic replay",
+        "pass_": true,
+        "reason": "Rejected: complete diagnostic inventory mismatch",
+        "rejected": true
+      },
+      "observed": {
+        "configuration": "bench_trace0",
+        "description": "Duplicate encoder occurrence with consistent updated count.",
+        "expected_rejection": true,
+        "id": "N06",
+        "kind": "diagnostic replay",
+        "pass_": true,
+        "reason": "Rejected: complete diagnostic inventory mismatch",
+        "rejected": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "control-confidentiality-N06",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "individual-control-N07",
+      "expected": {
+        "configuration": "core_trace1",
+        "description": "Unexpected LATCH diagnostic, consistent updated count.",
+        "expected_rejection": true,
+        "id": "N07",
+        "kind": "diagnostic replay",
+        "pass_": true,
+        "reason": "Rejected: complete diagnostic inventory mismatch",
+        "rejected": true
+      },
+      "observed": {
+        "configuration": "core_trace1",
+        "description": "Unexpected LATCH diagnostic, consistent updated count.",
+        "expected_rejection": true,
+        "id": "N07",
+        "kind": "diagnostic replay",
+        "pass_": true,
+        "reason": "Rejected: complete diagnostic inventory mismatch",
+        "rejected": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "control-confidentiality-N07",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "individual-control-N08",
+      "expected": {
+        "configuration": "core_trace1",
+        "description": "TRACE_EN=0-only wb_trace diagnostic supplied to TRACE_EN=1 inventory.",
+        "expected_rejection": true,
+        "id": "N08",
+        "kind": "diagnostic replay",
+        "pass_": true,
+        "reason": "Rejected: complete diagnostic inventory mismatch",
+        "rejected": true
+      },
+      "observed": {
+        "configuration": "core_trace1",
+        "description": "TRACE_EN=0-only wb_trace diagnostic supplied to TRACE_EN=1 inventory.",
+        "expected_rejection": true,
+        "id": "N08",
+        "kind": "diagnostic replay",
+        "pass_": true,
+        "reason": "Rejected: complete diagnostic inventory mismatch",
+        "rejected": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "control-confidentiality-N08",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "individual-control-N09",
+      "expected": {
+        "configuration": "core_trace1",
+        "description": "One LF in copied top; warning text could be unchanged, but hash must fail.",
+        "expected_rejection": true,
+        "id": "N09",
+        "kind": "disposable source fingerprint",
+        "pass_": true,
+        "reason": "Rejected: source fingerprint mismatch",
+        "rejected": true
+      },
+      "observed": {
+        "configuration": "core_trace1",
+        "description": "One LF in copied top; warning text could be unchanged, but hash must fail.",
+        "expected_rejection": true,
+        "id": "N09",
+        "kind": "disposable source fingerprint",
+        "pass_": true,
+        "reason": "Rejected: source fingerprint mismatch",
+        "rejected": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "control-confidentiality-N09",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "individual-control-N10_version",
+      "expected": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": true,
+        "id": "N10_version",
+        "kind": "metadata identity mutation",
+        "pass_": true,
+        "reason": "Rejected: tool/version/command/environment identity mismatch",
+        "rejected": true
+      },
+      "observed": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": true,
+        "id": "N10_version",
+        "kind": "metadata identity mutation",
+        "pass_": true,
+        "reason": "Rejected: tool/version/command/environment identity mismatch",
+        "rejected": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "control-confidentiality-N10_version",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "individual-control-N10_arguments",
+      "expected": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": true,
+        "id": "N10_arguments",
+        "kind": "metadata identity mutation",
+        "pass_": true,
+        "reason": "Rejected: tool/version/command/environment identity mismatch",
+        "rejected": true
+      },
+      "observed": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": true,
+        "id": "N10_arguments",
+        "kind": "metadata identity mutation",
+        "pass_": true,
+        "reason": "Rejected: tool/version/command/environment identity mismatch",
+        "rejected": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "control-confidentiality-N10_arguments",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "individual-control-N10_top",
+      "expected": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": true,
+        "id": "N10_top",
+        "kind": "metadata identity mutation",
+        "pass_": true,
+        "reason": "Rejected: tool/version/command/environment identity mismatch",
+        "rejected": true
+      },
+      "observed": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": true,
+        "id": "N10_top",
+        "kind": "metadata identity mutation",
+        "pass_": true,
+        "reason": "Rejected: tool/version/command/environment identity mismatch",
+        "rejected": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "control-confidentiality-N10_top",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "individual-control-N10_executable",
+      "expected": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": true,
+        "id": "N10_executable",
+        "kind": "metadata identity mutation",
+        "pass_": true,
+        "reason": "Rejected: tool/version/command/environment identity mismatch",
+        "rejected": true
+      },
+      "observed": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": true,
+        "id": "N10_executable",
+        "kind": "metadata identity mutation",
+        "pass_": true,
+        "reason": "Rejected: tool/version/command/environment identity mismatch",
+        "rejected": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "control-confidentiality-N10_executable",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "individual-control-N10_environment",
+      "expected": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": true,
+        "id": "N10_environment",
+        "kind": "metadata identity mutation",
+        "pass_": true,
+        "reason": "Rejected: tool/version/command/environment identity mismatch",
+        "rejected": true
+      },
+      "observed": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": true,
+        "id": "N10_environment",
+        "kind": "metadata identity mutation",
+        "pass_": true,
+        "reason": "Rejected: tool/version/command/environment identity mismatch",
+        "rejected": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "control-confidentiality-N10_environment",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "individual-control-N11_truncated",
+      "expected": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": true,
+        "id": "N11_truncated",
+        "kind": "diagnostic replay",
+        "pass_": true,
+        "reason": "Rejected: empty/truncated/nontext output",
+        "rejected": true
+      },
+      "observed": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": true,
+        "id": "N11_truncated",
+        "kind": "diagnostic replay",
+        "pass_": true,
+        "reason": "Rejected: empty/truncated/nontext output",
+        "rejected": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "control-confidentiality-N11_truncated",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "individual-control-N11_malformed_header",
+      "expected": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": true,
+        "id": "N11_malformed_header",
+        "kind": "diagnostic replay",
+        "pass_": true,
+        "reason": "Rejected: unexpected diagnostic or unframed tool output: %Warning???-UNUSEDSIGNAL: rtl/core/rv32i_core_top.sv:62:7: Signal is not used: 'enter_drain'\n",
+        "rejected": true
+      },
+      "observed": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": true,
+        "id": "N11_malformed_header",
+        "kind": "diagnostic replay",
+        "pass_": true,
+        "reason": "Rejected: unexpected diagnostic or unframed tool output: %Warning???-UNUSEDSIGNAL: rtl/core/rv32i_core_top.sv:62:7: Signal is not used: 'enter_drain'\n",
+        "rejected": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "control-confidentiality-N11_malformed_header",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "individual-control-N11_malformed_message",
+      "expected": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": true,
+        "id": "N11_malformed_message",
+        "kind": "diagnostic replay",
+        "pass_": true,
+        "reason": "Rejected: complete diagnostic inventory mismatch",
+        "rejected": true
+      },
+      "observed": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": true,
+        "id": "N11_malformed_message",
+        "kind": "diagnostic replay",
+        "pass_": true,
+        "reason": "Rejected: complete diagnostic inventory mismatch",
+        "rejected": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "control-confidentiality-N11_malformed_message",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "individual-control-N11_non_utf8",
+      "expected": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": true,
+        "id": "N11_non_utf8",
+        "kind": "diagnostic replay",
+        "pass_": true,
+        "reason": "Rejected: non-UTF8 tool output",
+        "rejected": true
+      },
+      "observed": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": true,
+        "id": "N11_non_utf8",
+        "kind": "diagnostic replay",
+        "pass_": true,
+        "reason": "Rejected: non-UTF8 tool output",
+        "rejected": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "control-confidentiality-N11_non_utf8",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "individual-control-N12_fatal",
+      "expected": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": true,
+        "id": "N12_fatal",
+        "kind": "diagnostic replay",
+        "pass_": true,
+        "reason": "Rejected: duplicate/nonterminal warning summary",
+        "rejected": true
+      },
+      "observed": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": true,
+        "id": "N12_fatal",
+        "kind": "diagnostic replay",
+        "pass_": true,
+        "reason": "Rejected: duplicate/nonterminal warning summary",
+        "rejected": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "control-confidentiality-N12_fatal",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "individual-control-N12_crash",
+      "expected": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": true,
+        "id": "N12_crash",
+        "kind": "diagnostic replay",
+        "pass_": true,
+        "reason": "Rejected: unexpected native tool exit -11",
+        "rejected": true
+      },
+      "observed": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": true,
+        "id": "N12_crash",
+        "kind": "diagnostic replay",
+        "pass_": true,
+        "reason": "Rejected: unexpected native tool exit -11",
+        "rejected": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "control-confidentiality-N12_crash",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "individual-control-N12_success_exit",
+      "expected": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": true,
+        "id": "N12_success_exit",
+        "kind": "diagnostic replay",
+        "pass_": true,
+        "reason": "Rejected: unexpected native tool exit 0",
+        "rejected": true
+      },
+      "observed": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": true,
+        "id": "N12_success_exit",
+        "kind": "diagnostic replay",
+        "pass_": true,
+        "reason": "Rejected: unexpected native tool exit 0",
+        "rejected": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "control-confidentiality-N12_success_exit",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "individual-control-P01_multiline",
+      "expected": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": false,
+        "id": "P01_multiline",
+        "kind": "diagnostic replay",
+        "pass_": true,
+        "reason": "accepted",
+        "rejected": false
+      },
+      "observed": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": false,
+        "id": "P01_multiline",
+        "kind": "diagnostic replay",
+        "pass_": true,
+        "reason": "accepted",
+        "rejected": false
+      },
+      "passed": true
+    },
+    {
+      "check_id": "control-confidentiality-P01_multiline",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "individual-control-P02_warning_reordering",
+      "expected": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": false,
+        "id": "P02_warning_reordering",
+        "kind": "diagnostic replay",
+        "pass_": true,
+        "reason": "accepted",
+        "rejected": false
+      },
+      "observed": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": false,
+        "id": "P02_warning_reordering",
+        "kind": "diagnostic replay",
+        "pass_": true,
+        "reason": "accepted",
+        "rejected": false
+      },
+      "passed": true
+    },
+    {
+      "check_id": "control-confidentiality-P02_warning_reordering",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "individual-control-P03_relative_path_normalization",
+      "expected": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": false,
+        "id": "P03_relative_path_normalization",
+        "kind": "diagnostic replay",
+        "pass_": true,
+        "reason": "accepted",
+        "rejected": false
+      },
+      "observed": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": false,
+        "id": "P03_relative_path_normalization",
+        "kind": "diagnostic replay",
+        "pass_": true,
+        "reason": "accepted",
+        "rejected": false
+      },
+      "passed": true
+    },
+    {
+      "check_id": "control-confidentiality-P03_relative_path_normalization",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "individual-control-P04_absolute_path_normalization",
+      "expected": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": false,
+        "id": "P04_absolute_path_normalization",
+        "kind": "diagnostic replay",
+        "pass_": true,
+        "reason": "accepted",
+        "rejected": false
+      },
+      "observed": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": false,
+        "id": "P04_absolute_path_normalization",
+        "kind": "diagnostic replay",
+        "pass_": true,
+        "reason": "accepted",
+        "rejected": false
+      },
+      "passed": true
+    },
+    {
+      "check_id": "control-confidentiality-P04_absolute_path_normalization",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "individual-control-X01_stdout_noise",
+      "expected": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": true,
+        "id": "X01_stdout_noise",
+        "kind": "diagnostic replay",
+        "pass_": true,
+        "reason": "Rejected: unexpected stdout",
+        "rejected": true
+      },
+      "observed": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": true,
+        "id": "X01_stdout_noise",
+        "kind": "diagnostic replay",
+        "pass_": true,
+        "reason": "Rejected: unexpected stdout",
+        "rejected": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "control-confidentiality-X01_stdout_noise",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "individual-control-X02_multiline_detail_change",
+      "expected": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": true,
+        "id": "X02_multiline_detail_change",
+        "kind": "diagnostic replay",
+        "pass_": true,
+        "reason": "Rejected: complete diagnostic inventory mismatch",
+        "rejected": true
+      },
+      "observed": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": true,
+        "id": "X02_multiline_detail_change",
+        "kind": "diagnostic replay",
+        "pass_": true,
+        "reason": "Rejected: complete diagnostic inventory mismatch",
+        "rejected": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "control-confidentiality-X02_multiline_detail_change",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "individual-control-X03_path_escape",
+      "expected": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": true,
+        "id": "X03_path_escape",
+        "kind": "diagnostic replay",
+        "pass_": true,
+        "reason": "Rejected: diagnostic path escapes source root",
+        "rejected": true
+      },
+      "observed": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": true,
+        "id": "X03_path_escape",
+        "kind": "diagnostic replay",
+        "pass_": true,
+        "reason": "Rejected: diagnostic path escapes source root",
+        "rejected": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "control-confidentiality-X03_path_escape",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "individual-control-X04_wrong_summary_count",
+      "expected": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": true,
+        "id": "X04_wrong_summary_count",
+        "kind": "diagnostic replay",
+        "pass_": true,
+        "reason": "Rejected: missing/mismatched fatal warning count",
+        "rejected": true
+      },
+      "observed": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": true,
+        "id": "X04_wrong_summary_count",
+        "kind": "diagnostic replay",
+        "pass_": true,
+        "reason": "Rejected: missing/mismatched fatal warning count",
+        "rejected": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "control-confidentiality-X04_wrong_summary_count",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "individual-control-X05_missing_summary",
+      "expected": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": true,
+        "id": "X05_missing_summary",
+        "kind": "diagnostic replay",
+        "pass_": true,
+        "reason": "Rejected: missing/mismatched fatal warning count",
+        "rejected": true
+      },
+      "observed": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": true,
+        "id": "X05_missing_summary",
+        "kind": "diagnostic replay",
+        "pass_": true,
+        "reason": "Rejected: missing/mismatched fatal warning count",
+        "rejected": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "control-confidentiality-X05_missing_summary",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "individual-control-X06_malformed_continuation",
+      "expected": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": true,
+        "id": "X06_malformed_continuation",
+        "kind": "diagnostic replay",
+        "pass_": true,
+        "reason": "Rejected: complete diagnostic inventory mismatch",
+        "rejected": true
+      },
+      "observed": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": true,
+        "id": "X06_malformed_continuation",
+        "kind": "diagnostic replay",
+        "pass_": true,
+        "reason": "Rejected: complete diagnostic inventory mismatch",
+        "rejected": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "control-confidentiality-X06_malformed_continuation",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "individual-control-X07_added_source",
+      "expected": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": true,
+        "id": "X07_added_source",
+        "kind": "source set guard",
+        "pass_": true,
+        "reason": "Rejected: source file set changed",
+        "rejected": true
+      },
+      "observed": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": true,
+        "id": "X07_added_source",
+        "kind": "source set guard",
+        "pass_": true,
+        "reason": "Rejected: source file set changed",
+        "rejected": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "control-confidentiality-X07_added_source",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "individual-control-X08_wrong_configuration_inventory",
+      "expected": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": true,
+        "id": "X08_wrong_configuration_inventory",
+        "kind": "diagnostic replay",
+        "pass_": true,
+        "reason": "Rejected: complete diagnostic inventory mismatch",
+        "rejected": true
+      },
+      "observed": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": true,
+        "id": "X08_wrong_configuration_inventory",
+        "kind": "diagnostic replay",
+        "pass_": true,
+        "reason": "Rejected: complete diagnostic inventory mismatch",
+        "rejected": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "control-confidentiality-X08_wrong_configuration_inventory",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "individual-control-X09_contract_tamper",
+      "expected": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": true,
+        "id": "X09_contract_tamper",
+        "kind": "contract fingerprint",
+        "pass_": true,
+        "reason": "Rejected: approved manifest fingerprint mismatch",
+        "rejected": true
+      },
+      "observed": {
+        "configuration": "core_trace1",
+        "description": "",
+        "expected_rejection": true,
+        "id": "X09_contract_tamper",
+        "kind": "contract fingerprint",
+        "pass_": true,
+        "reason": "Rejected: approved manifest fingerprint mismatch",
+        "rejected": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "control-confidentiality-X09_contract_tamper",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "cli_override_exit",
+      "expected": 2,
+      "observed": 2,
+      "passed": true
+    },
+    {
+      "check_id": "cli_override_marker",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "control-confidentiality-X10_cli_override",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "required_negative_families",
+      "expected": [
+        "N01",
+        "N02",
+        "N03",
+        "N04",
+        "N05",
+        "N06",
+        "N07",
+        "N08",
+        "N09",
+        "N10",
+        "N11",
+        "N12"
+      ],
+      "observed": [
+        "N01",
+        "N02",
+        "N03",
+        "N04",
+        "N05",
+        "N06",
+        "N07",
+        "N08",
+        "N09",
+        "N10",
+        "N11",
+        "N12"
+      ],
+      "passed": true
+    },
+    {
+      "check_id": "required_N_family_cases",
+      "expected": 21,
+      "observed": 21,
+      "passed": true
+    },
+    {
+      "check_id": "additional_X_rejection_cases",
+      "expected": 10,
+      "observed": 10,
+      "passed": true
+    },
+    {
+      "check_id": "output-confidentiality-evidence",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "output-confidentiality-manifest",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    }
+  ],
+  "confidentiality": {
+    "all_serialized_output_fields_scanned": true,
+    "all_used_original_artifacts_scanned": true,
+    "limits": "Pattern scanning is not proof that every possible secret is absent; no encrypted/encoded restricted fixture is embedded to bypass inspection.",
+    "output_findings": [],
+    "patterns": [
+      "internal_material",
+      "conversation_identifier",
+      "personal_path",
+      "credential_candidate"
+    ],
+    "restricted_handling": "Project technical fields; omit separate administrative fields/private roots and restricted fixture contents. Diagnostic records and complete native logs remain unchanged."
+  },
+  "diagnostic_comparison": {
+    "equality": "Counter equality; order-insensitive and multiplicity-sensitive",
+    "fields": [
+      "category",
+      "path",
+      "line",
+      "column",
+      "message",
+      "details"
+    ],
+    "native_transcript_transform": "none; strict UTF-8 roundtrip byte equality",
+    "serialization": "json.dumps(record,sort_keys=True,separators=(comma,colon))"
+  },
+  "historical_vs_current": {
+    "frozen_runner_executed": false,
+    "historical_acceptance_reconciled": true,
+    "known_decision_register_divergence_documented": true,
+    "new_lint_executed": false,
+    "portable_procedure_created_or_qualified": false
+  },
+  "limitations": [
+    "Historical F01 is CLOSED through approved-warning inventory acceptance; native lint is not warning-free and all four native exits are one.",
+    "Current-tree reproduction under the unchanged frozen contract is not established: current decision-register bytes differ and restricted document inputs/root/environment are required.",
+    "Raw original manifest, runner and restricted control source-root/context fixtures remain historical dependencies; technical projection is not an executable replacement contract.",
+    "A portable procedure is proposed only; no portable runner was created, executed or qualified.",
+    "The ten F02 observation-mutation simulations are distinct from these 31 runner rejection controls.",
+    "Saved execution metadata is historical evidence, not a newly measured tool/environment result.",
+    "Lint acceptance and finite runner tests do not establish functional correctness, formal proof, target synthesis or physical timing signoff."
+  ],
+  "missing_required_evidence": [],
+  "output_hash_policy": "Output hashes reported externally after final byte verification",
+  "overall_status": "PASS",
+  "package_id": "rv32i-historical-f01-technical-evidence-v1-pre-push-008d",
+  "portable_qualification": {
+    "contract_id": "rv32i-portable-exact-diagnostics-v1",
+    "controlled_environment": {
+      "LANG": "C",
+      "LC_ALL": "C",
+      "PATH": "/usr/bin:/bin"
+    },
+    "controls": {
+      "all_outcomes_passed": true,
+      "case_results": [
+        {
+          "actual": "DIAGNOSTICS",
+          "expected": "DIAGNOSTICS",
+          "id": "N01_warning_added",
+          "intended_rejection": true,
+          "mode": "offline_comparator",
+          "pass_": true
+        },
+        {
+          "actual": "DIAGNOSTICS",
+          "expected": "DIAGNOSTICS",
+          "id": "N02_warning_removed",
+          "intended_rejection": true,
+          "mode": "offline_comparator",
+          "pass_": true
+        },
+        {
+          "actual": "DIAGNOSTICS",
+          "expected": "DIAGNOSTICS",
+          "id": "N03_category",
+          "intended_rejection": true,
+          "mode": "offline_comparator",
+          "pass_": true
+        },
+        {
+          "actual": "DIAGNOSTICS",
+          "expected": "DIAGNOSTICS",
+          "id": "N04_source_path",
+          "intended_rejection": true,
+          "mode": "offline_comparator",
+          "pass_": true
+        },
+        {
+          "actual": "DIAGNOSTICS",
+          "expected": "DIAGNOSTICS",
+          "id": "N05_line",
+          "intended_rejection": true,
+          "mode": "offline_comparator",
+          "pass_": true
+        },
+        {
+          "actual": "DIAGNOSTICS",
+          "expected": "DIAGNOSTICS",
+          "id": "N06_column",
+          "intended_rejection": true,
+          "mode": "offline_comparator",
+          "pass_": true
+        },
+        {
+          "actual": "DIAGNOSTICS",
+          "expected": "DIAGNOSTICS",
+          "id": "N07_message",
+          "intended_rejection": true,
+          "mode": "offline_comparator",
+          "pass_": true
+        },
+        {
+          "actual": "DIAGNOSTICS",
+          "expected": "DIAGNOSTICS",
+          "id": "N08_multiline",
+          "intended_rejection": true,
+          "mode": "offline_comparator",
+          "pass_": true
+        },
+        {
+          "actual": "DIAGNOSTICS",
+          "expected": "DIAGNOSTICS",
+          "id": "N09_multiplicity",
+          "intended_rejection": true,
+          "mode": "offline_comparator",
+          "pass_": true
+        },
+        {
+          "actual": "DIAGNOSTICS",
+          "expected": "DIAGNOSTICS",
+          "id": "N10_same_count_remove_duplicate",
+          "intended_rejection": true,
+          "mode": "offline_comparator",
+          "pass_": true
+        },
+        {
+          "actual": "NATIVE_EXIT",
+          "expected": "NATIVE_EXIT",
+          "id": "N11_exit_zero",
+          "intended_rejection": true,
+          "mode": "offline_comparator",
+          "pass_": true
+        },
+        {
+          "actual": "NATIVE_EXIT",
+          "expected": "NATIVE_EXIT",
+          "id": "N12_crash_exit",
+          "intended_rejection": true,
+          "mode": "offline_comparator",
+          "pass_": true
+        },
+        {
+          "actual": "CHANNEL",
+          "expected": "CHANNEL",
+          "id": "N13_stdout_noise",
+          "intended_rejection": true,
+          "mode": "offline_comparator",
+          "pass_": true
+        },
+        {
+          "actual": "CHANNEL",
+          "expected": "CHANNEL",
+          "id": "N14_wrong_channel",
+          "intended_rejection": true,
+          "mode": "offline_comparator",
+          "pass_": true
+        },
+        {
+          "actual": "FRAMING",
+          "expected": "FRAMING",
+          "id": "N15_malformed_header",
+          "intended_rejection": true,
+          "mode": "offline_comparator",
+          "pass_": true
+        },
+        {
+          "actual": "FRAMING",
+          "expected": "FRAMING",
+          "id": "N16_truncated",
+          "intended_rejection": true,
+          "mode": "offline_comparator",
+          "pass_": true
+        },
+        {
+          "actual": "FRAMING",
+          "expected": "FRAMING",
+          "id": "N17_missing_summary",
+          "intended_rejection": true,
+          "mode": "offline_comparator",
+          "pass_": true
+        },
+        {
+          "actual": "FRAMING",
+          "expected": "FRAMING",
+          "id": "N18_wrong_summary",
+          "intended_rejection": true,
+          "mode": "offline_comparator",
+          "pass_": true
+        },
+        {
+          "actual": "ENCODING",
+          "expected": "ENCODING",
+          "id": "N19_non_utf8",
+          "intended_rejection": true,
+          "mode": "offline_comparator",
+          "pass_": true
+        },
+        {
+          "actual": "FRAMING",
+          "expected": "FRAMING",
+          "id": "N20_null_byte",
+          "intended_rejection": true,
+          "mode": "offline_comparator",
+          "pass_": true
+        },
+        {
+          "actual": "FRAMING",
+          "expected": "FRAMING",
+          "id": "N21_empty_stderr",
+          "intended_rejection": true,
+          "mode": "offline_comparator",
+          "pass_": true
+        },
+        {
+          "actual": "FRAMING",
+          "expected": "FRAMING",
+          "id": "N22_extra_fatal",
+          "intended_rejection": true,
+          "mode": "offline_comparator",
+          "pass_": true
+        },
+        {
+          "actual": "DIAGNOSTIC_PATH",
+          "expected": "DIAGNOSTIC_PATH",
+          "id": "N23_path_escape",
+          "intended_rejection": true,
+          "mode": "offline_comparator",
+          "pass_": true
+        },
+        {
+          "actual": "DIAGNOSTIC_PATH",
+          "expected": "DIAGNOSTIC_PATH",
+          "id": "N24_backslash_path",
+          "intended_rejection": true,
+          "mode": "offline_comparator",
+          "pass_": true
+        },
+        {
+          "actual": "ACCEPT",
+          "expected": "ACCEPT",
+          "id": "P01_multiline",
+          "mode": "offline_comparator",
+          "pass_": true
+        },
+        {
+          "actual": "ACCEPT",
+          "expected": "ACCEPT",
+          "id": "P02_reordered",
+          "mode": "offline_comparator",
+          "pass_": true
+        },
+        {
+          "actual": "ACCEPT",
+          "expected": "ACCEPT",
+          "id": "P03_dot_relative",
+          "mode": "offline_comparator",
+          "pass_": true
+        },
+        {
+          "actual": "ACCEPT",
+          "expected": "ACCEPT",
+          "id": "P04_absolute_within_root",
+          "mode": "offline_comparator",
+          "pass_": true
+        },
+        {
+          "actual": "TOOL_VERSION",
+          "expected": "TOOL_VERSION",
+          "id": "N25_version_mismatch",
+          "intended_rejection": true,
+          "mode": "metadata_injection",
+          "pass_": true
+        },
+        {
+          "actual": "TIMEOUT",
+          "expected": "TIMEOUT",
+          "id": "N26_timeout",
+          "intended_rejection": true,
+          "mode": "timeout_exception_injection",
+          "pass_": true
+        },
+        {
+          "actual": "TOOL_MISSING",
+          "expected": "TOOL_MISSING",
+          "id": "N27_missing_launch",
+          "intended_rejection": true,
+          "mode": "launch_failure_injection",
+          "pass_": true
+        },
+        {
+          "actual": "COMMAND",
+          "expected": "COMMAND",
+          "id": "N28_invalid_parameters",
+          "intended_rejection": true,
+          "mode": "in_memory_contract_mutation",
+          "pass_": true
+        },
+        {
+          "actual": "ENVIRONMENT",
+          "expected": "ENVIRONMENT",
+          "id": "N29_environment",
+          "intended_rejection": true,
+          "mode": "in_memory_contract_mutation",
+          "pass_": true
+        },
+        {
+          "actual": "SOURCE_HASH",
+          "expected": "SOURCE_HASH",
+          "id": "N30_source_hash",
+          "intended_rejection": true,
+          "mode": "actual_runner_CLI",
+          "pass_": true
+        },
+        {
+          "actual": "SOURCE_MISSING",
+          "expected": "SOURCE_MISSING",
+          "id": "N31_missing_source",
+          "intended_rejection": true,
+          "mode": "actual_runner_CLI",
+          "pass_": true
+        },
+        {
+          "actual": "SOURCE_HASH",
+          "expected": "SOURCE_HASH",
+          "id": "N32_baseline_hash",
+          "intended_rejection": true,
+          "mode": "actual_runner_CLI",
+          "pass_": true
+        },
+        {
+          "actual": "SOURCE_SET",
+          "expected": "SOURCE_SET",
+          "id": "N33_extra_source",
+          "intended_rejection": true,
+          "mode": "actual_runner_CLI",
+          "pass_": true
+        },
+        {
+          "actual": "SOURCE_PATH",
+          "expected": "SOURCE_PATH",
+          "id": "N34_source_symlink",
+          "intended_rejection": true,
+          "mode": "actual_runner_CLI",
+          "pass_": true
+        },
+        {
+          "actual": "CONTRACT_HASH",
+          "expected": "CONTRACT_HASH",
+          "id": "N35_contract_tamper",
+          "intended_rejection": true,
+          "mode": "actual_runner_CLI",
+          "pass_": true
+        },
+        {
+          "actual": "TOOL_FINGERPRINT",
+          "expected": "TOOL_FINGERPRINT",
+          "id": "N36_tool_fingerprint",
+          "intended_rejection": true,
+          "mode": "actual_runner_CLI",
+          "pass_": true
+        },
+        {
+          "actual": "TOOL_MISSING",
+          "expected": "TOOL_MISSING",
+          "id": "N37_tool_missing",
+          "intended_rejection": true,
+          "mode": "actual_runner_CLI",
+          "pass_": true
+        },
+        {
+          "actual": "OUTPUT_UNSAFE",
+          "expected": "OUTPUT_UNSAFE",
+          "id": "N38_output_inside_root",
+          "intended_rejection": true,
+          "mode": "actual_runner_CLI",
+          "pass_": true
+        },
+        {
+          "actual": "OUTPUT_EXISTS",
+          "expected": "OUTPUT_EXISTS",
+          "id": "N39_output_reuse",
+          "intended_rejection": true,
+          "mode": "actual_runner_CLI",
+          "pass_": true
+        },
+        {
+          "actual": "ARGUMENTS",
+          "expected": "ARGUMENTS",
+          "id": "N40_unknown_configuration",
+          "intended_rejection": true,
+          "mode": "actual_runner_CLI",
+          "pass_": true
+        },
+        {
+          "actual": "ARGUMENTS",
+          "expected": "ARGUMENTS",
+          "id": "N41_cli_override",
+          "intended_rejection": true,
+          "mode": "actual_runner_CLI",
+          "pass_": true
+        },
+        {
+          "actual": "ACCEPT",
+          "expected": "ACCEPT",
+          "id": "P05_second_root_default_detection",
+          "mode": "native_relocated_root",
+          "pass_": true
+        }
+      ],
+      "distinct_cases": 46,
+      "execution_total": 92,
+      "intended_rejection_cases": 41,
+      "outcomes_identical_between_modes": true,
+      "positive_control_cases": 5,
+      "suite_modes": [
+        "normal Python",
+        "optimized Python harness"
+      ]
+    },
+    "execution_date_utc": "2026-11-06T05:01:26.083567+00:00",
+    "external_artifact_index": {
+      "bytes": 18884,
+      "relative_path": "qualification_artifacts.json",
+      "sha256": "fbb0a31fb3669a077c79d56b42c69964fba7697f5caa622e31bd46b8aefec445"
+    },
+    "external_evidence_reference": "external:PRE-PUSH-008F",
+    "file_identities": {
+      "docs/verification/module17/lint_closure/fail_closed_runner/portable_manifest.json": {
+        "bytes": 114316,
+        "sha256": "09f2d79a9b585759aaf7f03f90683f131f38db0675818205ba6bd2697e7aa1a4"
+      },
+      "docs/verification/module17/lint_closure/fail_closed_runner/portable_runner.py": {
+        "bytes": 17088,
+        "sha256": "b750ecddf40b634267e1b3712671e9ea4bbd19111f9a76647c76bf6e437b9376"
+      },
+      "docs/verification/module17/lint_closure/fail_closed_runner/test_portable_runner.py": {
+        "bytes": 14660,
+        "sha256": "1150b743629b4d1c884d4079d02c19b2256ce3c326cafd749da5d236474ff1ec"
+      }
+    },
+    "historical_separation": "New portable contract qualification only. All preexisting validation fields retain their earlier checkpoint scope; earlier unimplemented-portability fields are preserved, not reinterpreted. Historical F01 CLOSED acceptance is unchanged.",
+    "identity_scheme": "Runner literal pins manifest; manifest pins technical source/evidence/tool identities; this record pins runner/manifest/test suite. No validation-file self-hash or reverse dependency.",
+    "implementation_provenance": "Codex-assisted technical verification-infrastructure implementation and qualification; no exclusive production RTL authorship claim",
+    "native_scope": {
+      "four_configuration_batches": 3,
+      "optimized_runner_four_configuration_batch_passed": true,
+      "relocated_default_root_checks": 2,
+      "total_native_lint_executions": 14
+    },
+    "portability_limits": [
+      "Exact Verilator 5.020 executable, companion executable and interpreter fingerprints required; other builds are incompatible pending separate qualification",
+      "Controlled Linux tool environment required; no unrestricted cross-platform compatibility claimed",
+      "All execution outputs require a fresh absolute disjoint directory; existing outputs and symlinked/ambiguous locations rejected",
+      "Timeout and version-mismatch controls include explicitly identified synthetic exception/metadata tests; they are not induced installed-tool corruption",
+      "This qualification does not establish RTL functional correctness, target synthesis or physical timing"
+    ],
+    "positive_configurations": [
+      {
+        "configuration": "core_trace0",
+        "full_multiset_equal": true,
+        "native_exit": 1,
+        "record_id": "PORTABLE-core_trace0",
+        "stderr_sha256": "3901f41cb388237625053c9a4a20230a0d2bfcc17b0826743c21650e9e22c749",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warning_occurrences": 27
+      },
+      {
+        "configuration": "core_trace1",
+        "full_multiset_equal": true,
+        "native_exit": 1,
+        "record_id": "PORTABLE-core_trace1",
+        "stderr_sha256": "6091bb803b9818ecfb1a7a43833334ea86887349cc8323b52d82043ec89f2b00",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warning_occurrences": 5
+      },
+      {
+        "configuration": "bench_trace0",
+        "full_multiset_equal": true,
+        "native_exit": 1,
+        "record_id": "PORTABLE-bench_trace0",
+        "stderr_sha256": "021077155cddd8655f2f7e3acec0f704cc97766765cbb10fdd4f2e64d3ea2f29",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warning_occurrences": 49
+      },
+      {
+        "configuration": "bench_trace1",
+        "full_multiset_equal": true,
+        "native_exit": 1,
+        "record_id": "PORTABLE-bench_trace1",
+        "stderr_sha256": "c19357a9bc7599860849a4cc48001c619c6cf3a1e5fe4fc6c0706026af619d4c",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warning_occurrences": 27
+      }
+    ],
+    "previous_validation_identity": {
+      "bytes": 99085,
+      "retained_external_copy": "external:PRE-PUSH-008F/TECHNICAL_LINT_VALIDATION.before.json",
+      "sha256": "e540792ad1f1a9cd22ac300fb61d4273be041c9118232645b4dd39f0a60f5646"
+    },
+    "record_id": "PRE-PUSH-008F-PORTABLE-QUALIFICATION",
+    "schema_version": "1.0.0",
+    "status": "PASS",
+    "technical_source_inputs": {
+      "docs/verification/module17/lint_closure/fail_closed_runner/TECHNICAL_LINT_EVIDENCE.json": "09bc02f2b14bc9437244d4f053a7c26e34d645a41c66f7879abffb16d5510f51",
+      "rtl/core/alu.sv": "8ec9db346cd6f41bfe4a1640288f2bc1a399e97fa43ce0ebb9aa8a46be669939",
+      "rtl/core/branch_unit.sv": "3e029339650acde9092ca72233a7eb761adf82cdb99423a3d11644293f8b5dff",
+      "rtl/core/ex_event_mux.sv": "2c52108735e2181d3554a2542343c20864c029be39189df07db76409c8efbe3d",
+      "rtl/core/fault_ctrl.sv": "6406e8f0d23d40152ea4ea39c3e705eee22670fd884094dd62e7d2dfe506beba",
+      "rtl/core/forward_unit.sv": "61097692b624744c51b88ca95bc0c2d485db570cb0f4efbb64f7580a5b497d02",
+      "rtl/core/hazard_ctrl.sv": "74c9691330fc99b708fee570e61d575d8400ebf5d27344dc1a03ecb849d12cc8",
+      "rtl/core/pc_fetch.sv": "a7408b3e9e8c7059465cd19505f77bcfe9d2deda5bba07ba23a1e625853579c5",
+      "rtl/core/pipeline_regs.sv": "5fbb22be5137cbd7a9e7455ed1d76558623375fc4e89b5e8f36e7564cc620b15",
+      "rtl/core/rv32i_core_top.sv": "412910c9715894020c4fcdc7c641372951197525bfaa44061f70fd8b26a8386b",
+      "rtl/core/wb_trace.sv": "39ba5ea95779c5445b96298cf7cc45ae373adde60f19808fa4743a58ccfabe1f",
+      "rtl/decode/decoder.sv": "bc4e16864545f00fcdb0ad755cfe80512ea4d13cb9d408ae268ba12b2c7c6742",
+      "rtl/decode/imm_gen.sv": "17e0d0ffe8aaa44d4171470625f7a383bbe39c0583c112547ad558b8c7ea6815",
+      "rtl/decode/reg_file.sv": "0ab07270776dc07725cb9a9be3f99fd9f7e42d26b20f205c071971119ae411a0",
+      "rtl/memory/dmem_sync.sv": "fb0cc47641f86feeb0d5b1fd32128e47258bcab3e1031143a1627d7c778d8f9d",
+      "rtl/memory/imem_sync.sv": "95ffe4de77adc2f5f22238c921bc206cd308597ac0d851ed53b34aa5c4867260",
+      "rtl/memory/load_formatter.sv": "562491ee4affd64ee76f593b753144bfc2812b59bc3c55f3fcc57731711ce800",
+      "rtl/memory/lsu_ex.sv": "5689a9c2d7e1bb432e450e0b64554a83dfe144d976f882bb9663ec186093dcd6",
+      "tb/integration/tb_rv32i_core_top.sv": "d293418f0d68adc9898495a0a3d439d5059a2ae19cba981672d67998cf8b27fe"
+    },
+    "tool_identity": {
+      "executable": "/usr/bin/verilator",
+      "sha256": {
+        "perl": "47bdc8a342556c1d140084417ef6cacd79a3362e4b6cc1e4754df55bdf1e3683",
+        "verilator": "4c6292ab82e57b7f34ab26dbae86ba9c494bacfb088b6ff34be93c553d1301b1",
+        "verilator_bin": "25f33046f0055a6982c67cdc55081685a844abb50d044cfda087bd418db9be6c"
+      },
+      "version_exit": 0,
+      "version_stderr": "",
+      "version_stdout": "Verilator 5.020 2024-01-01 rev (Debian 5.020-1)\n"
+    }
+  },
+  "record_id": "VALIDATION",
+  "restricted_dependencies": [
+    "Frozen original manifest and runner",
+    "Four historical document inputs needed by the exact frozen contract",
+    "Original local-root and command-context mapping",
+    "Control context/source-root fixture contents; no embedded instruction or organizational document text"
+  ],
+  "schema_id": "rv32i.technical-lint-validation",
+  "schema_version": "1.0.0",
+  "workspace_scope": "Exactly three authorized files newly created; all pre-existing file bytes/modes including Git internals compared before/after; no index/ref/history mutation or remote contact"
+}

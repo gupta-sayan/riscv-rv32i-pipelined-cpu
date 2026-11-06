@@ -1,0 +1,27 @@
+# Automatically detect text and normalize line endings
+* text=auto
+
+# RTL source files
+*.v   text eol=lf
+*.sv  text eol=lf
+*.vh  text eol=lf
+*.svh text eol=lf
+
+# Build scripts and automation
+*.sh  text eol=lf
+*.py  text eol=lf
+*.mk  text eol=lf
+Makefile text eol=lf
+
+# Documentation and configuration
+*.md   text eol=lf
+*.yml  text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+*.tcl  text eol=lf
+
+# Binary assets
+*.png binary
+*.jpg binary
+*.pdf binary
+*.zip binary

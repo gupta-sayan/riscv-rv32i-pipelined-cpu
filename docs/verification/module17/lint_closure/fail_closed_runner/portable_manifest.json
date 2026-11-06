@@ -1,0 +1,2244 @@
+{
+  "baseline_path": "docs/verification/module17/lint_closure/fail_closed_runner/TECHNICAL_LINT_EVIDENCE.json",
+  "configurations": {
+    "bench_trace0": {
+      "argv": [
+        "{tool}",
+        "--lint-only",
+        "--Wall",
+        "--top-module",
+        "tb_rv32i_core_top",
+        "-GTRACE_EN=1'b0",
+        "--Mdir",
+        "{workdir}",
+        "--timing",
+        "tb/integration/tb_rv32i_core_top.sv",
+        "rtl/core/alu.sv",
+        "rtl/core/branch_unit.sv",
+        "rtl/core/ex_event_mux.sv",
+        "rtl/core/fault_ctrl.sv",
+        "rtl/core/forward_unit.sv",
+        "rtl/core/hazard_ctrl.sv",
+        "rtl/core/pc_fetch.sv",
+        "rtl/core/pipeline_regs.sv",
+        "rtl/core/rv32i_core_top.sv",
+        "rtl/core/wb_trace.sv",
+        "rtl/decode/decoder.sv",
+        "rtl/decode/imm_gen.sv",
+        "rtl/decode/reg_file.sv",
+        "rtl/memory/dmem_sync.sv",
+        "rtl/memory/imem_sync.sv",
+        "rtl/memory/load_formatter.sv",
+        "rtl/memory/lsu_ex.sv"
+      ],
+      "diagnostic_multiplicities": [
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "BLKSEQ",
+            "column": 18,
+            "details": "                                                         : ... Suggest using delayed assignment '<='\n    5 |     always #5 clk=~clk;\n      |                  ^\n",
+            "line": 5,
+            "message": "Blocking assignment '=' in sequential logic process",
+            "path": "tb/integration/tb_rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 13,
+            "details": "                                                       : ... note: In instance 'tb_rv32i_core_top.dut'\n   79 | logic [2:0] idex_imm_kind;\n      |             ^~~~~~~~~~~~~\n",
+            "line": 79,
+            "message": "Signal is not used: 'idex_imm_kind'",
+            "path": "rtl/core/rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 18,
+            "details": "                                                : ... note: In instance 'tb_rv32i_core_top.dut.u_wb_trace'\n    4 |     input  logic clk,\n      |                  ^~~\n",
+            "line": 4,
+            "message": "Signal is not used: 'clk'",
+            "path": "rtl/core/wb_trace.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 23,
+            "details": "                                                      : ... note: In instance 'tb_rv32i_core_top.dut.u_pipeline_regs'\n   78 |     input logic       ex_mem_write,\n      |                       ^~~~~~~~~~~~\n",
+            "line": 78,
+            "message": "Signal is not used: 'ex_mem_write'",
+            "path": "rtl/core/pipeline_regs.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 24,
+            "details": "                                                       : ... note: In instance 'tb_rv32i_core_top.dut.u_pipeline_regs'\n  107 |     input logic        mem_read,\n      |                        ^~~~~~~~\n",
+            "line": 107,
+            "message": "Signal is not used: 'mem_read'",
+            "path": "rtl/core/pipeline_regs.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 24,
+            "details": "                                                       : ... note: In instance 'tb_rv32i_core_top.dut.u_pipeline_regs'\n  108 |     input logic        mem_write,\n      |                        ^~~~~~~~~\n",
+            "line": 108,
+            "message": "Signal is not used: 'mem_write'",
+            "path": "rtl/core/pipeline_regs.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 24,
+            "details": "                                                       : ... note: In instance 'tb_rv32i_core_top.dut.u_pipeline_regs'\n  109 |     input logic [31:0] mem_instr,\n      |                        ^~~~~~~~~\n",
+            "line": 109,
+            "message": "Signal is not used: 'mem_instr'",
+            "path": "rtl/core/pipeline_regs.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 24,
+            "details": "                                                       : ... note: In instance 'tb_rv32i_core_top.dut.u_pipeline_regs'\n  110 |     input logic [31:0] mem_addr,\n      |                        ^~~~~~~~\n",
+            "line": 110,
+            "message": "Signal is not used: 'mem_addr'",
+            "path": "rtl/core/pipeline_regs.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 24,
+            "details": "                                                       : ... note: In instance 'tb_rv32i_core_top.dut.u_pipeline_regs'\n  111 |     input logic [31:0] mem_wdata,\n      |                        ^~~~~~~~~\n",
+            "line": 111,
+            "message": "Signal is not used: 'mem_wdata'",
+            "path": "rtl/core/pipeline_regs.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 24,
+            "details": "                                                       : ... note: In instance 'tb_rv32i_core_top.dut.u_pipeline_regs'\n  112 |     input logic [3:0]  mem_wmask,\n      |                        ^~~~~~~~~\n",
+            "line": 112,
+            "message": "Signal is not used: 'mem_wmask'",
+            "path": "rtl/core/pipeline_regs.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 24,
+            "details": "                                                       : ... note: In instance 'tb_rv32i_core_top.dut.u_pipeline_regs'\n  113 |     input logic [31:0] mem_rdata,\n      |                        ^~~~~~~~~\n",
+            "line": 113,
+            "message": "Signal is not used: 'mem_rdata'",
+            "path": "rtl/core/pipeline_regs.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 24,
+            "details": "                                                      : ... note: In instance 'tb_rv32i_core_top.dut.u_pipeline_regs'\n   21 |     input logic [31:0] id_instr,\n      |                        ^~~~~~~~\n",
+            "line": 21,
+            "message": "Signal is not used: 'id_instr'",
+            "path": "rtl/core/pipeline_regs.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 24,
+            "details": "                                                      : ... note: In instance 'tb_rv32i_core_top.dut.u_pipeline_regs'\n   72 |     input logic [31:0] ex_instr,\n      |                        ^~~~~~~~\n",
+            "line": 72,
+            "message": "Signal is not used: 'ex_instr'",
+            "path": "rtl/core/pipeline_regs.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 24,
+            "details": "                                                      : ... note: In instance 'tb_rv32i_core_top.dut.u_pipeline_regs'\n   82 |     input logic [31:0] ex_mem_addr,\n      |                        ^~~~~~~~~~~\n",
+            "line": 82,
+            "message": "Signal is not used: 'ex_mem_addr'",
+            "path": "rtl/core/pipeline_regs.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 24,
+            "details": "                                                      : ... note: In instance 'tb_rv32i_core_top.dut.u_pipeline_regs'\n   83 |     input logic [31:0] ex_mem_wdata,\n      |                        ^~~~~~~~~~~~\n",
+            "line": 83,
+            "message": "Signal is not used: 'ex_mem_wdata'",
+            "path": "rtl/core/pipeline_regs.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 24,
+            "details": "                                                      : ... note: In instance 'tb_rv32i_core_top.dut.u_pipeline_regs'\n   84 |     input logic [3:0]  ex_mem_wmask,\n      |                        ^~~~~~~~~~~~\n",
+            "line": 84,
+            "message": "Signal is not used: 'ex_mem_wmask'",
+            "path": "rtl/core/pipeline_regs.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 24,
+            "details": "                                                 : ... note: In instance 'tb_rv32i_core_top.dut.u_decoder'\n    3 |     input logic [31:0] pc,\n      |                        ^~\n",
+            "line": 3,
+            "message": "Signal is not used: 'pc'",
+            "path": "rtl/decode/decoder.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 25,
+            "details": "                                                   : ... note: In instance 'tb_rv32i_core_top.u_dmem'\n    4 |     input  logic [31:0] dmem_addr,\n      |                         ^~~~~~~~~\n",
+            "line": 4,
+            "message": "Bits of signal are not used: 'dmem_addr'[31:14,1:0]",
+            "path": "rtl/memory/dmem_sync.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 25,
+            "details": "                                                   : ... note: In instance 'tb_rv32i_core_top.u_imem'\n    5 |     input  logic [31:0] imem_addr,\n      |                         ^~~~~~~~~\n",
+            "line": 5,
+            "message": "Bits of signal are not used: 'imem_addr'[31:14,1:0]",
+            "path": "rtl/memory/imem_sync.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 25,
+            "details": "                                                 : ... note: In instance 'tb_rv32i_core_top.dut.u_imm_gen'\n    2 |     input  logic [31:0] instr,\n      |                         ^~~~~\n",
+            "line": 2,
+            "message": "Bits of signal are not used: 'instr'[6:0]",
+            "path": "rtl/decode/imm_gen.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 25,
+            "details": "                                                 : ... note: In instance 'tb_rv32i_core_top.dut.u_wb_trace'\n   10 |     input  logic [31:0] memwb_pc,\n      |                         ^~~~~~~~\n",
+            "line": 10,
+            "message": "Signal is not used: 'memwb_pc'",
+            "path": "rtl/core/wb_trace.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 25,
+            "details": "                                                 : ... note: In instance 'tb_rv32i_core_top.dut.u_wb_trace'\n   15 |     input  logic [31:0] memwb_instr,\n      |                         ^~~~~~~~~~~\n",
+            "line": 15,
+            "message": "Signal is not used: 'memwb_instr'",
+            "path": "rtl/core/wb_trace.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 25,
+            "details": "                                                 : ... note: In instance 'tb_rv32i_core_top.dut.u_wb_trace'\n   16 |     input  logic        memwb_mem_read,\n      |                         ^~~~~~~~~~~~~~\n",
+            "line": 16,
+            "message": "Signal is not used: 'memwb_mem_read'",
+            "path": "rtl/core/wb_trace.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 25,
+            "details": "                                                 : ... note: In instance 'tb_rv32i_core_top.dut.u_wb_trace'\n   17 |     input  logic        memwb_mem_write,\n      |                         ^~~~~~~~~~~~~~~\n",
+            "line": 17,
+            "message": "Signal is not used: 'memwb_mem_write'",
+            "path": "rtl/core/wb_trace.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 25,
+            "details": "                                                 : ... note: In instance 'tb_rv32i_core_top.dut.u_wb_trace'\n   18 |     input  logic [31:0] memwb_mem_addr,\n      |                         ^~~~~~~~~~~~~~\n",
+            "line": 18,
+            "message": "Signal is not used: 'memwb_mem_addr'",
+            "path": "rtl/core/wb_trace.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 25,
+            "details": "                                                 : ... note: In instance 'tb_rv32i_core_top.dut.u_wb_trace'\n   19 |     input  logic [31:0] memwb_mem_wdata,\n      |                         ^~~~~~~~~~~~~~~\n",
+            "line": 19,
+            "message": "Signal is not used: 'memwb_mem_wdata'",
+            "path": "rtl/core/wb_trace.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 25,
+            "details": "                                                 : ... note: In instance 'tb_rv32i_core_top.dut.u_wb_trace'\n   20 |     input  logic [3:0]  memwb_mem_wmask,\n      |                         ^~~~~~~~~~~~~~~\n",
+            "line": 20,
+            "message": "Signal is not used: 'memwb_mem_wmask'",
+            "path": "rtl/core/wb_trace.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 25,
+            "details": "                                                 : ... note: In instance 'tb_rv32i_core_top.dut.u_wb_trace'\n   21 |     input  logic [31:0] memwb_mem_rdata,\n      |                         ^~~~~~~~~~~~~~~\n",
+            "line": 21,
+            "message": "Signal is not used: 'memwb_mem_rdata'",
+            "path": "rtl/core/wb_trace.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 48,
+            "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   25 |     function automatic [31:0] it(input integer imm,rs,f3,rd,op);\n      |                                                ^~~\n                       ... For warning description see https://verilator.org/warn/UNUSEDSIGNAL?v=5.020\n                       ... Use \"/* verilator lint_off UNUSEDSIGNAL */\" and lint_on around source to disable this message.\n",
+            "line": 25,
+            "message": "Bits of signal are not used: 'imm'[31:12]",
+            "path": "tb/integration/tb_rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 48,
+            "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   28 |     function automatic [31:0] rt(input integer f7,b,a,f3,rd);\n      |                                                ^~\n",
+            "line": 28,
+            "message": "Bits of signal are not used: 'f7'[31:7]",
+            "path": "tb/integration/tb_rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 48,
+            "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   31 |     function automatic [31:0] st(input integer imm,b,a,f3);\n      |                                                ^~~\n",
+            "line": 31,
+            "message": "Bits of signal are not used: 'imm'[31:12]",
+            "path": "tb/integration/tb_rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 48,
+            "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   34 |     function automatic [31:0] br(input integer imm,b,a,f3);\n      |                                                ^~~\n",
+            "line": 34,
+            "message": "Bits of signal are not used: 'imm'[31:13,0]",
+            "path": "tb/integration/tb_rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 49,
+            "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   37 |     function automatic [31:0] jal(input integer imm,rd);\n      |                                                 ^~~\n",
+            "line": 37,
+            "message": "Bits of signal are not used: 'imm'[31:21,0]",
+            "path": "tb/integration/tb_rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 51,
+            "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   28 |     function automatic [31:0] rt(input integer f7,b,a,f3,rd);\n      |                                                   ^\n",
+            "line": 28,
+            "message": "Bits of signal are not used: 'b'[31:5]",
+            "path": "tb/integration/tb_rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 52,
+            "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   25 |     function automatic [31:0] it(input integer imm,rs,f3,rd,op);\n      |                                                    ^~\n",
+            "line": 25,
+            "message": "Bits of signal are not used: 'rs'[31:5]",
+            "path": "tb/integration/tb_rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 52,
+            "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   31 |     function automatic [31:0] st(input integer imm,b,a,f3);\n      |                                                    ^\n",
+            "line": 31,
+            "message": "Bits of signal are not used: 'b'[31:5]",
+            "path": "tb/integration/tb_rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 52,
+            "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   34 |     function automatic [31:0] br(input integer imm,b,a,f3);\n      |                                                    ^\n",
+            "line": 34,
+            "message": "Bits of signal are not used: 'b'[31:5]",
+            "path": "tb/integration/tb_rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 53,
+            "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   28 |     function automatic [31:0] rt(input integer f7,b,a,f3,rd);\n      |                                                     ^\n",
+            "line": 28,
+            "message": "Bits of signal are not used: 'a'[31:5]",
+            "path": "tb/integration/tb_rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 53,
+            "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   37 |     function automatic [31:0] jal(input integer imm,rd);\n      |                                                     ^~\n",
+            "line": 37,
+            "message": "Bits of signal are not used: 'rd'[31:5]",
+            "path": "tb/integration/tb_rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 54,
+            "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   31 |     function automatic [31:0] st(input integer imm,b,a,f3);\n      |                                                      ^\n",
+            "line": 31,
+            "message": "Bits of signal are not used: 'a'[31:5]",
+            "path": "tb/integration/tb_rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 54,
+            "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   34 |     function automatic [31:0] br(input integer imm,b,a,f3);\n      |                                                      ^\n",
+            "line": 34,
+            "message": "Bits of signal are not used: 'a'[31:5]",
+            "path": "tb/integration/tb_rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 55,
+            "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   25 |     function automatic [31:0] it(input integer imm,rs,f3,rd,op);\n      |                                                       ^~\n",
+            "line": 25,
+            "message": "Bits of signal are not used: 'f3'[31:3]",
+            "path": "tb/integration/tb_rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 55,
+            "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   28 |     function automatic [31:0] rt(input integer f7,b,a,f3,rd);\n      |                                                       ^~\n",
+            "line": 28,
+            "message": "Bits of signal are not used: 'f3'[31:3]",
+            "path": "tb/integration/tb_rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 56,
+            "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   31 |     function automatic [31:0] st(input integer imm,b,a,f3);\n      |                                                        ^~\n",
+            "line": 31,
+            "message": "Bits of signal are not used: 'f3'[31:3]",
+            "path": "tb/integration/tb_rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 56,
+            "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   34 |     function automatic [31:0] br(input integer imm,b,a,f3);\n      |                                                        ^~\n",
+            "line": 34,
+            "message": "Bits of signal are not used: 'f3'[31:3]",
+            "path": "tb/integration/tb_rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 58,
+            "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   25 |     function automatic [31:0] it(input integer imm,rs,f3,rd,op);\n      |                                                          ^~\n",
+            "line": 25,
+            "message": "Bits of signal are not used: 'rd'[31:5]",
+            "path": "tb/integration/tb_rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 58,
+            "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   28 |     function automatic [31:0] rt(input integer f7,b,a,f3,rd);\n      |                                                          ^~\n",
+            "line": 28,
+            "message": "Bits of signal are not used: 'rd'[31:5]",
+            "path": "tb/integration/tb_rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 61,
+            "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   25 |     function automatic [31:0] it(input integer imm,rs,f3,rd,op);\n      |                                                             ^~\n",
+            "line": 25,
+            "message": "Bits of signal are not used: 'op'[31:7]",
+            "path": "tb/integration/tb_rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 7,
+            "details": "                                                      : ... note: In instance 'tb_rv32i_core_top.dut'\n   62 | logic enter_drain;\n      |       ^~~~~~~~~~~\n",
+            "line": 62,
+            "message": "Signal is not used: 'enter_drain'",
+            "path": "rtl/core/rv32i_core_top.sv"
+          }
+        }
+      ],
+      "diagnostics": [
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 48,
+          "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   25 |     function automatic [31:0] it(input integer imm,rs,f3,rd,op);\n      |                                                ^~~\n                       ... For warning description see https://verilator.org/warn/UNUSEDSIGNAL?v=5.020\n                       ... Use \"/* verilator lint_off UNUSEDSIGNAL */\" and lint_on around source to disable this message.\n",
+          "line": 25,
+          "message": "Bits of signal are not used: 'imm'[31:12]",
+          "path": "tb/integration/tb_rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 52,
+          "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   25 |     function automatic [31:0] it(input integer imm,rs,f3,rd,op);\n      |                                                    ^~\n",
+          "line": 25,
+          "message": "Bits of signal are not used: 'rs'[31:5]",
+          "path": "tb/integration/tb_rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 55,
+          "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   25 |     function automatic [31:0] it(input integer imm,rs,f3,rd,op);\n      |                                                       ^~\n",
+          "line": 25,
+          "message": "Bits of signal are not used: 'f3'[31:3]",
+          "path": "tb/integration/tb_rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 58,
+          "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   25 |     function automatic [31:0] it(input integer imm,rs,f3,rd,op);\n      |                                                          ^~\n",
+          "line": 25,
+          "message": "Bits of signal are not used: 'rd'[31:5]",
+          "path": "tb/integration/tb_rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 61,
+          "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   25 |     function automatic [31:0] it(input integer imm,rs,f3,rd,op);\n      |                                                             ^~\n",
+          "line": 25,
+          "message": "Bits of signal are not used: 'op'[31:7]",
+          "path": "tb/integration/tb_rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 48,
+          "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   28 |     function automatic [31:0] rt(input integer f7,b,a,f3,rd);\n      |                                                ^~\n",
+          "line": 28,
+          "message": "Bits of signal are not used: 'f7'[31:7]",
+          "path": "tb/integration/tb_rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 51,
+          "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   28 |     function automatic [31:0] rt(input integer f7,b,a,f3,rd);\n      |                                                   ^\n",
+          "line": 28,
+          "message": "Bits of signal are not used: 'b'[31:5]",
+          "path": "tb/integration/tb_rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 53,
+          "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   28 |     function automatic [31:0] rt(input integer f7,b,a,f3,rd);\n      |                                                     ^\n",
+          "line": 28,
+          "message": "Bits of signal are not used: 'a'[31:5]",
+          "path": "tb/integration/tb_rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 55,
+          "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   28 |     function automatic [31:0] rt(input integer f7,b,a,f3,rd);\n      |                                                       ^~\n",
+          "line": 28,
+          "message": "Bits of signal are not used: 'f3'[31:3]",
+          "path": "tb/integration/tb_rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 58,
+          "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   28 |     function automatic [31:0] rt(input integer f7,b,a,f3,rd);\n      |                                                          ^~\n",
+          "line": 28,
+          "message": "Bits of signal are not used: 'rd'[31:5]",
+          "path": "tb/integration/tb_rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 48,
+          "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   31 |     function automatic [31:0] st(input integer imm,b,a,f3);\n      |                                                ^~~\n",
+          "line": 31,
+          "message": "Bits of signal are not used: 'imm'[31:12]",
+          "path": "tb/integration/tb_rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 52,
+          "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   31 |     function automatic [31:0] st(input integer imm,b,a,f3);\n      |                                                    ^\n",
+          "line": 31,
+          "message": "Bits of signal are not used: 'b'[31:5]",
+          "path": "tb/integration/tb_rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 54,
+          "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   31 |     function automatic [31:0] st(input integer imm,b,a,f3);\n      |                                                      ^\n",
+          "line": 31,
+          "message": "Bits of signal are not used: 'a'[31:5]",
+          "path": "tb/integration/tb_rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 56,
+          "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   31 |     function automatic [31:0] st(input integer imm,b,a,f3);\n      |                                                        ^~\n",
+          "line": 31,
+          "message": "Bits of signal are not used: 'f3'[31:3]",
+          "path": "tb/integration/tb_rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 48,
+          "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   34 |     function automatic [31:0] br(input integer imm,b,a,f3);\n      |                                                ^~~\n",
+          "line": 34,
+          "message": "Bits of signal are not used: 'imm'[31:13,0]",
+          "path": "tb/integration/tb_rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 52,
+          "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   34 |     function automatic [31:0] br(input integer imm,b,a,f3);\n      |                                                    ^\n",
+          "line": 34,
+          "message": "Bits of signal are not used: 'b'[31:5]",
+          "path": "tb/integration/tb_rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 54,
+          "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   34 |     function automatic [31:0] br(input integer imm,b,a,f3);\n      |                                                      ^\n",
+          "line": 34,
+          "message": "Bits of signal are not used: 'a'[31:5]",
+          "path": "tb/integration/tb_rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 56,
+          "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   34 |     function automatic [31:0] br(input integer imm,b,a,f3);\n      |                                                        ^~\n",
+          "line": 34,
+          "message": "Bits of signal are not used: 'f3'[31:3]",
+          "path": "tb/integration/tb_rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 49,
+          "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   37 |     function automatic [31:0] jal(input integer imm,rd);\n      |                                                 ^~~\n",
+          "line": 37,
+          "message": "Bits of signal are not used: 'imm'[31:21,0]",
+          "path": "tb/integration/tb_rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 53,
+          "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   37 |     function automatic [31:0] jal(input integer imm,rd);\n      |                                                     ^~\n",
+          "line": 37,
+          "message": "Bits of signal are not used: 'rd'[31:5]",
+          "path": "tb/integration/tb_rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 25,
+          "details": "                                                   : ... note: In instance 'tb_rv32i_core_top.u_dmem'\n    4 |     input  logic [31:0] dmem_addr,\n      |                         ^~~~~~~~~\n",
+          "line": 4,
+          "message": "Bits of signal are not used: 'dmem_addr'[31:14,1:0]",
+          "path": "rtl/memory/dmem_sync.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 25,
+          "details": "                                                   : ... note: In instance 'tb_rv32i_core_top.u_imem'\n    5 |     input  logic [31:0] imem_addr,\n      |                         ^~~~~~~~~\n",
+          "line": 5,
+          "message": "Bits of signal are not used: 'imem_addr'[31:14,1:0]",
+          "path": "rtl/memory/imem_sync.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 7,
+          "details": "                                                      : ... note: In instance 'tb_rv32i_core_top.dut'\n   62 | logic enter_drain;\n      |       ^~~~~~~~~~~\n",
+          "line": 62,
+          "message": "Signal is not used: 'enter_drain'",
+          "path": "rtl/core/rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 13,
+          "details": "                                                       : ... note: In instance 'tb_rv32i_core_top.dut'\n   79 | logic [2:0] idex_imm_kind;\n      |             ^~~~~~~~~~~~~\n",
+          "line": 79,
+          "message": "Signal is not used: 'idex_imm_kind'",
+          "path": "rtl/core/rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 24,
+          "details": "                                                 : ... note: In instance 'tb_rv32i_core_top.dut.u_decoder'\n    3 |     input logic [31:0] pc,\n      |                        ^~\n",
+          "line": 3,
+          "message": "Signal is not used: 'pc'",
+          "path": "rtl/decode/decoder.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 25,
+          "details": "                                                 : ... note: In instance 'tb_rv32i_core_top.dut.u_imm_gen'\n    2 |     input  logic [31:0] instr,\n      |                         ^~~~~\n",
+          "line": 2,
+          "message": "Bits of signal are not used: 'instr'[6:0]",
+          "path": "rtl/decode/imm_gen.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 18,
+          "details": "                                                : ... note: In instance 'tb_rv32i_core_top.dut.u_wb_trace'\n    4 |     input  logic clk,\n      |                  ^~~\n",
+          "line": 4,
+          "message": "Signal is not used: 'clk'",
+          "path": "rtl/core/wb_trace.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 25,
+          "details": "                                                 : ... note: In instance 'tb_rv32i_core_top.dut.u_wb_trace'\n   10 |     input  logic [31:0] memwb_pc,\n      |                         ^~~~~~~~\n",
+          "line": 10,
+          "message": "Signal is not used: 'memwb_pc'",
+          "path": "rtl/core/wb_trace.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 25,
+          "details": "                                                 : ... note: In instance 'tb_rv32i_core_top.dut.u_wb_trace'\n   15 |     input  logic [31:0] memwb_instr,\n      |                         ^~~~~~~~~~~\n",
+          "line": 15,
+          "message": "Signal is not used: 'memwb_instr'",
+          "path": "rtl/core/wb_trace.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 25,
+          "details": "                                                 : ... note: In instance 'tb_rv32i_core_top.dut.u_wb_trace'\n   16 |     input  logic        memwb_mem_read,\n      |                         ^~~~~~~~~~~~~~\n",
+          "line": 16,
+          "message": "Signal is not used: 'memwb_mem_read'",
+          "path": "rtl/core/wb_trace.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 25,
+          "details": "                                                 : ... note: In instance 'tb_rv32i_core_top.dut.u_wb_trace'\n   17 |     input  logic        memwb_mem_write,\n      |                         ^~~~~~~~~~~~~~~\n",
+          "line": 17,
+          "message": "Signal is not used: 'memwb_mem_write'",
+          "path": "rtl/core/wb_trace.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 25,
+          "details": "                                                 : ... note: In instance 'tb_rv32i_core_top.dut.u_wb_trace'\n   18 |     input  logic [31:0] memwb_mem_addr,\n      |                         ^~~~~~~~~~~~~~\n",
+          "line": 18,
+          "message": "Signal is not used: 'memwb_mem_addr'",
+          "path": "rtl/core/wb_trace.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 25,
+          "details": "                                                 : ... note: In instance 'tb_rv32i_core_top.dut.u_wb_trace'\n   19 |     input  logic [31:0] memwb_mem_wdata,\n      |                         ^~~~~~~~~~~~~~~\n",
+          "line": 19,
+          "message": "Signal is not used: 'memwb_mem_wdata'",
+          "path": "rtl/core/wb_trace.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 25,
+          "details": "                                                 : ... note: In instance 'tb_rv32i_core_top.dut.u_wb_trace'\n   20 |     input  logic [3:0]  memwb_mem_wmask,\n      |                         ^~~~~~~~~~~~~~~\n",
+          "line": 20,
+          "message": "Signal is not used: 'memwb_mem_wmask'",
+          "path": "rtl/core/wb_trace.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 25,
+          "details": "                                                 : ... note: In instance 'tb_rv32i_core_top.dut.u_wb_trace'\n   21 |     input  logic [31:0] memwb_mem_rdata,\n      |                         ^~~~~~~~~~~~~~~\n",
+          "line": 21,
+          "message": "Signal is not used: 'memwb_mem_rdata'",
+          "path": "rtl/core/wb_trace.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 24,
+          "details": "                                                      : ... note: In instance 'tb_rv32i_core_top.dut.u_pipeline_regs'\n   21 |     input logic [31:0] id_instr,\n      |                        ^~~~~~~~\n",
+          "line": 21,
+          "message": "Signal is not used: 'id_instr'",
+          "path": "rtl/core/pipeline_regs.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 24,
+          "details": "                                                      : ... note: In instance 'tb_rv32i_core_top.dut.u_pipeline_regs'\n   72 |     input logic [31:0] ex_instr,\n      |                        ^~~~~~~~\n",
+          "line": 72,
+          "message": "Signal is not used: 'ex_instr'",
+          "path": "rtl/core/pipeline_regs.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 23,
+          "details": "                                                      : ... note: In instance 'tb_rv32i_core_top.dut.u_pipeline_regs'\n   78 |     input logic       ex_mem_write,\n      |                       ^~~~~~~~~~~~\n",
+          "line": 78,
+          "message": "Signal is not used: 'ex_mem_write'",
+          "path": "rtl/core/pipeline_regs.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 24,
+          "details": "                                                      : ... note: In instance 'tb_rv32i_core_top.dut.u_pipeline_regs'\n   82 |     input logic [31:0] ex_mem_addr,\n      |                        ^~~~~~~~~~~\n",
+          "line": 82,
+          "message": "Signal is not used: 'ex_mem_addr'",
+          "path": "rtl/core/pipeline_regs.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 24,
+          "details": "                                                      : ... note: In instance 'tb_rv32i_core_top.dut.u_pipeline_regs'\n   83 |     input logic [31:0] ex_mem_wdata,\n      |                        ^~~~~~~~~~~~\n",
+          "line": 83,
+          "message": "Signal is not used: 'ex_mem_wdata'",
+          "path": "rtl/core/pipeline_regs.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 24,
+          "details": "                                                      : ... note: In instance 'tb_rv32i_core_top.dut.u_pipeline_regs'\n   84 |     input logic [3:0]  ex_mem_wmask,\n      |                        ^~~~~~~~~~~~\n",
+          "line": 84,
+          "message": "Signal is not used: 'ex_mem_wmask'",
+          "path": "rtl/core/pipeline_regs.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 24,
+          "details": "                                                       : ... note: In instance 'tb_rv32i_core_top.dut.u_pipeline_regs'\n  107 |     input logic        mem_read,\n      |                        ^~~~~~~~\n",
+          "line": 107,
+          "message": "Signal is not used: 'mem_read'",
+          "path": "rtl/core/pipeline_regs.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 24,
+          "details": "                                                       : ... note: In instance 'tb_rv32i_core_top.dut.u_pipeline_regs'\n  108 |     input logic        mem_write,\n      |                        ^~~~~~~~~\n",
+          "line": 108,
+          "message": "Signal is not used: 'mem_write'",
+          "path": "rtl/core/pipeline_regs.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 24,
+          "details": "                                                       : ... note: In instance 'tb_rv32i_core_top.dut.u_pipeline_regs'\n  109 |     input logic [31:0] mem_instr,\n      |                        ^~~~~~~~~\n",
+          "line": 109,
+          "message": "Signal is not used: 'mem_instr'",
+          "path": "rtl/core/pipeline_regs.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 24,
+          "details": "                                                       : ... note: In instance 'tb_rv32i_core_top.dut.u_pipeline_regs'\n  110 |     input logic [31:0] mem_addr,\n      |                        ^~~~~~~~\n",
+          "line": 110,
+          "message": "Signal is not used: 'mem_addr'",
+          "path": "rtl/core/pipeline_regs.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 24,
+          "details": "                                                       : ... note: In instance 'tb_rv32i_core_top.dut.u_pipeline_regs'\n  111 |     input logic [31:0] mem_wdata,\n      |                        ^~~~~~~~~\n",
+          "line": 111,
+          "message": "Signal is not used: 'mem_wdata'",
+          "path": "rtl/core/pipeline_regs.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 24,
+          "details": "                                                       : ... note: In instance 'tb_rv32i_core_top.dut.u_pipeline_regs'\n  112 |     input logic [3:0]  mem_wmask,\n      |                        ^~~~~~~~~\n",
+          "line": 112,
+          "message": "Signal is not used: 'mem_wmask'",
+          "path": "rtl/core/pipeline_regs.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 24,
+          "details": "                                                       : ... note: In instance 'tb_rv32i_core_top.dut.u_pipeline_regs'\n  113 |     input logic [31:0] mem_rdata,\n      |                        ^~~~~~~~~\n",
+          "line": 113,
+          "message": "Signal is not used: 'mem_rdata'",
+          "path": "rtl/core/pipeline_regs.sv"
+        },
+        {
+          "category": "BLKSEQ",
+          "column": 18,
+          "details": "                                                         : ... Suggest using delayed assignment '<='\n    5 |     always #5 clk=~clk;\n      |                  ^\n",
+          "line": 5,
+          "message": "Blocking assignment '=' in sequential logic process",
+          "path": "tb/integration/tb_rv32i_core_top.sv"
+        }
+      ],
+      "native_exit": 1,
+      "stdout": "empty"
+    },
+    "bench_trace1": {
+      "argv": [
+        "{tool}",
+        "--lint-only",
+        "--Wall",
+        "--top-module",
+        "tb_rv32i_core_top",
+        "-GTRACE_EN=1'b1",
+        "--Mdir",
+        "{workdir}",
+        "--timing",
+        "tb/integration/tb_rv32i_core_top.sv",
+        "rtl/core/alu.sv",
+        "rtl/core/branch_unit.sv",
+        "rtl/core/ex_event_mux.sv",
+        "rtl/core/fault_ctrl.sv",
+        "rtl/core/forward_unit.sv",
+        "rtl/core/hazard_ctrl.sv",
+        "rtl/core/pc_fetch.sv",
+        "rtl/core/pipeline_regs.sv",
+        "rtl/core/rv32i_core_top.sv",
+        "rtl/core/wb_trace.sv",
+        "rtl/decode/decoder.sv",
+        "rtl/decode/imm_gen.sv",
+        "rtl/decode/reg_file.sv",
+        "rtl/memory/dmem_sync.sv",
+        "rtl/memory/imem_sync.sv",
+        "rtl/memory/load_formatter.sv",
+        "rtl/memory/lsu_ex.sv"
+      ],
+      "diagnostic_multiplicities": [
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "BLKSEQ",
+            "column": 18,
+            "details": "                                                         : ... Suggest using delayed assignment '<='\n    5 |     always #5 clk=~clk;\n      |                  ^\n",
+            "line": 5,
+            "message": "Blocking assignment '=' in sequential logic process",
+            "path": "tb/integration/tb_rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 13,
+            "details": "                                                       : ... note: In instance 'tb_rv32i_core_top.dut'\n   79 | logic [2:0] idex_imm_kind;\n      |             ^~~~~~~~~~~~~\n",
+            "line": 79,
+            "message": "Signal is not used: 'idex_imm_kind'",
+            "path": "rtl/core/rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 24,
+            "details": "                                                 : ... note: In instance 'tb_rv32i_core_top.dut.u_decoder'\n    3 |     input logic [31:0] pc,\n      |                        ^~\n",
+            "line": 3,
+            "message": "Signal is not used: 'pc'",
+            "path": "rtl/decode/decoder.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 25,
+            "details": "                                                   : ... note: In instance 'tb_rv32i_core_top.u_dmem'\n    4 |     input  logic [31:0] dmem_addr,\n      |                         ^~~~~~~~~\n",
+            "line": 4,
+            "message": "Bits of signal are not used: 'dmem_addr'[31:14,1:0]",
+            "path": "rtl/memory/dmem_sync.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 25,
+            "details": "                                                   : ... note: In instance 'tb_rv32i_core_top.u_imem'\n    5 |     input  logic [31:0] imem_addr,\n      |                         ^~~~~~~~~\n",
+            "line": 5,
+            "message": "Bits of signal are not used: 'imem_addr'[31:14,1:0]",
+            "path": "rtl/memory/imem_sync.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 25,
+            "details": "                                                 : ... note: In instance 'tb_rv32i_core_top.dut.u_imm_gen'\n    2 |     input  logic [31:0] instr,\n      |                         ^~~~~\n",
+            "line": 2,
+            "message": "Bits of signal are not used: 'instr'[6:0]",
+            "path": "rtl/decode/imm_gen.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 48,
+            "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   25 |     function automatic [31:0] it(input integer imm,rs,f3,rd,op);\n      |                                                ^~~\n                       ... For warning description see https://verilator.org/warn/UNUSEDSIGNAL?v=5.020\n                       ... Use \"/* verilator lint_off UNUSEDSIGNAL */\" and lint_on around source to disable this message.\n",
+            "line": 25,
+            "message": "Bits of signal are not used: 'imm'[31:12]",
+            "path": "tb/integration/tb_rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 48,
+            "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   28 |     function automatic [31:0] rt(input integer f7,b,a,f3,rd);\n      |                                                ^~\n",
+            "line": 28,
+            "message": "Bits of signal are not used: 'f7'[31:7]",
+            "path": "tb/integration/tb_rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 48,
+            "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   31 |     function automatic [31:0] st(input integer imm,b,a,f3);\n      |                                                ^~~\n",
+            "line": 31,
+            "message": "Bits of signal are not used: 'imm'[31:12]",
+            "path": "tb/integration/tb_rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 48,
+            "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   34 |     function automatic [31:0] br(input integer imm,b,a,f3);\n      |                                                ^~~\n",
+            "line": 34,
+            "message": "Bits of signal are not used: 'imm'[31:13,0]",
+            "path": "tb/integration/tb_rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 49,
+            "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   37 |     function automatic [31:0] jal(input integer imm,rd);\n      |                                                 ^~~\n",
+            "line": 37,
+            "message": "Bits of signal are not used: 'imm'[31:21,0]",
+            "path": "tb/integration/tb_rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 51,
+            "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   28 |     function automatic [31:0] rt(input integer f7,b,a,f3,rd);\n      |                                                   ^\n",
+            "line": 28,
+            "message": "Bits of signal are not used: 'b'[31:5]",
+            "path": "tb/integration/tb_rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 52,
+            "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   25 |     function automatic [31:0] it(input integer imm,rs,f3,rd,op);\n      |                                                    ^~\n",
+            "line": 25,
+            "message": "Bits of signal are not used: 'rs'[31:5]",
+            "path": "tb/integration/tb_rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 52,
+            "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   31 |     function automatic [31:0] st(input integer imm,b,a,f3);\n      |                                                    ^\n",
+            "line": 31,
+            "message": "Bits of signal are not used: 'b'[31:5]",
+            "path": "tb/integration/tb_rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 52,
+            "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   34 |     function automatic [31:0] br(input integer imm,b,a,f3);\n      |                                                    ^\n",
+            "line": 34,
+            "message": "Bits of signal are not used: 'b'[31:5]",
+            "path": "tb/integration/tb_rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 53,
+            "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   28 |     function automatic [31:0] rt(input integer f7,b,a,f3,rd);\n      |                                                     ^\n",
+            "line": 28,
+            "message": "Bits of signal are not used: 'a'[31:5]",
+            "path": "tb/integration/tb_rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 53,
+            "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   37 |     function automatic [31:0] jal(input integer imm,rd);\n      |                                                     ^~\n",
+            "line": 37,
+            "message": "Bits of signal are not used: 'rd'[31:5]",
+            "path": "tb/integration/tb_rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 54,
+            "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   31 |     function automatic [31:0] st(input integer imm,b,a,f3);\n      |                                                      ^\n",
+            "line": 31,
+            "message": "Bits of signal are not used: 'a'[31:5]",
+            "path": "tb/integration/tb_rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 54,
+            "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   34 |     function automatic [31:0] br(input integer imm,b,a,f3);\n      |                                                      ^\n",
+            "line": 34,
+            "message": "Bits of signal are not used: 'a'[31:5]",
+            "path": "tb/integration/tb_rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 55,
+            "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   25 |     function automatic [31:0] it(input integer imm,rs,f3,rd,op);\n      |                                                       ^~\n",
+            "line": 25,
+            "message": "Bits of signal are not used: 'f3'[31:3]",
+            "path": "tb/integration/tb_rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 55,
+            "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   28 |     function automatic [31:0] rt(input integer f7,b,a,f3,rd);\n      |                                                       ^~\n",
+            "line": 28,
+            "message": "Bits of signal are not used: 'f3'[31:3]",
+            "path": "tb/integration/tb_rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 56,
+            "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   31 |     function automatic [31:0] st(input integer imm,b,a,f3);\n      |                                                        ^~\n",
+            "line": 31,
+            "message": "Bits of signal are not used: 'f3'[31:3]",
+            "path": "tb/integration/tb_rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 56,
+            "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   34 |     function automatic [31:0] br(input integer imm,b,a,f3);\n      |                                                        ^~\n",
+            "line": 34,
+            "message": "Bits of signal are not used: 'f3'[31:3]",
+            "path": "tb/integration/tb_rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 58,
+            "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   25 |     function automatic [31:0] it(input integer imm,rs,f3,rd,op);\n      |                                                          ^~\n",
+            "line": 25,
+            "message": "Bits of signal are not used: 'rd'[31:5]",
+            "path": "tb/integration/tb_rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 58,
+            "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   28 |     function automatic [31:0] rt(input integer f7,b,a,f3,rd);\n      |                                                          ^~\n",
+            "line": 28,
+            "message": "Bits of signal are not used: 'rd'[31:5]",
+            "path": "tb/integration/tb_rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 61,
+            "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   25 |     function automatic [31:0] it(input integer imm,rs,f3,rd,op);\n      |                                                             ^~\n",
+            "line": 25,
+            "message": "Bits of signal are not used: 'op'[31:7]",
+            "path": "tb/integration/tb_rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 7,
+            "details": "                                                      : ... note: In instance 'tb_rv32i_core_top.dut'\n   62 | logic enter_drain;\n      |       ^~~~~~~~~~~\n",
+            "line": 62,
+            "message": "Signal is not used: 'enter_drain'",
+            "path": "rtl/core/rv32i_core_top.sv"
+          }
+        }
+      ],
+      "diagnostics": [
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 48,
+          "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   25 |     function automatic [31:0] it(input integer imm,rs,f3,rd,op);\n      |                                                ^~~\n                       ... For warning description see https://verilator.org/warn/UNUSEDSIGNAL?v=5.020\n                       ... Use \"/* verilator lint_off UNUSEDSIGNAL */\" and lint_on around source to disable this message.\n",
+          "line": 25,
+          "message": "Bits of signal are not used: 'imm'[31:12]",
+          "path": "tb/integration/tb_rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 52,
+          "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   25 |     function automatic [31:0] it(input integer imm,rs,f3,rd,op);\n      |                                                    ^~\n",
+          "line": 25,
+          "message": "Bits of signal are not used: 'rs'[31:5]",
+          "path": "tb/integration/tb_rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 55,
+          "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   25 |     function automatic [31:0] it(input integer imm,rs,f3,rd,op);\n      |                                                       ^~\n",
+          "line": 25,
+          "message": "Bits of signal are not used: 'f3'[31:3]",
+          "path": "tb/integration/tb_rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 58,
+          "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   25 |     function automatic [31:0] it(input integer imm,rs,f3,rd,op);\n      |                                                          ^~\n",
+          "line": 25,
+          "message": "Bits of signal are not used: 'rd'[31:5]",
+          "path": "tb/integration/tb_rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 61,
+          "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   25 |     function automatic [31:0] it(input integer imm,rs,f3,rd,op);\n      |                                                             ^~\n",
+          "line": 25,
+          "message": "Bits of signal are not used: 'op'[31:7]",
+          "path": "tb/integration/tb_rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 48,
+          "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   28 |     function automatic [31:0] rt(input integer f7,b,a,f3,rd);\n      |                                                ^~\n",
+          "line": 28,
+          "message": "Bits of signal are not used: 'f7'[31:7]",
+          "path": "tb/integration/tb_rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 51,
+          "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   28 |     function automatic [31:0] rt(input integer f7,b,a,f3,rd);\n      |                                                   ^\n",
+          "line": 28,
+          "message": "Bits of signal are not used: 'b'[31:5]",
+          "path": "tb/integration/tb_rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 53,
+          "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   28 |     function automatic [31:0] rt(input integer f7,b,a,f3,rd);\n      |                                                     ^\n",
+          "line": 28,
+          "message": "Bits of signal are not used: 'a'[31:5]",
+          "path": "tb/integration/tb_rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 55,
+          "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   28 |     function automatic [31:0] rt(input integer f7,b,a,f3,rd);\n      |                                                       ^~\n",
+          "line": 28,
+          "message": "Bits of signal are not used: 'f3'[31:3]",
+          "path": "tb/integration/tb_rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 58,
+          "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   28 |     function automatic [31:0] rt(input integer f7,b,a,f3,rd);\n      |                                                          ^~\n",
+          "line": 28,
+          "message": "Bits of signal are not used: 'rd'[31:5]",
+          "path": "tb/integration/tb_rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 48,
+          "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   31 |     function automatic [31:0] st(input integer imm,b,a,f3);\n      |                                                ^~~\n",
+          "line": 31,
+          "message": "Bits of signal are not used: 'imm'[31:12]",
+          "path": "tb/integration/tb_rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 52,
+          "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   31 |     function automatic [31:0] st(input integer imm,b,a,f3);\n      |                                                    ^\n",
+          "line": 31,
+          "message": "Bits of signal are not used: 'b'[31:5]",
+          "path": "tb/integration/tb_rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 54,
+          "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   31 |     function automatic [31:0] st(input integer imm,b,a,f3);\n      |                                                      ^\n",
+          "line": 31,
+          "message": "Bits of signal are not used: 'a'[31:5]",
+          "path": "tb/integration/tb_rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 56,
+          "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   31 |     function automatic [31:0] st(input integer imm,b,a,f3);\n      |                                                        ^~\n",
+          "line": 31,
+          "message": "Bits of signal are not used: 'f3'[31:3]",
+          "path": "tb/integration/tb_rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 48,
+          "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   34 |     function automatic [31:0] br(input integer imm,b,a,f3);\n      |                                                ^~~\n",
+          "line": 34,
+          "message": "Bits of signal are not used: 'imm'[31:13,0]",
+          "path": "tb/integration/tb_rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 52,
+          "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   34 |     function automatic [31:0] br(input integer imm,b,a,f3);\n      |                                                    ^\n",
+          "line": 34,
+          "message": "Bits of signal are not used: 'b'[31:5]",
+          "path": "tb/integration/tb_rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 54,
+          "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   34 |     function automatic [31:0] br(input integer imm,b,a,f3);\n      |                                                      ^\n",
+          "line": 34,
+          "message": "Bits of signal are not used: 'a'[31:5]",
+          "path": "tb/integration/tb_rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 56,
+          "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   34 |     function automatic [31:0] br(input integer imm,b,a,f3);\n      |                                                        ^~\n",
+          "line": 34,
+          "message": "Bits of signal are not used: 'f3'[31:3]",
+          "path": "tb/integration/tb_rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 49,
+          "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   37 |     function automatic [31:0] jal(input integer imm,rd);\n      |                                                 ^~~\n",
+          "line": 37,
+          "message": "Bits of signal are not used: 'imm'[31:21,0]",
+          "path": "tb/integration/tb_rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 53,
+          "details": "                                                                : ... note: In instance 'tb_rv32i_core_top'\n   37 |     function automatic [31:0] jal(input integer imm,rd);\n      |                                                     ^~\n",
+          "line": 37,
+          "message": "Bits of signal are not used: 'rd'[31:5]",
+          "path": "tb/integration/tb_rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 25,
+          "details": "                                                   : ... note: In instance 'tb_rv32i_core_top.u_dmem'\n    4 |     input  logic [31:0] dmem_addr,\n      |                         ^~~~~~~~~\n",
+          "line": 4,
+          "message": "Bits of signal are not used: 'dmem_addr'[31:14,1:0]",
+          "path": "rtl/memory/dmem_sync.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 25,
+          "details": "                                                   : ... note: In instance 'tb_rv32i_core_top.u_imem'\n    5 |     input  logic [31:0] imem_addr,\n      |                         ^~~~~~~~~\n",
+          "line": 5,
+          "message": "Bits of signal are not used: 'imem_addr'[31:14,1:0]",
+          "path": "rtl/memory/imem_sync.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 7,
+          "details": "                                                      : ... note: In instance 'tb_rv32i_core_top.dut'\n   62 | logic enter_drain;\n      |       ^~~~~~~~~~~\n",
+          "line": 62,
+          "message": "Signal is not used: 'enter_drain'",
+          "path": "rtl/core/rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 13,
+          "details": "                                                       : ... note: In instance 'tb_rv32i_core_top.dut'\n   79 | logic [2:0] idex_imm_kind;\n      |             ^~~~~~~~~~~~~\n",
+          "line": 79,
+          "message": "Signal is not used: 'idex_imm_kind'",
+          "path": "rtl/core/rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 24,
+          "details": "                                                 : ... note: In instance 'tb_rv32i_core_top.dut.u_decoder'\n    3 |     input logic [31:0] pc,\n      |                        ^~\n",
+          "line": 3,
+          "message": "Signal is not used: 'pc'",
+          "path": "rtl/decode/decoder.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 25,
+          "details": "                                                 : ... note: In instance 'tb_rv32i_core_top.dut.u_imm_gen'\n    2 |     input  logic [31:0] instr,\n      |                         ^~~~~\n",
+          "line": 2,
+          "message": "Bits of signal are not used: 'instr'[6:0]",
+          "path": "rtl/decode/imm_gen.sv"
+        },
+        {
+          "category": "BLKSEQ",
+          "column": 18,
+          "details": "                                                         : ... Suggest using delayed assignment '<='\n    5 |     always #5 clk=~clk;\n      |                  ^\n",
+          "line": 5,
+          "message": "Blocking assignment '=' in sequential logic process",
+          "path": "tb/integration/tb_rv32i_core_top.sv"
+        }
+      ],
+      "native_exit": 1,
+      "stdout": "empty"
+    },
+    "core_trace0": {
+      "argv": [
+        "{tool}",
+        "--lint-only",
+        "--Wall",
+        "--top-module",
+        "rv32i_core_top",
+        "-GTRACE_EN=1'b0",
+        "--Mdir",
+        "{workdir}",
+        "rtl/core/alu.sv",
+        "rtl/core/branch_unit.sv",
+        "rtl/core/ex_event_mux.sv",
+        "rtl/core/fault_ctrl.sv",
+        "rtl/core/forward_unit.sv",
+        "rtl/core/hazard_ctrl.sv",
+        "rtl/core/pc_fetch.sv",
+        "rtl/core/pipeline_regs.sv",
+        "rtl/core/rv32i_core_top.sv",
+        "rtl/core/wb_trace.sv",
+        "rtl/decode/decoder.sv",
+        "rtl/decode/imm_gen.sv",
+        "rtl/decode/reg_file.sv",
+        "rtl/memory/dmem_sync.sv",
+        "rtl/memory/imem_sync.sv",
+        "rtl/memory/load_formatter.sv",
+        "rtl/memory/lsu_ex.sv"
+      ],
+      "diagnostic_multiplicities": [
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 13,
+            "details": "                                                       : ... note: In instance 'rv32i_core_top'\n   79 | logic [2:0] idex_imm_kind;\n      |             ^~~~~~~~~~~~~\n",
+            "line": 79,
+            "message": "Signal is not used: 'idex_imm_kind'",
+            "path": "rtl/core/rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 18,
+            "details": "                                                : ... note: In instance 'rv32i_core_top.u_wb_trace'\n    4 |     input  logic clk,\n      |                  ^~~\n",
+            "line": 4,
+            "message": "Signal is not used: 'clk'",
+            "path": "rtl/core/wb_trace.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 23,
+            "details": "                                                      : ... note: In instance 'rv32i_core_top.u_pipeline_regs'\n   78 |     input logic       ex_mem_write,\n      |                       ^~~~~~~~~~~~\n",
+            "line": 78,
+            "message": "Signal is not used: 'ex_mem_write'",
+            "path": "rtl/core/pipeline_regs.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 24,
+            "details": "                                                       : ... note: In instance 'rv32i_core_top.u_pipeline_regs'\n  107 |     input logic        mem_read,\n      |                        ^~~~~~~~\n",
+            "line": 107,
+            "message": "Signal is not used: 'mem_read'",
+            "path": "rtl/core/pipeline_regs.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 24,
+            "details": "                                                       : ... note: In instance 'rv32i_core_top.u_pipeline_regs'\n  108 |     input logic        mem_write,\n      |                        ^~~~~~~~~\n",
+            "line": 108,
+            "message": "Signal is not used: 'mem_write'",
+            "path": "rtl/core/pipeline_regs.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 24,
+            "details": "                                                       : ... note: In instance 'rv32i_core_top.u_pipeline_regs'\n  109 |     input logic [31:0] mem_instr,\n      |                        ^~~~~~~~~\n",
+            "line": 109,
+            "message": "Signal is not used: 'mem_instr'",
+            "path": "rtl/core/pipeline_regs.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 24,
+            "details": "                                                       : ... note: In instance 'rv32i_core_top.u_pipeline_regs'\n  110 |     input logic [31:0] mem_addr,\n      |                        ^~~~~~~~\n",
+            "line": 110,
+            "message": "Signal is not used: 'mem_addr'",
+            "path": "rtl/core/pipeline_regs.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 24,
+            "details": "                                                       : ... note: In instance 'rv32i_core_top.u_pipeline_regs'\n  111 |     input logic [31:0] mem_wdata,\n      |                        ^~~~~~~~~\n",
+            "line": 111,
+            "message": "Signal is not used: 'mem_wdata'",
+            "path": "rtl/core/pipeline_regs.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 24,
+            "details": "                                                       : ... note: In instance 'rv32i_core_top.u_pipeline_regs'\n  112 |     input logic [3:0]  mem_wmask,\n      |                        ^~~~~~~~~\n",
+            "line": 112,
+            "message": "Signal is not used: 'mem_wmask'",
+            "path": "rtl/core/pipeline_regs.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 24,
+            "details": "                                                       : ... note: In instance 'rv32i_core_top.u_pipeline_regs'\n  113 |     input logic [31:0] mem_rdata,\n      |                        ^~~~~~~~~\n",
+            "line": 113,
+            "message": "Signal is not used: 'mem_rdata'",
+            "path": "rtl/core/pipeline_regs.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 24,
+            "details": "                                                      : ... note: In instance 'rv32i_core_top.u_pipeline_regs'\n   21 |     input logic [31:0] id_instr,\n      |                        ^~~~~~~~\n",
+            "line": 21,
+            "message": "Signal is not used: 'id_instr'",
+            "path": "rtl/core/pipeline_regs.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 24,
+            "details": "                                                      : ... note: In instance 'rv32i_core_top.u_pipeline_regs'\n   72 |     input logic [31:0] ex_instr,\n      |                        ^~~~~~~~\n",
+            "line": 72,
+            "message": "Signal is not used: 'ex_instr'",
+            "path": "rtl/core/pipeline_regs.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 24,
+            "details": "                                                      : ... note: In instance 'rv32i_core_top.u_pipeline_regs'\n   82 |     input logic [31:0] ex_mem_addr,\n      |                        ^~~~~~~~~~~\n",
+            "line": 82,
+            "message": "Signal is not used: 'ex_mem_addr'",
+            "path": "rtl/core/pipeline_regs.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 24,
+            "details": "                                                      : ... note: In instance 'rv32i_core_top.u_pipeline_regs'\n   83 |     input logic [31:0] ex_mem_wdata,\n      |                        ^~~~~~~~~~~~\n",
+            "line": 83,
+            "message": "Signal is not used: 'ex_mem_wdata'",
+            "path": "rtl/core/pipeline_regs.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 24,
+            "details": "                                                      : ... note: In instance 'rv32i_core_top.u_pipeline_regs'\n   84 |     input logic [3:0]  ex_mem_wmask,\n      |                        ^~~~~~~~~~~~\n",
+            "line": 84,
+            "message": "Signal is not used: 'ex_mem_wmask'",
+            "path": "rtl/core/pipeline_regs.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 24,
+            "details": "                                                 : ... note: In instance 'rv32i_core_top.u_decoder'\n    3 |     input logic [31:0] pc,\n      |                        ^~\n",
+            "line": 3,
+            "message": "Signal is not used: 'pc'",
+            "path": "rtl/decode/decoder.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 25,
+            "details": "                                                 : ... note: In instance 'rv32i_core_top.u_imm_gen'\n    2 |     input  logic [31:0] instr,\n      |                         ^~~~~\n",
+            "line": 2,
+            "message": "Bits of signal are not used: 'instr'[6:0]",
+            "path": "rtl/decode/imm_gen.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 25,
+            "details": "                                                 : ... note: In instance 'rv32i_core_top.u_wb_trace'\n   10 |     input  logic [31:0] memwb_pc,\n      |                         ^~~~~~~~\n",
+            "line": 10,
+            "message": "Signal is not used: 'memwb_pc'",
+            "path": "rtl/core/wb_trace.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 25,
+            "details": "                                                 : ... note: In instance 'rv32i_core_top.u_wb_trace'\n   15 |     input  logic [31:0] memwb_instr,\n      |                         ^~~~~~~~~~~\n",
+            "line": 15,
+            "message": "Signal is not used: 'memwb_instr'",
+            "path": "rtl/core/wb_trace.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 25,
+            "details": "                                                 : ... note: In instance 'rv32i_core_top.u_wb_trace'\n   16 |     input  logic        memwb_mem_read,\n      |                         ^~~~~~~~~~~~~~\n",
+            "line": 16,
+            "message": "Signal is not used: 'memwb_mem_read'",
+            "path": "rtl/core/wb_trace.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 25,
+            "details": "                                                 : ... note: In instance 'rv32i_core_top.u_wb_trace'\n   17 |     input  logic        memwb_mem_write,\n      |                         ^~~~~~~~~~~~~~~\n",
+            "line": 17,
+            "message": "Signal is not used: 'memwb_mem_write'",
+            "path": "rtl/core/wb_trace.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 25,
+            "details": "                                                 : ... note: In instance 'rv32i_core_top.u_wb_trace'\n   18 |     input  logic [31:0] memwb_mem_addr,\n      |                         ^~~~~~~~~~~~~~\n",
+            "line": 18,
+            "message": "Signal is not used: 'memwb_mem_addr'",
+            "path": "rtl/core/wb_trace.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 25,
+            "details": "                                                 : ... note: In instance 'rv32i_core_top.u_wb_trace'\n   19 |     input  logic [31:0] memwb_mem_wdata,\n      |                         ^~~~~~~~~~~~~~~\n",
+            "line": 19,
+            "message": "Signal is not used: 'memwb_mem_wdata'",
+            "path": "rtl/core/wb_trace.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 25,
+            "details": "                                                 : ... note: In instance 'rv32i_core_top.u_wb_trace'\n   20 |     input  logic [3:0]  memwb_mem_wmask,\n      |                         ^~~~~~~~~~~~~~~\n",
+            "line": 20,
+            "message": "Signal is not used: 'memwb_mem_wmask'",
+            "path": "rtl/core/wb_trace.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 25,
+            "details": "                                                 : ... note: In instance 'rv32i_core_top.u_wb_trace'\n   21 |     input  logic [31:0] memwb_mem_rdata,\n      |                         ^~~~~~~~~~~~~~~\n",
+            "line": 21,
+            "message": "Signal is not used: 'memwb_mem_rdata'",
+            "path": "rtl/core/wb_trace.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 7,
+            "details": "                                                       : ... note: In instance 'rv32i_core_top'\n  202 | logic fwd_nonready_sticky;\n      |       ^~~~~~~~~~~~~~~~~~~\n",
+            "line": 202,
+            "message": "Signal is not used: 'fwd_nonready_sticky'",
+            "path": "rtl/core/rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 7,
+            "details": "                                                      : ... note: In instance 'rv32i_core_top'\n   62 | logic enter_drain;\n      |       ^~~~~~~~~~~\n                       ... For warning description see https://verilator.org/warn/UNUSEDSIGNAL?v=5.020\n                       ... Use \"/* verilator lint_off UNUSEDSIGNAL */\" and lint_on around source to disable this message.\n",
+            "line": 62,
+            "message": "Signal is not used: 'enter_drain'",
+            "path": "rtl/core/rv32i_core_top.sv"
+          }
+        }
+      ],
+      "diagnostics": [
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 7,
+          "details": "                                                      : ... note: In instance 'rv32i_core_top'\n   62 | logic enter_drain;\n      |       ^~~~~~~~~~~\n                       ... For warning description see https://verilator.org/warn/UNUSEDSIGNAL?v=5.020\n                       ... Use \"/* verilator lint_off UNUSEDSIGNAL */\" and lint_on around source to disable this message.\n",
+          "line": 62,
+          "message": "Signal is not used: 'enter_drain'",
+          "path": "rtl/core/rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 13,
+          "details": "                                                       : ... note: In instance 'rv32i_core_top'\n   79 | logic [2:0] idex_imm_kind;\n      |             ^~~~~~~~~~~~~\n",
+          "line": 79,
+          "message": "Signal is not used: 'idex_imm_kind'",
+          "path": "rtl/core/rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 7,
+          "details": "                                                       : ... note: In instance 'rv32i_core_top'\n  202 | logic fwd_nonready_sticky;\n      |       ^~~~~~~~~~~~~~~~~~~\n",
+          "line": 202,
+          "message": "Signal is not used: 'fwd_nonready_sticky'",
+          "path": "rtl/core/rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 24,
+          "details": "                                                 : ... note: In instance 'rv32i_core_top.u_decoder'\n    3 |     input logic [31:0] pc,\n      |                        ^~\n",
+          "line": 3,
+          "message": "Signal is not used: 'pc'",
+          "path": "rtl/decode/decoder.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 25,
+          "details": "                                                 : ... note: In instance 'rv32i_core_top.u_imm_gen'\n    2 |     input  logic [31:0] instr,\n      |                         ^~~~~\n",
+          "line": 2,
+          "message": "Bits of signal are not used: 'instr'[6:0]",
+          "path": "rtl/decode/imm_gen.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 18,
+          "details": "                                                : ... note: In instance 'rv32i_core_top.u_wb_trace'\n    4 |     input  logic clk,\n      |                  ^~~\n",
+          "line": 4,
+          "message": "Signal is not used: 'clk'",
+          "path": "rtl/core/wb_trace.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 25,
+          "details": "                                                 : ... note: In instance 'rv32i_core_top.u_wb_trace'\n   10 |     input  logic [31:0] memwb_pc,\n      |                         ^~~~~~~~\n",
+          "line": 10,
+          "message": "Signal is not used: 'memwb_pc'",
+          "path": "rtl/core/wb_trace.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 25,
+          "details": "                                                 : ... note: In instance 'rv32i_core_top.u_wb_trace'\n   15 |     input  logic [31:0] memwb_instr,\n      |                         ^~~~~~~~~~~\n",
+          "line": 15,
+          "message": "Signal is not used: 'memwb_instr'",
+          "path": "rtl/core/wb_trace.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 25,
+          "details": "                                                 : ... note: In instance 'rv32i_core_top.u_wb_trace'\n   16 |     input  logic        memwb_mem_read,\n      |                         ^~~~~~~~~~~~~~\n",
+          "line": 16,
+          "message": "Signal is not used: 'memwb_mem_read'",
+          "path": "rtl/core/wb_trace.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 25,
+          "details": "                                                 : ... note: In instance 'rv32i_core_top.u_wb_trace'\n   17 |     input  logic        memwb_mem_write,\n      |                         ^~~~~~~~~~~~~~~\n",
+          "line": 17,
+          "message": "Signal is not used: 'memwb_mem_write'",
+          "path": "rtl/core/wb_trace.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 25,
+          "details": "                                                 : ... note: In instance 'rv32i_core_top.u_wb_trace'\n   18 |     input  logic [31:0] memwb_mem_addr,\n      |                         ^~~~~~~~~~~~~~\n",
+          "line": 18,
+          "message": "Signal is not used: 'memwb_mem_addr'",
+          "path": "rtl/core/wb_trace.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 25,
+          "details": "                                                 : ... note: In instance 'rv32i_core_top.u_wb_trace'\n   19 |     input  logic [31:0] memwb_mem_wdata,\n      |                         ^~~~~~~~~~~~~~~\n",
+          "line": 19,
+          "message": "Signal is not used: 'memwb_mem_wdata'",
+          "path": "rtl/core/wb_trace.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 25,
+          "details": "                                                 : ... note: In instance 'rv32i_core_top.u_wb_trace'\n   20 |     input  logic [3:0]  memwb_mem_wmask,\n      |                         ^~~~~~~~~~~~~~~\n",
+          "line": 20,
+          "message": "Signal is not used: 'memwb_mem_wmask'",
+          "path": "rtl/core/wb_trace.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 25,
+          "details": "                                                 : ... note: In instance 'rv32i_core_top.u_wb_trace'\n   21 |     input  logic [31:0] memwb_mem_rdata,\n      |                         ^~~~~~~~~~~~~~~\n",
+          "line": 21,
+          "message": "Signal is not used: 'memwb_mem_rdata'",
+          "path": "rtl/core/wb_trace.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 24,
+          "details": "                                                      : ... note: In instance 'rv32i_core_top.u_pipeline_regs'\n   21 |     input logic [31:0] id_instr,\n      |                        ^~~~~~~~\n",
+          "line": 21,
+          "message": "Signal is not used: 'id_instr'",
+          "path": "rtl/core/pipeline_regs.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 24,
+          "details": "                                                      : ... note: In instance 'rv32i_core_top.u_pipeline_regs'\n   72 |     input logic [31:0] ex_instr,\n      |                        ^~~~~~~~\n",
+          "line": 72,
+          "message": "Signal is not used: 'ex_instr'",
+          "path": "rtl/core/pipeline_regs.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 23,
+          "details": "                                                      : ... note: In instance 'rv32i_core_top.u_pipeline_regs'\n   78 |     input logic       ex_mem_write,\n      |                       ^~~~~~~~~~~~\n",
+          "line": 78,
+          "message": "Signal is not used: 'ex_mem_write'",
+          "path": "rtl/core/pipeline_regs.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 24,
+          "details": "                                                      : ... note: In instance 'rv32i_core_top.u_pipeline_regs'\n   82 |     input logic [31:0] ex_mem_addr,\n      |                        ^~~~~~~~~~~\n",
+          "line": 82,
+          "message": "Signal is not used: 'ex_mem_addr'",
+          "path": "rtl/core/pipeline_regs.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 24,
+          "details": "                                                      : ... note: In instance 'rv32i_core_top.u_pipeline_regs'\n   83 |     input logic [31:0] ex_mem_wdata,\n      |                        ^~~~~~~~~~~~\n",
+          "line": 83,
+          "message": "Signal is not used: 'ex_mem_wdata'",
+          "path": "rtl/core/pipeline_regs.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 24,
+          "details": "                                                      : ... note: In instance 'rv32i_core_top.u_pipeline_regs'\n   84 |     input logic [3:0]  ex_mem_wmask,\n      |                        ^~~~~~~~~~~~\n",
+          "line": 84,
+          "message": "Signal is not used: 'ex_mem_wmask'",
+          "path": "rtl/core/pipeline_regs.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 24,
+          "details": "                                                       : ... note: In instance 'rv32i_core_top.u_pipeline_regs'\n  107 |     input logic        mem_read,\n      |                        ^~~~~~~~\n",
+          "line": 107,
+          "message": "Signal is not used: 'mem_read'",
+          "path": "rtl/core/pipeline_regs.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 24,
+          "details": "                                                       : ... note: In instance 'rv32i_core_top.u_pipeline_regs'\n  108 |     input logic        mem_write,\n      |                        ^~~~~~~~~\n",
+          "line": 108,
+          "message": "Signal is not used: 'mem_write'",
+          "path": "rtl/core/pipeline_regs.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 24,
+          "details": "                                                       : ... note: In instance 'rv32i_core_top.u_pipeline_regs'\n  109 |     input logic [31:0] mem_instr,\n      |                        ^~~~~~~~~\n",
+          "line": 109,
+          "message": "Signal is not used: 'mem_instr'",
+          "path": "rtl/core/pipeline_regs.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 24,
+          "details": "                                                       : ... note: In instance 'rv32i_core_top.u_pipeline_regs'\n  110 |     input logic [31:0] mem_addr,\n      |                        ^~~~~~~~\n",
+          "line": 110,
+          "message": "Signal is not used: 'mem_addr'",
+          "path": "rtl/core/pipeline_regs.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 24,
+          "details": "                                                       : ... note: In instance 'rv32i_core_top.u_pipeline_regs'\n  111 |     input logic [31:0] mem_wdata,\n      |                        ^~~~~~~~~\n",
+          "line": 111,
+          "message": "Signal is not used: 'mem_wdata'",
+          "path": "rtl/core/pipeline_regs.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 24,
+          "details": "                                                       : ... note: In instance 'rv32i_core_top.u_pipeline_regs'\n  112 |     input logic [3:0]  mem_wmask,\n      |                        ^~~~~~~~~\n",
+          "line": 112,
+          "message": "Signal is not used: 'mem_wmask'",
+          "path": "rtl/core/pipeline_regs.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 24,
+          "details": "                                                       : ... note: In instance 'rv32i_core_top.u_pipeline_regs'\n  113 |     input logic [31:0] mem_rdata,\n      |                        ^~~~~~~~~\n",
+          "line": 113,
+          "message": "Signal is not used: 'mem_rdata'",
+          "path": "rtl/core/pipeline_regs.sv"
+        }
+      ],
+      "native_exit": 1,
+      "stdout": "empty"
+    },
+    "core_trace1": {
+      "argv": [
+        "{tool}",
+        "--lint-only",
+        "--Wall",
+        "--top-module",
+        "rv32i_core_top",
+        "-GTRACE_EN=1'b1",
+        "--Mdir",
+        "{workdir}",
+        "rtl/core/alu.sv",
+        "rtl/core/branch_unit.sv",
+        "rtl/core/ex_event_mux.sv",
+        "rtl/core/fault_ctrl.sv",
+        "rtl/core/forward_unit.sv",
+        "rtl/core/hazard_ctrl.sv",
+        "rtl/core/pc_fetch.sv",
+        "rtl/core/pipeline_regs.sv",
+        "rtl/core/rv32i_core_top.sv",
+        "rtl/core/wb_trace.sv",
+        "rtl/decode/decoder.sv",
+        "rtl/decode/imm_gen.sv",
+        "rtl/decode/reg_file.sv",
+        "rtl/memory/dmem_sync.sv",
+        "rtl/memory/imem_sync.sv",
+        "rtl/memory/load_formatter.sv",
+        "rtl/memory/lsu_ex.sv"
+      ],
+      "diagnostic_multiplicities": [
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 13,
+            "details": "                                                       : ... note: In instance 'rv32i_core_top'\n   79 | logic [2:0] idex_imm_kind;\n      |             ^~~~~~~~~~~~~\n",
+            "line": 79,
+            "message": "Signal is not used: 'idex_imm_kind'",
+            "path": "rtl/core/rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 24,
+            "details": "                                                 : ... note: In instance 'rv32i_core_top.u_decoder'\n    3 |     input logic [31:0] pc,\n      |                        ^~\n",
+            "line": 3,
+            "message": "Signal is not used: 'pc'",
+            "path": "rtl/decode/decoder.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 25,
+            "details": "                                                 : ... note: In instance 'rv32i_core_top.u_imm_gen'\n    2 |     input  logic [31:0] instr,\n      |                         ^~~~~\n",
+            "line": 2,
+            "message": "Bits of signal are not used: 'instr'[6:0]",
+            "path": "rtl/decode/imm_gen.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 7,
+            "details": "                                                       : ... note: In instance 'rv32i_core_top'\n  202 | logic fwd_nonready_sticky;\n      |       ^~~~~~~~~~~~~~~~~~~\n",
+            "line": 202,
+            "message": "Signal is not used: 'fwd_nonready_sticky'",
+            "path": "rtl/core/rv32i_core_top.sv"
+          }
+        },
+        {
+          "multiplicity": 1,
+          "record": {
+            "category": "UNUSEDSIGNAL",
+            "column": 7,
+            "details": "                                                      : ... note: In instance 'rv32i_core_top'\n   62 | logic enter_drain;\n      |       ^~~~~~~~~~~\n                       ... For warning description see https://verilator.org/warn/UNUSEDSIGNAL?v=5.020\n                       ... Use \"/* verilator lint_off UNUSEDSIGNAL */\" and lint_on around source to disable this message.\n",
+            "line": 62,
+            "message": "Signal is not used: 'enter_drain'",
+            "path": "rtl/core/rv32i_core_top.sv"
+          }
+        }
+      ],
+      "diagnostics": [
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 7,
+          "details": "                                                      : ... note: In instance 'rv32i_core_top'\n   62 | logic enter_drain;\n      |       ^~~~~~~~~~~\n                       ... For warning description see https://verilator.org/warn/UNUSEDSIGNAL?v=5.020\n                       ... Use \"/* verilator lint_off UNUSEDSIGNAL */\" and lint_on around source to disable this message.\n",
+          "line": 62,
+          "message": "Signal is not used: 'enter_drain'",
+          "path": "rtl/core/rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 13,
+          "details": "                                                       : ... note: In instance 'rv32i_core_top'\n   79 | logic [2:0] idex_imm_kind;\n      |             ^~~~~~~~~~~~~\n",
+          "line": 79,
+          "message": "Signal is not used: 'idex_imm_kind'",
+          "path": "rtl/core/rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 7,
+          "details": "                                                       : ... note: In instance 'rv32i_core_top'\n  202 | logic fwd_nonready_sticky;\n      |       ^~~~~~~~~~~~~~~~~~~\n",
+          "line": 202,
+          "message": "Signal is not used: 'fwd_nonready_sticky'",
+          "path": "rtl/core/rv32i_core_top.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 24,
+          "details": "                                                 : ... note: In instance 'rv32i_core_top.u_decoder'\n    3 |     input logic [31:0] pc,\n      |                        ^~\n",
+          "line": 3,
+          "message": "Signal is not used: 'pc'",
+          "path": "rtl/decode/decoder.sv"
+        },
+        {
+          "category": "UNUSEDSIGNAL",
+          "column": 25,
+          "details": "                                                 : ... note: In instance 'rv32i_core_top.u_imm_gen'\n    2 |     input  logic [31:0] instr,\n      |                         ^~~~~\n",
+          "line": 2,
+          "message": "Bits of signal are not used: 'instr'[6:0]",
+          "path": "rtl/decode/imm_gen.sv"
+        }
+      ],
+      "native_exit": 1,
+      "stdout": "empty"
+    }
+  },
+  "contract_id": "rv32i-portable-exact-diagnostics-v1",
+  "environment": {
+    "LANG": "C",
+    "LC_ALL": "C",
+    "PATH": "/usr/bin:/bin"
+  },
+  "identity_scheme": "Runner literal pins manifest SHA-256; external qualification record pins runner, manifest and test suite. Manifest does not hash runner or validation record. No circular fingerprint.",
+  "interpretation": "New portable acceptance contract; separate from historical F01 closure; native warnings remain visible and fatal to the native tool",
+  "schema_id": "rv32i.portable-lint-contract",
+  "schema_version": "1.0.0",
+  "sources": {
+    "docs/verification/module17/lint_closure/fail_closed_runner/TECHNICAL_LINT_EVIDENCE.json": "09bc02f2b14bc9437244d4f053a7c26e34d645a41c66f7879abffb16d5510f51",
+    "rtl/core/alu.sv": "8ec9db346cd6f41bfe4a1640288f2bc1a399e97fa43ce0ebb9aa8a46be669939",
+    "rtl/core/branch_unit.sv": "3e029339650acde9092ca72233a7eb761adf82cdb99423a3d11644293f8b5dff",
+    "rtl/core/ex_event_mux.sv": "2c52108735e2181d3554a2542343c20864c029be39189df07db76409c8efbe3d",
+    "rtl/core/fault_ctrl.sv": "6406e8f0d23d40152ea4ea39c3e705eee22670fd884094dd62e7d2dfe506beba",
+    "rtl/core/forward_unit.sv": "61097692b624744c51b88ca95bc0c2d485db570cb0f4efbb64f7580a5b497d02",
+    "rtl/core/hazard_ctrl.sv": "74c9691330fc99b708fee570e61d575d8400ebf5d27344dc1a03ecb849d12cc8",
+    "rtl/core/pc_fetch.sv": "a7408b3e9e8c7059465cd19505f77bcfe9d2deda5bba07ba23a1e625853579c5",
+    "rtl/core/pipeline_regs.sv": "5fbb22be5137cbd7a9e7455ed1d76558623375fc4e89b5e8f36e7564cc620b15",
+    "rtl/core/rv32i_core_top.sv": "412910c9715894020c4fcdc7c641372951197525bfaa44061f70fd8b26a8386b",
+    "rtl/core/wb_trace.sv": "39ba5ea95779c5445b96298cf7cc45ae373adde60f19808fa4743a58ccfabe1f",
+    "rtl/decode/decoder.sv": "bc4e16864545f00fcdb0ad755cfe80512ea4d13cb9d408ae268ba12b2c7c6742",
+    "rtl/decode/imm_gen.sv": "17e0d0ffe8aaa44d4171470625f7a383bbe39c0583c112547ad558b8c7ea6815",
+    "rtl/decode/reg_file.sv": "0ab07270776dc07725cb9a9be3f99fd9f7e42d26b20f205c071971119ae411a0",
+    "rtl/memory/dmem_sync.sv": "fb0cc47641f86feeb0d5b1fd32128e47258bcab3e1031143a1627d7c778d8f9d",
+    "rtl/memory/imem_sync.sv": "95ffe4de77adc2f5f22238c921bc206cd308597ac0d851ed53b34aa5c4867260",
+    "rtl/memory/load_formatter.sv": "562491ee4affd64ee76f593b753144bfc2812b59bc3c55f3fcc57731711ce800",
+    "rtl/memory/lsu_ex.sv": "5689a9c2d7e1bb432e450e0b64554a83dfe144d976f882bb9663ec186093dcd6",
+    "tb/integration/tb_rv32i_core_top.sv": "d293418f0d68adc9898495a0a3d439d5059a2ae19cba981672d67998cf8b27fe"
+  },
+  "timeout_seconds": 60,
+  "tool": {
+    "portability_limit": "Exact recorded executable/interpreter fingerprints required; version string alone insufficient",
+    "sha256": {
+      "perl": "47bdc8a342556c1d140084417ef6cacd79a3362e4b6cc1e4754df55bdf1e3683",
+      "verilator": "4c6292ab82e57b7f34ab26dbae86ba9c494bacfb088b6ff34be93c553d1301b1",
+      "verilator_bin": "25f33046f0055a6982c67cdc55081685a844abb50d044cfda087bd418db9be6c"
+    },
+    "version_stderr": "",
+    "version_stdout": "Verilator 5.020 2024-01-01 rev (Debian 5.020-1)\n"
+  },
+  "version_timeout_seconds": 15
+}

@@ -1,0 +1,13 @@
+`verilator_config
+// Module 16 disposition: exact diagnostic text, exact file, exact warning type.
+// Apply only to TRACE_EN=0 RTL and dual-config TB lint. Enabled RTL stays unwaived.
+// clk becomes unused because all sequential trace logic is excluded.
+lint_off -rule UNUSEDSIGNAL -file "rtl/core/wb_trace.sv" -match "Signal is not used: 'clk'"
+lint_off -rule UNUSEDSIGNAL -file "rtl/core/wb_trace.sv" -match "Signal is not used: 'memwb_pc'"
+lint_off -rule UNUSEDSIGNAL -file "rtl/core/wb_trace.sv" -match "Signal is not used: 'memwb_instr'"
+lint_off -rule UNUSEDSIGNAL -file "rtl/core/wb_trace.sv" -match "Signal is not used: 'memwb_mem_read'"
+lint_off -rule UNUSEDSIGNAL -file "rtl/core/wb_trace.sv" -match "Signal is not used: 'memwb_mem_write'"
+lint_off -rule UNUSEDSIGNAL -file "rtl/core/wb_trace.sv" -match "Signal is not used: 'memwb_mem_addr'"
+lint_off -rule UNUSEDSIGNAL -file "rtl/core/wb_trace.sv" -match "Signal is not used: 'memwb_mem_wdata'"
+lint_off -rule UNUSEDSIGNAL -file "rtl/core/wb_trace.sv" -match "Signal is not used: 'memwb_mem_wmask'"
+lint_off -rule UNUSEDSIGNAL -file "rtl/core/wb_trace.sv" -match "Signal is not used: 'memwb_mem_rdata'"

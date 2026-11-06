@@ -1,0 +1,20 @@
+[
+  {
+    "file": "rtl/memory/load_formatter.sv",
+    "before_sha256": "8e0b77bc226b3ff8db10596061ed9a798fa60fc405b036df456a194e16e44194",
+    "after_sha256": "562491ee4affd64ee76f593b753144bfc2812b59bc3c55f3fcc57731711ce800",
+    "before_length": 1499,
+    "after_length": 1500,
+    "missing_terminal_lf": true,
+    "exact_authorized_change": true
+  },
+  {
+    "file": "tb/integration/tb_rv32i_core_top.sv",
+    "before_sha256": "ee5b4f53c3c63869dfd1115e5c1f52265e4c641cefa445949c69457a15774ec6",
+    "after_sha256": "d293418f0d68adc9898495a0a3d439d5059a2ae19cba981672d67998cf8b27fe",
+    "before_length": 13614,
+    "after_length": 13619,
+    "missing_terminal_lf": false,
+    "exact_authorized_change": true
+  }
+]
