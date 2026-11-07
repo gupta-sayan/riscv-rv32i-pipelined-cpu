@@ -1,48 +1,67 @@
 # RV32I Five-Stage Pipelined RISC-V Processor
 
-A 32-bit, single-issue, in-order RISC-V processor implemented in SystemVerilog. The design uses a five-stage pipeline, separate instruction and data interfaces, and synchronous memories with registered read outputs.
+A 32-bit, single-issue, in-order CPU implemented in **SystemVerilog**, with an **IF → ID → EX → MEM → WB** pipeline and separate synchronous instruction and data memories.
 
-The technology-independent RTL milestone was **conditionally accepted on November 5, 2026**. Verification covers instruction execution, pipeline timing, forwarding, memory accesses, fault handling, reset and tracing. Generic synthesis is complete; FPGA/ASIC timing qualification remains deferred.
+The design makes pipeline control explicit: newest-producer operand forwarding, WB-to-ID bypass, a one-bubble load-use interlock, EX-stage memory acceptance, and exactly two EX bubbles after a legal redirect. Ordered fail-stop control drains older work before halting and preserves an immutable fault record. Optional retirement tracing supports architectural checking.
 
-## Architecture at a glance
+The technology-independent RTL milestone was conditionally accepted on November 5, 2026. Verification combines unit tests, full-core simulation, directed programs, an architectural reference model, executable assertions and deliberate negative controls. **Generic synthesis is complete; FPGA/ASIC implementation and physical timing qualification remain deferred.**
 
-| Property | Implementation |
+**Start with the architecture:** [Pipeline diagram and control-flow details](docs/PIPELINE_DIAGRAM.md) · [Technical architecture](docs/TECHNICAL_ARCHITECTURE.md) · [Reproduce the results](docs/REPRODUCING.md) · [Verification status](docs/VERIFICATION_STATUS.md)
+
+### Pipeline overview
+
+```mermaid
+flowchart LR
+    IF["IF — fetch"] --> ID["ID — decode"] --> EX["EX — execute"] --> MEM["MEM — memory"] --> WB["WB — writeback"]
+```
+
+This is a conceptual stage sequence, not a cycle-accurate datapath drawing. Instruction and data memories have registered outputs, and actual control, forwarding and fault paths are shown in the [detailed diagram](docs/PIPELINE_DIAGRAM.md).
+
+### Key engineering challenges
+
+- **Data hazards:** implement newest-producer EX/MEM-versus-MEM/WB forwarding and a single-bubble load-use interlock without forwarding unavailable load data.
+- **Control hazards:** qualify EX-stage redirects against older faults and younger ID terminal events; preserve the defined two-bubble redirect behavior.
+- **Synchronous memory timing:** align fetch metadata with registered IMEM output and accept qualified data-memory transactions at the EX-ending edge.
+- **Verification credibility:** distinguish directed simulation, expected-negative controls and assertion observations from exhaustive proof; retain auditable evidence and reproducible current-source commands.
+
+## Results at a glance
+
+| Area | Implemented or recorded scope |
 |---|---|
-| Instruction set | RV32I: 40 instruction mnemonics under the documented execution environment |
-| Pipeline | IF, ID, EX, MEM, WB |
-| Integer registers | 32 × 32 bits; x0 reads zero |
-| Instruction memory | 16 KiB at `0x00000000–0x00003FFF` |
-| Data memory | 16 KiB at `0x00010000–0x00013FFF` |
-| Memory behavior | Little-endian; fixed-latency synchronous reads |
-| Data transactions | Accepted at the EX-ending rising edge |
-| Dependencies | Operand forwarding, WB-to-ID bypass and one-bubble load-use interlock |
-| Control transfers | Resolved in EX; exactly two EX bubbles after a legal redirect |
-| Terminal events | Ordered fail-stop with an immutable fault record |
-| Tracing | Optional registered retirement trace through static `TRACE_EN` |
+| Instruction support | 40 RV32I mnemonics within the restricted execution environment below |
+| Production RTL | 17 SystemVerilog modules |
+| Unit verification | 16 standalone testbenches; individual outcomes and waivers retain their documented scope |
+| Core integration | 12 scenarios in each static `TRACE_EN` configuration; 24 scenario/configuration checks |
+| Directed verification | V01–V27, including V15 diagnostics and V23 accepted-fetch reset supplements |
+| Positive regression | 414 case/configuration checks across 70 positive simulations |
+| Negative controls | 10 expected-negative assertion simulations, accepted only on designated failure markers |
+| Assertion observations | All 24 property IDs, P0–P23, positively evaluated in simulation |
+| Portable lint | 4 exact-diagnostic configurations; 46 qualification controls passed twice |
+| Historical F01 lint | CLOSED by approved-warning inventory matching; native exits 1, warning counts 27/5/49/27 |
+| Generic Yosys synthesis | 8,407 cells (`TRACE_EN=0`); 8,799 cells (`TRACE_EN=1`) |
+| Technology-specific timing | F05 **PARTIAL / DEFERRED**; no physical timing signoff |
 
-The execution environment has no privileged mode, CSR instructions, interrupts, operating system, MMIO, caches or variable-latency memory. C, M, A, F and D extensions are not implemented.
+The 414 checks include repeated programs, assertion-wrapped replays and supplements; they are not 414 unique programs. Assertion evaluation is simulation evidence, not exhaustive formal verification or external ISA certification. Lint acceptance retains the warnings and requires complete diagnostic matching, not merely matching counts.
 
-ECALL and EBREAK terminate execution through the fail-stop mechanism. FENCE is an accepted no-op in the single-hart, strongly ordered RAM environment. FENCE.I is unsupported.
+## Architecture and execution environment
+
+| Stage | Main responsibility |
+|---|---|
+| IF | Present the PC; accept a synchronous instruction read or fetch-fault token. |
+| ID | Decode, read registers, generate immediates, apply WB bypass and detect load-use dependencies or terminal events. |
+| EX | Forward operands, execute arithmetic, resolve branches, check addresses and accept legal data-memory transactions. |
+| MEM | Format the registered load response and select the next writeback value. |
+| WB | Write the register file and produce optional registered retirement tracing. |
+
+The register file has 32 × 32-bit registers; x0 always reads zero. IMEM occupies 16 KiB at `0x00000000–0x00003FFF`; DMEM occupies 16 KiB at `0x00010000–0x00013FFF`. Both use fixed-latency synchronous reads and hold their outputs when disabled. Data transactions are accepted at the EX-ending rising edge.
 
 Reset starts fetching at address zero. Registers x1–x31 and RAM contents are not reset; software and the test environment initialize them before use.
 
-## Pipeline
-
-| Stage | Main work |
-|---|---|
-| IF | Present the fetch PC and accept an instruction-memory read or fetch-fault token. |
-| ID | Decode, read registers, generate immediates, apply WB bypass and detect load-use dependencies or terminal instructions. |
-| EX | Forward operands, execute arithmetic, resolve branches, check addresses and accept a legal data-memory transaction. |
-| MEM | Select and extend registered load data, then select the next writeback value. |
-| WB | Write the register file and produce the optional registered retirement trace. |
-
-An immediate load consumer incurs **one bubble**. A legal taken redirect produces **exactly two EX-stage bubbles**. Invalid pipeline slots are explicit bubbles rather than substituted instructions.
+This single-hart, little-endian execution environment has no privileged mode, CSR instructions, interrupts, operating system, MMIO, caches or variable-latency memory. C, M, A, F and D extensions are not implemented. ECALL and EBREAK terminate through ordered fail-stop control. FENCE is an accepted no-op in the strongly ordered RAM environment; FENCE.I is unsupported. See the [architecture](docs/TECHNICAL_ARCHITECTURE.md) for exact instruction, fault, reset and timing contracts.
 
 ## Run the integration simulation
 
-The recorded simulation environment used Icarus Verilog/vvp 12.0 stable. This example also requires Bash and ripgrep.
-
-Run from the repository root:
+Run from the repository root using Bash, ripgrep and Icarus Verilog/vvp 12.0 stable:
 
 ```bash
 set -euo pipefail
@@ -81,18 +100,40 @@ PASS ALL TRACE_EN=1 tests=12
 
 The logs and generated executables stay outside the repository. This command reproduces the integration subset, not the complete historical campaign or frozen lint acceptance.
 
-## Source organization
+## Synthesis and remaining work
+
+Recorded generic Yosys 0.33 synthesis of `rv32i_core_top` passed structural checks in both static trace configurations:
+
+| Configuration | Generic cells | Generic sequential bits/cells |
+|---|---:|---:|
+| `TRACE_EN=0` | 8,407 | 1,380 |
+| `TRACE_EN=1` | 8,799 | 1,884 |
+
+External IMEM/DMEM arrays are outside the synthesized core. These are technology-independent cell counts, not FPGA LUT/BRAM utilization, ASIC area, power or measured Fmax. The original F04 run predates the R01 terminal-newline correction and remains historical evidence for its recorded source baseline.
+
+F05 remains **PARTIAL / DEFERRED** under FINAL-B01. The provisional 20 MHz target is a planning goal, not demonstrated performance. Target implementation must establish device/library selection, clock and I/O constraints, synchronous RAM inference and output-hold behavior, and quantitative slack/WNS for the forwarded address-to-memory-acceptance and branch-to-fetch-PC paths.
+
+No FPGA/ASIC implementation, hardware test, physical timing signoff, post-synthesis simulation or netlist equivalence has been established.
+
+## Reproducibility and evidence
+
+The [reproduction guide](docs/REPRODUCING.md) documents saved-fixture replay, model anchors, unit entry points, expected-negative acceptance, portable lint and generic synthesis commands, including tool and output-isolation requirements. The direct command above exercises only the integration subset.
+
+The [evidence index](docs/EVIDENCE_INDEX.md) links the functional, lint and implementation/integrity derivatives and their manifests and validation records. These are technical presentations of preserved historical records, not replacements for the originals.
+
+The functional derivative remains **PARTIAL**: five legacy-fingerprint entries refer to two unavailable older RTL identities (`pc_fetch.sv` and `pipeline_regs.sv`). The 18 accepted RTL/integration source identities and all 80 saved regression records reconcile. The missing older bytes are historical dependencies, not inputs to accepted-current-source reproduction.
+
+Historical F01 remains CLOSED under its frozen approved-warning inventory contract. Its private historical inputs prevent reconstructing that original acceptance from this package alone. The separately qualified [portable lint procedure](docs/verification/module17/lint_closure/fail_closed_runner/portable_runner.py) uses a technical-only contract; it is neither a rerun nor a replacement of historical F01.
+
+## Source guide
 
 ```text
-rtl/
-  core/          Pipeline integration, execution and control
-  decode/        Instruction decode, immediates and register file
-  memory/        Load/store checks, formatting and synchronous RAMs
-tb/
-  unit/          Sixteen module-level testbenches
-  integration/   Full-core testbench with synchronous instruction/data RAMs
-docs/
-  verification/  Verification sources, fixtures, reports and evidence
+rtl/core/         Pipeline integration, execution and control
+rtl/decode/       Instruction decode, immediates and register file
+rtl/memory/       Load/store checks, formatting and synchronous RAMs
+tb/unit/         Sixteen standalone module testbenches
+tb/integration/  Full-core testbench and external synchronous RAM instances
+docs/            Architecture, reproduction guide and qualified evidence
 ```
 
 ### RTL modules
@@ -119,72 +160,6 @@ docs/
 
 `rv32i_core_top` exposes memory interfaces. The integration testbench instantiates the two RAM modules around the core.
 
-## Verification results
+## Engineering contributions
 
-The verification environment combines module tests, a full-core scoreboard, an independent architectural model, directed programs, executable assertions and deliberate negative tests.
-
-| Area | Recorded result |
-|---|---|
-| Original integration | 12 scenarios in each trace configuration |
-| V01–V27 | Accepted directed coverage, including the V23 accepted-fetch reset supplement |
-| Later complete regression | 414 positive case/configuration checks across 70 simulations |
-| Assertion sensitivity | Ten expected-negative simulations with designated property failures |
-| Assertion execution | All 24 checker property IDs evaluated |
-| F01 lint acceptance | CLOSED through exact approved-warning inventory matching |
-| F03 compatibility | CLOSED |
-| Generic synthesis | Successful synthesis and structural checks in both trace configurations |
-
-The 414 checks include repeated programs, assertion-wrapped replays and supplemental checks. They are not 414 unique programs or exhaustive ISA compliance evidence.
-
-F01 retains the native Verilator warnings. The four configurations contain 27, 5, 49 and 27 warning occurrences, and native Verilator exits remain 1. The accepted result is an exact warning-inventory match, not warning-free lint.
-
-Historical failures, corrected verification-infrastructure issues and expected-negative results remain part of the evidence.
-
-## Generic synthesis
-
-Recorded Yosys 0.33 results for `rv32i_core_top`:
-
-| Configuration | Generic cells | Generic sequential bits/cells |
-|---|---:|---:|
-| `TRACE_EN=0` | 8,407 | 1,380 |
-| `TRACE_EN=1` | 8,799 | 1,884 |
-
-These counts describe generic synthesis cells. They do not establish FPGA LUT/BRAM utilization, ASIC area or physical timing. External instruction/data RAM arrays are outside the synthesized core.
-
-The original synthesis run predates the R01 terminal-newline correction. It remains historical synthesis evidence rather than a fresh run of the later source bytes.
-
-## Limitations and deferred work
-
-Verification is bounded simulation. It does not establish exhaustive correctness, external ISA certification, formal proof or netlist equivalence.
-
-No FPGA/ASIC implementation, hardware test or physical timing signoff is established. Post-synthesis simulation was not performed.
-
-F05 remains **PARTIAL / DEFERRED** under FINAL-B01. The provisional 20 MHz target is a planning goal, not measured Fmax. Target-specific work must establish:
-
-- Device or technology/library, tool versions and timing constraints.
-- Memory inference and registered-output hold behavior.
-- Timing through the forwarded load/store address path.
-- Timing through branch comparison, redirect control and the fetch PC.
-- Quantitative slack/WNS and documented handling of violations.
-
-## Documentation and evidence navigation
-
-Start with the [technical architecture](docs/TECHNICAL_ARCHITECTURE.md), a companion restatement of the approved architecture rather than a newly approved replacement specification.
-
-The technical delivery uses the validated derivatives below. They preserve original identities and qualification limits; restricted reports and archives remain private historical records.
-
-| Evidence group | Evidence | Manifest | Validation |
-|---|---|---|---|
-| Functional — PARTIAL | [Evidence](docs/verification/module17/final_campaign/TECHNICAL_FUNCTIONAL_EVIDENCE.json) | [Manifest](docs/verification/module17/final_campaign/TECHNICAL_FUNCTIONAL_MANIFEST.json) | [Validation](docs/verification/module17/final_campaign/TECHNICAL_FUNCTIONAL_VALIDATION.json) |
-| Historical lint — validated | [Evidence](docs/verification/module17/lint_closure/fail_closed_runner/TECHNICAL_LINT_EVIDENCE.json) | [Manifest](docs/verification/module17/lint_closure/fail_closed_runner/TECHNICAL_LINT_MANIFEST.json) | [Validation](docs/verification/module17/lint_closure/fail_closed_runner/TECHNICAL_LINT_VALIDATION.json) |
-| Implementation/integrity — validated | [Evidence](docs/verification/module17/final_campaign/TECHNICAL_IMPLEMENTATION_EVIDENCE.json) | [Manifest](docs/verification/module17/final_campaign/TECHNICAL_IMPLEMENTATION_MANIFEST.json) | [Validation](docs/verification/module17/final_campaign/TECHNICAL_IMPLEMENTATION_VALIDATION.json) |
-
-The PRE-PUSH-008C functional derivative is **PARTIAL**: five legacy-fingerprint entries refer to two unavailable older RTL identities (`rtl/core/pc_fetch.sv` and `rtl/core/pipeline_regs.sv`). The 18 accepted design/bench hashes and all 80 replay records reconcile. Those missing older bytes are historical dependencies, not inputs required by the current-source procedures below.
-
-PRE-PUSH-008F separately qualified the portable technical lint procedure: four matching configurations and 46 controls passing twice. This is new qualification, not a rerun or replacement of historical F01 acceptance.
-
-Use the [portable runner](docs/verification/module17/lint_closure/fail_closed_runner/portable_runner.py), its [technical contract](docs/verification/module17/lint_closure/fail_closed_runner/portable_manifest.json), and the [qualification suite](docs/verification/module17/lint_closure/fail_closed_runner/test_portable_runner.py). See [reproduction instructions](docs/REPRODUCING.md), [verification status](docs/VERIFICATION_STATUS.md), [evidence index](docs/EVIDENCE_INDEX.md) and [technical provenance](docs/PROVENANCE.md).
-
-The original F01 contract remains historical-only: its frozen document fingerprints differ from the current presentation. The portable contract pins technical sources and the technical lint baseline instead. Generic synthesis remains historical, and F05 remains PARTIAL / DEFERRED.
-
-The project records include AI-assisted architecture review and verification work. Those records do not support an exclusive human-only RTL authorship claim.
+The project engineer led design decisions and technical reviews. Recorded contributions include AI-assisted consultation and architecture review, Codex-assisted verification and tooling, and controlled source-maintenance work. The records do not establish exclusive human or AI authorship of production RTL. See [technical provenance](docs/PROVENANCE.md) for the supported contribution scope and source fingerprints, and [technical decisions](docs/TECHNICAL_DECISIONS.md) for design rationale.
