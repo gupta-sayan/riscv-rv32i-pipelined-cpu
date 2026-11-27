@@ -879,8 +879,6 @@ The recorded 68/65 generic cell-step path lengths are topology observations, not
 
 The technical baseline is ARCH-001 Revision C with A01/A01-OWN/A02/A03, ARCH-M17-D02, ARCH-M17-A01-SYN and FINAL-B01. Historical RW, REVA, REV and RB identifiers remain traceability records rather than independent verification results.
 
-The original architecture records Claude-assisted reviews, and project records document AI-assisted verification. This document makes no exclusive human or AI implementation-authorship claim.
-
 Reviewer-reported older interfaces included `dmem_en` versus current `dmem_re`, older write-mask naming, instruction-misalignment cause `1` versus current `0x9`, and ECALL cause `5` versus current `0x4`. These are reported comparisons, not a verified diff of an unavailable older source. Additional historical assignments must not be guessed.
 
 The normative ISA reference is *RV32I Base Integer Instruction Set, Version 2.1*. This document preserves the project's restricted EEI and does not claim external ISA certification.
@@ -911,6 +909,6 @@ The PRE-PUSH-008C functional derivative is **PARTIAL**: five legacy-fingerprint 
 
 PRE-PUSH-008F separately qualified the portable technical lint procedure: four matching configurations and 46 controls passing twice. This is new qualification, not a rerun or replacement of historical F01 acceptance.
 
-[Portable source and lint contract](verification/module17/lint_closure/fail_closed_runner/portable_manifest.json); [reproduction guide](REPRODUCING.md); [technical decisions](TECHNICAL_DECISIONS.md); [provenance](PROVENANCE.md).
+[Portable source and lint contract](verification/module17/lint_closure/fail_closed_runner/portable_manifest.json); [reproduction guide](REPRODUCING.md); [technical decisions](TECHNICAL_DECISIONS.md).
 
 Original `docs/ARCHITECTURE.md`, `docs/DECISIONS.md` and frozen F01 records remain restricted historical citations. Their identities above are preserved; they are not ordinary delivery links. The technical derivatives retain D01/D02, V01–V27, accepted-fetch reset, assertion, synthesis, timing and source-maintenance traceability. They do not rewrite the originals or establish physical timing signoff.

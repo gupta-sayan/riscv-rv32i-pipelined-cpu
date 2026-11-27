@@ -170,7 +170,3 @@ docs/            Architecture, reproduction guide and qualified evidence
 | [dmem_sync](rtl/memory/dmem_sync.sv) | Implements registered data reads and byte-strobed writes. |
 
 `rv32i_core_top` exposes memory interfaces. The integration testbench instantiates the two RAM modules around the core.
-
-## Engineering contributions
-
-The project engineer led design decisions and technical reviews. Recorded contributions include AI-assisted consultation and architecture review, Codex-assisted verification and tooling, and controlled source-maintenance work. The records do not establish exclusive human or AI authorship of production RTL. See [technical provenance](docs/PROVENANCE.md) for the supported contribution scope and source fingerprints, and [technical decisions](docs/TECHNICAL_DECISIONS.md) for design rationale.
