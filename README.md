@@ -4,9 +4,9 @@ A 32-bit, single-issue, in-order CPU implemented in **SystemVerilog**, with an *
 
 The design makes pipeline control explicit: newest-producer operand forwarding, WB-to-ID bypass, a one-bubble load-use interlock, EX-stage memory acceptance, and exactly two EX bubbles after a legal redirect. Ordered fail-stop control drains older work before halting and preserves an immutable fault record. Optional retirement tracing supports architectural checking.
 
-The technology-independent RTL milestone was conditionally accepted on November 5, 2026. Verification combines unit tests, full-core simulation, directed programs, an architectural reference model, executable assertions and deliberate negative controls. **Generic synthesis is complete; FPGA/ASIC implementation and physical timing qualification remain deferred.**
+The technology-independent RTL milestone was conditionally accepted on November 5, 2026. Verification combines unit tests, full-core simulation, directed programs, an architectural reference model, executable assertions and deliberate negative controls. **On a Spartan-7 FPGA (out-of-context), the core meets timing at 80 MHz as accepted and at 93 MHz after two report-driven RTL fixes** ([timing analysis](docs/TIMING_ANALYSIS.md)). Board-level implementation and hardware testing are next.
 
-**Start with the architecture:** [Pipeline diagram and control-flow details](docs/PIPELINE_DIAGRAM.md) · [Technical architecture](docs/TECHNICAL_ARCHITECTURE.md) · [Reproduce the results](docs/REPRODUCING.md) · [Verification status](docs/VERIFICATION_STATUS.md)
+**Start with the architecture:** [Pipeline diagram and control-flow details](docs/PIPELINE_DIAGRAM.md) · [Technical architecture](docs/TECHNICAL_ARCHITECTURE.md) · [FPGA timing analysis](docs/TIMING_ANALYSIS.md) · [Reproduce the results](docs/REPRODUCING.md) · [Verification status](docs/VERIFICATION_STATUS.md)
 
 ### Pipeline overview
 
@@ -39,7 +39,7 @@ This is a conceptual stage sequence, not a cycle-accurate datapath drawing. Inst
 | Portable lint | 4 exact-diagnostic configurations; 46 qualification controls passed twice |
 | Historical F01 lint | CLOSED by approved-warning inventory matching; native exits 1, warning counts 27/5/49/27 |
 | Generic Yosys synthesis | 8,407 cells (`TRACE_EN=0`); 8,799 cells (`TRACE_EN=1`) |
-| Technology-specific timing | F05 **PARTIAL / DEFERRED**; no physical timing signoff |
+| FPGA timing (Spartan-7 XC7S50, Vivado 2023.2, out-of-context) | **80 MHz** as accepted → **93 MHz** after [TIMING-V2](docs/CHANGE_PROPOSAL_TIMING_V2.md) (`TRACE_EN=0`); 71 → 83 MHz with trace; 1,460 LUTs, 356 FFs, 8 block RAMs |
 
 The 414 checks include repeated programs, assertion-wrapped replays and supplements; they are not 414 unique programs. Assertion evaluation is simulation evidence, not exhaustive formal verification or external ISA certification. Lint acceptance retains the warnings and requires complete diagnostic matching, not merely matching counts.
 
@@ -100,7 +100,7 @@ PASS ALL TRACE_EN=1 tests=12
 
 The logs and generated executables stay outside the repository. This command reproduces the integration subset, not the complete historical campaign or frozen lint acceptance.
 
-## Synthesis and remaining work
+## Synthesis, FPGA timing and remaining work
 
 Recorded generic Yosys 0.33 synthesis of `rv32i_core_top` passed structural checks in both static trace configurations:
 
@@ -111,9 +111,20 @@ Recorded generic Yosys 0.33 synthesis of `rv32i_core_top` passed structural chec
 
 External IMEM/DMEM arrays are outside the synthesized core. These are technology-independent cell counts, not FPGA LUT/BRAM utilization, ASIC area, power or measured Fmax. The original F04 run predates the R01 terminal-newline correction and remains historical evidence for its recorded source baseline.
 
-F05 remains **PARTIAL / DEFERRED** under FINAL-B01. The provisional 20 MHz target is a planning goal, not demonstrated performance. Target implementation must establish device/library selection, clock and I/O constraints, synchronous RAM inference and output-hold behavior, and quantitative slack/WNS for the forwarded address-to-memory-acceptance and branch-to-fetch-PC paths.
+### FPGA timing
 
-No FPGA/ASIC implementation, hardware test, physical timing signoff, post-synthesis simulation or netlist equivalence has been established.
+Out-of-context implementation on a Spartan-7 XC7S50 (Vivado 2023.2), with both memories inferred as block RAM:
+
+| RTL | `TRACE_EN=0` | `TRACE_EN=1` | LUTs / FFs / block RAMs |
+|---|---|---|---|
+| v1, as accepted | 80.0 MHz met | 71.4 MHz met | 1,453 / 355 / 8 |
+| v2, TIMING-V2 | **93.0 MHz** met | **83.3 MHz** met | 1,460 / 356 / 8 |
+
+A clock sweep showed the v1 limit was structural: the achieved period stayed near 12.4 ns whatever the target. The timing reports traced it to the EX stage, where the load/store address waited for the whole ALU result mux and a kill cleared about 150 ID/EX flip-flops through one high-fanout net. Two changes fixed it: a dedicated address adder (fix A) and clearing only the valid bit and side-effect controls on a bubble (fix B). The full 414-check regression, all 16 unit benches and lint diagnostics are unchanged in outcome; one unit bench was updated for fix B's contract. A third change was measured, gave no gain and was reverted. The remaining limiter is the forwarded branch → redirect → fetch path.
+
+Details: [timing analysis](docs/TIMING_ANALYSIS.md), [change proposal](docs/CHANGE_PROPOSAL_TIMING_V2.md), [scripts and results](docs/verification/timing/README.md).
+
+No board-level implementation, hardware test, ASIC timing, post-synthesis simulation or netlist equivalence has been established.
 
 ## Reproducibility and evidence
 

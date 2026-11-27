@@ -131,7 +131,7 @@ Generic synthesis and logic-depth reports do not establish physical timing.
 
 The original two timing shells were required before full integration. That deadline was missed and remains part of the record. FINAL-B01 defers the work to the technology-specific phase, before timing acceptance for that implementation.
 
-F05 remains **PARTIAL / DEFERRED**. Required work includes target selection, constraints, memory inference, both critical-path shells, quantitative slack/WNS, reproducible reports and violation dispositions.
+F05 was **PARTIAL / DEFERRED** at the November 5 milestone. Required work included target selection, constraints, memory inference, both critical-path shells, quantitative slack/WNS, reproducible reports and violation dispositions. Out-of-context FPGA implementation later measured both paths; see decision 14.
 
 The provisional 20 MHz/50 ns goal is not measured performance.
 
@@ -148,3 +148,13 @@ FINAL-B02 added current technical dispositions and timing obligations. It record
 PRE-PUSH-008F separately qualified the portable technical lint procedure: four matching configurations and 46 controls passing twice. This is new qualification, not a rerun or replacement of historical F01 acceptance.
 
 See [implementation and integrity evidence](verification/module17/final_campaign/TECHNICAL_IMPLEMENTATION_EVIDENCE.json) for F03/FINAL-B01/R01/T01, [historical and portable lint validation](verification/module17/lint_closure/fail_closed_runner/TECHNICAL_LINT_VALIDATION.json), and [verification status](VERIFICATION_STATUS.md) for the functional derivative’s PARTIAL qualification.
+
+## 14. Shorten the EX fault path for FPGA timing — TIMING-V2
+
+Out-of-context implementation on a Spartan-7 XC7S50 (Vivado 2023.2) found the accepted RTL limited to 80 MHz. The worst path ran from forwarding through the ALU add and the ALU result mux, into the address range check, the EX fault decision and a kill that cleared about 150 ID/EX flip-flops.
+
+Two changes address it. A dedicated adder now supplies the load/store effective address, so the address no longer waits for the ALU result mux. The ID/EX payload is cleared only on reset; validity and every side-effect control still clear on kill and bubble.
+
+**Effect:** 80 → 93 MHz with `TRACE_EN=0` and 71 → 83 MHz with `TRACE_EN=1`, same area, with the full regression, unit benches and lint unchanged in outcome.
+
+**Limitation:** the first change reverses the earlier "no second address adder" area choice. A third change of the same kind on EX/MEM was measured, gave no gain and was rejected. Figures are out-of-context and await board-level confirmation. See the [change proposal](CHANGE_PROPOSAL_TIMING_V2.md) and [timing analysis](TIMING_ANALYSIS.md).

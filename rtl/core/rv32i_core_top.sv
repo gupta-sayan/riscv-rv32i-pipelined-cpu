@@ -513,10 +513,12 @@ ex_event_mux u_ex_event_mux (
 );
 
 // EX stage — Load/Store Unit
+logic [31:0] lsu_eff_addr; // v2 fix A: dedicated address adder
+assign lsu_eff_addr = ex_rs1_forwarded + idex_imm;
 assign run_active = !stop_fetch;
 
 lsu_ex u_lsu_ex (
-    .eff_addr(alu_result),
+    .eff_addr(lsu_eff_addr),
     .store_data(ex_store_forwarded),
     .mem_size(idex_mem_size),
     .mem_read(idex_mem_read),

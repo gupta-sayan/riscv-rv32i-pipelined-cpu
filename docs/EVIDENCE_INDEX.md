@@ -219,6 +219,16 @@ docs/verification/module17/TIMING_OBLIGATIONS.md
 
 **Status:** PARTIAL / DEFERRED. Cell-step path lengths are not quantitative timing.
 
+**Later measurement (TIMING-V2):** out-of-context Vivado 2023.2 implementation on a Spartan-7 XC7S50 measured both named paths. v1 meets 80 MHz; v2 meets 93 MHz (`TRACE_EN=0`).
+
+```text
+docs/TIMING_ANALYSIS.md
+docs/CHANGE_PROPOSAL_TIMING_V2.md
+docs/verification/timing/            (flow, wrapper, recorded result CSVs, replay tools)
+```
+
+Raw Vivado reports and logs are kept outside the repository. The historical F05 records above are unchanged.
+
 ## 12. F06 complete regression
 
 **Established:** 414 positive checks across 70 simulations and ten expected negatives.

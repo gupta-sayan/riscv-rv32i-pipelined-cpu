@@ -160,7 +160,7 @@ always_ff @(posedge clk) begin // ID/EX validity register
 end
 
 always_ff @(posedge clk) begin // ID/EX instruction identity and register addresses
-    if (rst || kill_id || bubble_ex) begin
+    if (rst) begin // v2 fix B
         idex_pc  <= 32'b0;
         idex_rs1 <= 5'b0;
         idex_rs2 <= 5'b0;
@@ -175,7 +175,7 @@ always_ff @(posedge clk) begin // ID/EX instruction identity and register addres
 end
 
 always_ff @(posedge clk) begin // ID/EX register values and immediate
-    if (rst || kill_id || bubble_ex) begin
+    if (rst) begin // v2 fix B
         idex_rs1_value <= 32'b0;
         idex_rs2_value <= 32'b0;
         idex_imm       <= 32'b0;
@@ -188,7 +188,7 @@ always_ff @(posedge clk) begin // ID/EX register values and immediate
 end
 
 always_ff @(posedge clk) begin // ID/EX ALU and branch control
-    if (rst || kill_id || bubble_ex) begin
+    if (rst) begin // v2 fix B
         idex_alu_op   <= 4'b0;
         idex_imm_kind <= 3'b0;
         idex_op_a_sel <= 2'b0;
@@ -241,7 +241,7 @@ end
 generate // ID/EX instruction trace
     if (TRACE_EN) begin : gen_idex_trace
         always_ff @(posedge clk) begin
-            if (rst || kill_id || bubble_ex) begin
+            if (rst) begin // v2 fix B
                 idex_instr <= 32'b0;
             end
             else begin

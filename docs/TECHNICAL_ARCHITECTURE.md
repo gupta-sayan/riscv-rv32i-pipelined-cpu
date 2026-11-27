@@ -716,7 +716,7 @@ All `clk` and `rst` ports are one bit.
 | `forward_unit` | Section 6 producer/source identities to three 2-bit selectors and scalar error. |
 | `alu` | Two 32-bit operands and 4-bit operation to 32-bit result. |
 | `branch_unit` | Forwarded 32-bit operands, PC/immediate, 3-bit branch kind and jump flags to raw redirect, 32-bit target and target-misalignment flag. |
-| `lsu_ex` | ALU `eff_addr[31:0]`, forwarded store data, size/intents and valid/RUN/reset qualification to memory signals and LSU event. No second address adder. |
+| `lsu_ex` | `eff_addr[31:0]`, forwarded store data, size/intents and valid/RUN/reset qualification to memory signals and LSU event. *TIMING-V2 amendment:* `eff_addr` comes from a dedicated forwarded-rs1 + immediate adder; the original mapping used the ALU result with no second address adder. |
 | `ex_event_mux` | EX validity/PC, LSU event/cause and target-misalignment input to one EX event triple. |
 | `fault_ctrl` | EX/ID events, raw redirect and stage valids to qualified redirect, kills, drain/stop and terminal diagnostics. |
 | `dmem_sync` | Section 8 data interface; registered reads and byte-strobed writes. |
@@ -741,7 +741,7 @@ All `clk` and `rst` ports are one bit.
 | `bubble_ex` | 1 | `hazard_ctrl`; invalid ID/EX insertion |
 | `fwd_a_sel`, `fwd_b_sel`, `fwd_store_sel` | 2 each | `forward_unit`; operand/store selection |
 | `fwd_nonready_error` | 1 | `forward_unit`; nonready-producer error |
-| `eff_addr` | 32 | Existing ALU address result |
+| `eff_addr` | 32 | Dedicated EX address adder, forwarded rs1 + immediate (TIMING-V2; originally the ALU address result) |
 
 Reset and kills outrank ordinary holds/bubbles/advancement at the appropriate boundary.
 
@@ -827,24 +827,26 @@ Passing results require saved logs and reproducible commands. Correcting specifi
 
 ## 16. Timing qualification and verified scope
 
-### Deferred timing work
+### Timing work
 
 The provisional target is 20 MHz/50 ns. It is not a measured frequency guarantee.
 
 The original architecture required two timing shells before full integration. That deadline was missed and remains recorded.
 
-FINAL-B01 approves deferral to the technology-specific implementation phase. F05 remains **PARTIAL / DEFERRED**. Before technology-specific timing acceptance, establish:
+FINAL-B01 approved deferral to the technology-specific implementation phase. Out-of-context FPGA implementation has since addressed the items below; see [TIMING_ANALYSIS.md](TIMING_ANALYSIS.md).
 
-1. Selected FPGA device or ASIC technology/library.
-2. Synthesis and STA tool versions.
-3. Clock definitions and timing constraints.
-4. Memory primitive inference and disabled-read output hold behavior.
-5. Forwarded operand → EX address generation → alignment/range checks → DMEM acceptance, write-enable/data and memory-setup timing.
-6. Forwarded branch comparison → redirect control → fetch-PC-register timing.
-7. Quantitative timing, path slack and WNS.
-8. Reproducible scripts, complete commands, reports and violation dispositions.
+| # | Required item | Status |
+|---|---|---|
+| 1 | Selected FPGA device or ASIC technology/library | AMD Spartan-7 XC7S50 (`xc7s50csga324-1`); ASIC not addressed |
+| 2 | Synthesis and STA tool versions | Vivado 2023.2 |
+| 3 | Clock definitions and timing constraints | Single clock, period swept; out-of-context, no board I/O constraints yet |
+| 4 | Memory primitive inference and disabled-read output hold | IMEM and DMEM inferred as block RAM; hold relies on the RAM clock enable and is not separately verified post-synthesis |
+| 5 | Forwarded operand → address → alignment/range checks → DMEM acceptance | Measured: v1 limiter; shortened by TIMING-V2 fix A |
+| 6 | Forwarded branch comparison → redirect control → fetch | Measured: v2 limiter (about 10.6 ns) |
+| 7 | Quantitative timing, path slack and WNS | v1 met at 80 MHz; v2 met at 93 MHz (`TRACE_EN=0`) |
+| 8 | Reproducible scripts, commands, reports and dispositions | `docs/verification/timing/`; raw reports kept outside the repository |
 
-Negative slack requires a reviewed change proposal. It does not authorize an extra pipeline register, silent retiming or a changed EX transaction edge.
+Negative slack requires a reviewed change proposal. It does not authorize an extra pipeline register, silent retiming or a changed EX transaction edge. The v1 violations at 100 MHz were handled by [TIMING-V2](CHANGE_PROPOSAL_TIMING_V2.md), which does none of these.
 
 No replacement calendar deadline or implementation schedule is established here.
 
@@ -856,7 +858,7 @@ D01 selector closure, ARCH-M17-D02 and V01–V27 are accepted within their docum
 
 The recorded later regression contains 414 positive case/configuration checks and ten expected-negative checks. These are bounded executed checks, not unique-program counts or exhaustive proof.
 
-Generic synthesis succeeded in both trace configurations. It does not establish physical RAM inference, device utilization, netlist equivalence, hardware behavior or timing closure.
+Generic synthesis succeeded in both trace configurations. It does not establish physical RAM inference, device utilization, netlist equivalence, hardware behavior or timing closure. Device utilization, block-RAM inference and out-of-context timing were later established with Vivado (see Timing work above); netlist equivalence and hardware behavior remain open.
 
 The recorded 68/65 generic cell-step path lengths are topology observations, not delay, slack or Fmax.
 

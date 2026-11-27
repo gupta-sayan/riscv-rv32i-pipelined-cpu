@@ -1,6 +1,6 @@
 # Verification Status
 
-The technology-independent RV32I RTL milestone was **conditionally accepted on November 5, 2026**. Target-specific FPGA/ASIC timing qualification remains deferred.
+The technology-independent RV32I RTL milestone was **conditionally accepted on November 5, 2026**. Out-of-context FPGA timing was later measured on a Spartan-7 XC7S50: 80 MHz for the accepted v1 RTL and 93 MHz for the timing-v2 RTL. Board-level and ASIC timing remain open. See [FPGA timing (F05)](#fpga-timing-f05).
 
 This document summarizes recorded evidence. It distinguishes historical execution, later review reruns and work that has not been established.
 
@@ -15,6 +15,8 @@ The post-R01/T01 design baseline comprises 17 production RTL files and the integ
 The original frozen F01 manifest is a restricted historical identifier, not a runnable delivery dependency.
 
 All 18 design/testbench hashes matched during the read-only preparation of this summary. That comparison is an integrity check, not a new simulation result.
+
+The [TIMING-V2](CHANGE_PROPOSAL_TIMING_V2.md) change later modified `rtl/core/rv32i_core_top.sv` and `rtl/core/pipeline_regs.sv` (and the unit bench `tb/unit/tb_pipeline_regs.sv`). Those two RTL files no longer match the v1 manifest; the other 15 RTL files and the integration testbench are unchanged. The v1 identities above remain the record for the historical F01–F08 evidence.
 
 The original architecture remains authoritative; the technical architecture is its companion restatement.
 
@@ -83,7 +85,7 @@ The 414 checks are not 414 unique instruction programs. They include repeated pr
 | **F02** | PASS for executable assertions, positive evaluation of all 24 property IDs and ten expected-negative checks. |
 | **F03** | **CLOSED** under the accepted diagnostic synthesis disposition. |
 | **F04** | PASS for generic synthesis and reported structural checks in both trace configurations. |
-| **F05** | **PARTIAL / DEFERRED** under FINAL-B01. |
+| **F05** | **MEASURED, out-of-context.** v1 meets 80 MHz; v2 (TIMING-V2) meets 93 MHz on Spartan-7. Board-level confirmation pending. |
 | **F06** | PASS for the recorded complete engineering regression within its stated suite scope. |
 | **F07** | PASS for historical source/evidence integrity and result reconciliation at its recorded checkpoints. |
 | **F08** | PASS for reporting and package validation; not an additional correctness or timing certification. |
@@ -164,12 +166,36 @@ The evidence does not establish:
 - Formal verification or netlist equivalence.
 - Post-synthesis simulation.
 - External ISA certification.
-- FPGA/ASIC implementation or hardware testing.
-- Quantitative timing, slack, WNS or Fmax.
+- ASIC implementation, board-level FPGA implementation or hardware testing.
+- Board-level timing closure (current figures are out-of-context).
 
 The simulation clock period is stimulus timing, not a hardware performance result.
 
-FINAL-B01 remains APPROVED. Before technology-specific timing acceptance, both critical paths, target constraints and memory behavior require quantitative qualification.
+FINAL-B01 remains APPROVED. Both named critical paths have now been measured out-of-context; board-level constraints and confirmation remain.
+
+## FPGA timing (F05)
+
+Vivado 2023.2, `xc7s50csga324-1`, out-of-context, both memories inferred as block RAM. Full method and analysis: [TIMING_ANALYSIS.md](TIMING_ANALYSIS.md).
+
+| RTL | `TRACE_EN=0` met | `TRACE_EN=1` met | LUTs / FFs / block RAMs |
+|---|---|---|---|
+| v1 (accepted baseline) | 80.0 MHz (12.5 ns, WNS +0.120 ns) | 71.4 MHz (14 ns, WNS +0.140 ns) | 1,453 / 355 / 8 |
+| v2 ([TIMING-V2](CHANGE_PROPOSAL_TIMING_V2.md)) | 93.0 MHz (10.75 ns, WNS +0.034 ns) | 83.3 MHz (12 ns, WNS +0.402 ns) | 1,460 / 356 / 8 |
+
+Both architecture-named paths were confirmed as the limiters: v1 is limited by forwarded operand → address/range check → EX fault → kill; v2 by forwarded branch comparison → redirect qualification → fetch kill.
+
+### TIMING-V2 verification
+
+TIMING-V2 changes two RTL files and one unit bench. It was verified against the same suites as v1:
+
+| Check | Result |
+|---|---|
+| Full regression replay, Icarus 12.0 | 414/414 positive, 10/10 expected-negative |
+| 16 unit benches × 2 trace modes, Icarus 12.0 | 32/32 pass |
+| `tb_pipeline_regs` and integration bench, Questa 2023.4 | 0 failures; PASS ALL × 2 |
+| Verilator 5.020 `--Wall`, 4 configurations | Diagnostics identical to v1 |
+
+`tb_pipeline_regs` now checks ID/EX payload only for valid slots (6,309,177 → 5,426,477 checks); see the change proposal. The accepted v1 source identities and the portable lint manifest are unchanged; the pinned runner rejects v2 sources by design.
 
 ## Delivered evidence qualification
 
