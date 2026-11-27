@@ -447,19 +447,22 @@ module tb_pipeline_regs;
             field_check(32'(ifid_pc[c]),32'(expected_ifid_pc[c]),{phase," ifid_pc"},c);
             field_check(32'(ifid_fetch_fault[c]),32'(expected_ifid_fetch_fault[c]),{phase," ifid_fetch_fault"},c);
             field_check(32'(idex_valid[c]),32'(expected_idex_valid[c]),{phase," idex_valid"},c);
-            field_check(32'(idex_pc[c]),32'(expected_idex_pc[c]),{phase," idex_pc"},c);
-            field_check(32'(idex_instr[c]),32'(expected_idex_instr[c]),{phase," idex_instr"},c);
-            field_check(32'(idex_rs1[c]),32'(expected_idex_rs1[c]),{phase," idex_rs1"},c);
-            field_check(32'(idex_rs2[c]),32'(expected_idex_rs2[c]),{phase," idex_rs2"},c);
-            field_check(32'(idex_rd[c]),32'(expected_idex_rd[c]),{phase," idex_rd"},c);
-            field_check(32'(idex_rs1_value[c]),32'(expected_idex_rs1_value[c]),{phase," idex_rs1_value"},c);
-            field_check(32'(idex_rs2_value[c]),32'(expected_idex_rs2_value[c]),{phase," idex_rs2_value"},c);
-            field_check(32'(idex_imm[c]),32'(expected_idex_imm[c]),{phase," idex_imm"},c);
-            field_check(32'(idex_alu_op[c]),32'(expected_idex_alu_op[c]),{phase," idex_alu_op"},c);
-            field_check(32'(idex_imm_kind[c]),32'(expected_idex_imm_kind[c]),{phase," idex_imm_kind"},c);
-            field_check(32'(idex_op_a_sel[c]),32'(expected_idex_op_a_sel[c]),{phase," idex_op_a_sel"},c);
-            field_check(32'(idex_op_b_sel[c]),32'(expected_idex_op_b_sel[c]),{phase," idex_op_b_sel"},c);
-            field_check(32'(idex_br_kind[c]),32'(expected_idex_br_kind[c]),{phase," idex_br_kind"},c);
+            // Timing v2 (fix B): ID/EX payload of a bubbled/killed slot is architecturally
+            // don't-care and no longer cleared; it is checked only for valid slots. Validity and
+            // all side-effect controls (uses_rs*, is_jal/jalr, mem_*, reg_write, wb_sel) stay checked.
+            if(expected_idex_valid[c]) field_check(32'(idex_pc[c]),32'(expected_idex_pc[c]),{phase," idex_pc"},c);
+            if(expected_idex_valid[c]) field_check(32'(idex_instr[c]),32'(expected_idex_instr[c]),{phase," idex_instr"},c);
+            if(expected_idex_valid[c]) field_check(32'(idex_rs1[c]),32'(expected_idex_rs1[c]),{phase," idex_rs1"},c);
+            if(expected_idex_valid[c]) field_check(32'(idex_rs2[c]),32'(expected_idex_rs2[c]),{phase," idex_rs2"},c);
+            if(expected_idex_valid[c]) field_check(32'(idex_rd[c]),32'(expected_idex_rd[c]),{phase," idex_rd"},c);
+            if(expected_idex_valid[c]) field_check(32'(idex_rs1_value[c]),32'(expected_idex_rs1_value[c]),{phase," idex_rs1_value"},c);
+            if(expected_idex_valid[c]) field_check(32'(idex_rs2_value[c]),32'(expected_idex_rs2_value[c]),{phase," idex_rs2_value"},c);
+            if(expected_idex_valid[c]) field_check(32'(idex_imm[c]),32'(expected_idex_imm[c]),{phase," idex_imm"},c);
+            if(expected_idex_valid[c]) field_check(32'(idex_alu_op[c]),32'(expected_idex_alu_op[c]),{phase," idex_alu_op"},c);
+            if(expected_idex_valid[c]) field_check(32'(idex_imm_kind[c]),32'(expected_idex_imm_kind[c]),{phase," idex_imm_kind"},c);
+            if(expected_idex_valid[c]) field_check(32'(idex_op_a_sel[c]),32'(expected_idex_op_a_sel[c]),{phase," idex_op_a_sel"},c);
+            if(expected_idex_valid[c]) field_check(32'(idex_op_b_sel[c]),32'(expected_idex_op_b_sel[c]),{phase," idex_op_b_sel"},c);
+            if(expected_idex_valid[c]) field_check(32'(idex_br_kind[c]),32'(expected_idex_br_kind[c]),{phase," idex_br_kind"},c);
             field_check(32'(idex_uses_rs1[c]),32'(expected_idex_uses_rs1[c]),{phase," idex_uses_rs1"},c);
             field_check(32'(idex_uses_rs2[c]),32'(expected_idex_uses_rs2[c]),{phase," idex_uses_rs2"},c);
             field_check(32'(idex_is_jal[c]),32'(expected_idex_is_jal[c]),{phase," idex_is_jal"},c);
